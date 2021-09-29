@@ -1,0 +1,82 @@
+section#hi {
+    display: grid;
+    grid-template:
+        'header photo' auto
+        'name   photo' auto
+        'title  photo' 1fr
+        'button photo' auto;
+    grid-template-columns: 1fr auto;
+    padding-top: min(10vw, 10rem);
+    padding-bottom: min(10vw, 10rem);
+    clip-path: circle(500vw at 50% calc(100% - 500vw));
+    background-color: var(--color-secondary);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: var(--color-on-secondary);
+}
+
+section#hi > * {
+    margin: 0;
+}
+
+section#hi h2 {
+    color: var(--color-on-secondary)
+}
+
+section#hi .name {
+    margin: 0;
+    padding: 0;
+    font-size: 2.6em;
+}
+
+section#hi .title {
+    margin: 0;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+section#hi .button {
+    margin-top: 1rem;
+}
+
+section#hi .photo {
+    grid-area: photo;
+    width: 24vw;
+    max-width: 200px;
+    height: auto;
+    background-color: var(--color-bg-secondary);
+    clip-path: circle();
+    font-size: 0;
+    user-select: none;
+}
+
+
+
+section#skills .categories {
+    display: grid;
+    flex-wrap: wrap;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 1rem;
+    padding-left: 2.5rem;
+    list-style: none;
+}
+
+section#skills .category ul {
+    padding-left: 15px;
+}
+
+section#skills .category li {
+    list-style-type: disc;
+}
+
+section#skills h3 {
+    white-space: nowrap;
+}
+
+
+
+section#education ul {
+    padding-left: 0;
+    list-style: none;
+}
