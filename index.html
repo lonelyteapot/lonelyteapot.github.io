@@ -4,22 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>LonelyTeapot</title>
 </head>
 <body>
     <header class="siteheader">
-        <h1 class="siteheader__logo">LonelyTeapot</h1>
-        <nav class="sitenav">
-            <a href="#" class="sitenav__link">About me</a>
-            <a href="#" class="sitenav__link">Projects</a>
+        <h1 class="logo">
+            <a href="/">LonelyTeapot</a>
+        </h1>
+        <nav>
+            <a href="/" class="active">About me</a>
+            <a href="/projects">Projects</a>
         </nav>
     </header>
-    <main class="sitebody">
-        <section class="sitebody__whoami">
-            <div class="sitebody__whoami-hi">Hi! I'm</div>
-            <div class="sitebody__whoami-name">Dmitry Semenov</div>
-            <div class="sitebody__whoami-profession">Software Developer</div>
-            <img class="sitebody__whoami-photo" src="img/photo.png" alt="[Photo of me]" width="64">
+    <main class="main" id="index">
+        <section id="hi">
+            <h2>Hi!</h2>
+            <img class="photo" src="img/photo.jpg" alt="[My Photo]" width="64" height="64">
+            <p class="name">I'm Dmitry</p>
+            <p class="title">Software Developer</p>
+            <a class="button send" href="/contact-me">Contact me</a>
+        </section>
+        <section id="skills">
+            <h2>Skills & Tech Stack</h2>
+            <ul class="categories">
+                <li class="category">
+                    <h3 class="header">Software Development</h3>
+                    <ul>
+                        <li>Algorithms and Data Structures</li>
+                        <li>Version Control: Git, GitHub</li>
+                        <li>Linux terminal, PowerShell</li>
+                    </ul>
+                </li>
+                <li class="category">
+                    <h3 class="header">Programming languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++, QML</li>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Kotlin, Java, Dart</li>
+                    </ul>
+                </li>
+                <li class="category">
+                    <h3 class="header">Software Development Kits</h3>
+                    <ul>
+                        <li>Qt Quick</li>
+                        <li>Flutter</li>
+                        <li>Android</li>
+                    </ul>
+                </li>
+                <li class="category">
+                    <h3 class="header">Frameworks</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Flask</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <img src="/img/unn_logo.png" alt="" height="54" style="float: left;">
+                    Lobachevsky State University of Nizhny Novgorod<br>
+                    <i>Institute of Information Technology, Mathematics and Mechanics</i><br>
+                    Bachelor of <b>Software Engineering</b> (expected in 2024)
+                </li>
+            </ul>
         </section>
     </main>
     <footer class="sitefooter">
