@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    color: #3F51A2;
+}
+
+html {
+    --color-background: #FFF9FB;
+    --color-on-background: #070707;
+
+    --color-primary: #03C959;
+    --color-on-primary: #070707;
+
+    --color-secondary: #3F51A2;
+    --color-on-secondary: #FFF9FB;
+
+    /* --color-primary: #3F51A2; */
+    /* --color-primary-bg: #FFF9FB; */
+    /* --color-secondary: #3F51A2; */
+    /* --color-on-secondary: #FFF9FB; */
+    /* --color-tertiary: #FFF9FB; */
+    --font-regular: 'Montserrat', sans-serif;
+    --font-header: 'Open Sans', sans-serif;
+    --side-padding: max(1rem, calc((100vw - 56rem) / 2));
+    height: 100%;
+    font-family: var(--font-regular);
+    /* background-color: #FFF9FB; */
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+}
+
+main > section {
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+    padding-top: min(2vw, 2rem);
+}
+
+
+
+.siteheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px var(--side-padding);
+    align-items: baseline;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    white-space: nowrap;
+    box-shadow: 0 0 4px var(--color-on-background);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+}
+
+.siteheader > .logo {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: var(--color-on-primary);
+}
+
+.siteheader > nav {
+    display: flex;
+}
+
+.siteheader > nav > a {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Montserrat';
+}
+
+.siteheader > nav > a:hover,
+.siteheader > nav > a:focus,
+.siteheader > nav > a.active {
+    text-shadow: 0 0 1px black;
+    outline: none;
+}
+
+
+
+.sitefooter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    color: #999;
+    font-size: 0.8em;
+}
+
+
+
+.button {
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+    gap: 6px;
+    padding: 12px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+}
+
+.button::before {
+    content: '';
+    align-self: stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.button.send::before {
+    width: 1em;
+    background-image: url('/icon/send.svg');
+}
