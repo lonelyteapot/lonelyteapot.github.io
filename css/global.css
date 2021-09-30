@@ -81,13 +81,13 @@ main > section {
     color: var(--color-on-primary);
 }
 
-#header > nav {
+#navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#header > nav > a {
+#navigation > a {
     display: flex;
     align-items: center;
     padding-left: 1rem;
@@ -95,9 +95,9 @@ main > section {
     font-family: 'Montserrat';
 }
 
-#header > nav > a:hover,
-#header > nav > a:focus,
-#header > nav > a.active {
+#navigation > a:hover,
+#navigation > a:focus,
+#navigation > a.active {
     text-shadow: 0 0 1px black;
     outline: none;
 }
@@ -120,9 +120,8 @@ main > section {
     display: flex;
     align-items: center;
     max-width: max-content;
-    gap: 6px;
-    padding: 12px;
-    height: 40px;
+    gap: 0.25em;
+    padding: 0.7em 0.8em;
     border-radius: 10px;
     background-color: var(--color-primary);
     color: var(--color-on-primary);
@@ -140,3 +139,13 @@ main > section {
     width: 1em;
     background-image: url('/icon/send.svg');
 }
+
+a.github::after {
+    content: '';
+    background-image: url(/icon/github.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.2em;
+    height: 1.2em;
+    margin-left: 4px;
+ }
