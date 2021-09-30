@@ -56,10 +56,16 @@ section#skills .categories {
     display: grid;
     flex-wrap: wrap;
     grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding-left: 2.5rem;
     list-style: none;
+}
+
+@media screen and (min-width: 680px) {
+    section#skills .categories {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 section#skills .category ul {
@@ -70,13 +76,20 @@ section#skills .category li {
     list-style-type: disc;
 }
 
-section#skills h3 {
-    white-space: nowrap;
-}
-
 
 
 section#education ul {
-    padding-left: 0;
+    padding-left: 0px;
     list-style: none;
+}
+
+section#education img {
+    width: 3rem;
+    height: auto;
+    float: left;
+}
+
+section#education p {
+    margin: 4px 0;
+    margin-left: 3rem
 }
