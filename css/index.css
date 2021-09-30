@@ -79,8 +79,18 @@
     padding: 0 1rem 1rem 1rem;
 }
 
+#index #skills .category ul {
+    padding: 0;
+}
+
 #index #skills .category li {
-    list-style-type: disc;
+    list-style: none;
+    background-image: url(/icon/arrow_circle_right.svg);
+    background-size: 1.1em;
+    background-repeat: no-repeat;
+    background-position: left 3px;
+    padding-left: 1.5em;
+    padding-top: -2px;
 }
 
 
