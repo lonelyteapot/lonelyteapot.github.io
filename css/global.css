@@ -26,7 +26,7 @@ html {
     /* --color-tertiary: #FFF9FB; */
     --font-regular: 'Montserrat', sans-serif;
     --font-header: 'Open Sans', sans-serif;
-    --side-padding: max(1rem, calc((100vw - 56rem) / 2));
+    --side-padding: max(1rem, calc((100vw - 42rem) / 2));
     min-width: 320px;
     height: 100%;
     scrollbar-width: thin;
@@ -52,6 +52,8 @@ main > section {
     padding-right: var(--side-padding);
     padding-top: 2rem;
     padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 

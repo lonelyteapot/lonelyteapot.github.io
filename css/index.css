@@ -56,20 +56,22 @@ section#skills .categories {
     display: grid;
     flex-wrap: wrap;
     grid-auto-flow: row;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: max-content;
+    gap: 2rem;
     padding-left: 2.5rem;
     list-style: none;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 520px) {
     section#skills .categories {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-section#skills .category ul {
-    padding-left: 15px;
+section#skills .category {
+    box-shadow: 0 0 4px var(--color-on-background);
+    border-radius: 8px;
+    padding: 0 1rem 1rem 1rem;
 }
 
 section#skills .category li {
