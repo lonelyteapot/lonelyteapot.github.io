@@ -23,7 +23,7 @@ html {
     --font-header: 'Raleway', sans-serif;
     --font-interact: 'Montserrat', sans-serif;
 
-    --side-padding: max(1rem, calc((100vw - 42rem) / 2));
+    --side-padding: max(1rem, calc((100vw - 44rem) / 2));
 }
 
 html {
@@ -54,6 +54,11 @@ main > section {
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
+}
+
+main > section > *:not(h2) {
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 
