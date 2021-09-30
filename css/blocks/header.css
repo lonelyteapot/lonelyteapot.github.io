@@ -21,14 +21,21 @@
     margin: 0;
     padding: 8px 0;
     font-weight: normal;
+    letter-spacing: -0.05em;
     color: var(--color-on-primary);
     user-select: none;
+    transition: transform 0.1s;
+}
+
+#header > .logo:hover {
+    transform: scale(1.03125);
 }
 
 #navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 0.9rem;
 }
 
 #navigation > a {
@@ -45,7 +52,7 @@
 }
 
 #navigation > a.active {
-    text-shadow: 0 0 1px var(--color-on-primary);
+    text-decoration: 2px overline;
 }
 
 
