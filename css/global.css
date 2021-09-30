@@ -19,8 +19,9 @@ html {
     --color-secondary: #3F51A2;
     --color-on-secondary: #FFF9FB;
 
-    --font-regular: 'Montserrat', sans-serif;
-    --font-header: 'Open Sans', sans-serif;
+    --font-regular: 'Open Sans', sans-serif;
+    --font-header: 'Raleway', sans-serif;
+    --font-interact: 'Montserrat', sans-serif;
 
     --side-padding: max(1rem, calc((100vw - 42rem) / 2));
 }
@@ -61,8 +62,9 @@ main > section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 8px var(--side-padding);
-    align-items: baseline;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+    align-items: center;
     width: 100%;
     min-height: 60px;
     position: sticky;
@@ -72,34 +74,40 @@ main > section {
     box-shadow: 0 0 4px var(--color-on-background);
     background-color: var(--color-primary);
     color: var(--color-on-primary);
+    font-family: var(--font-interact);
 }
 
 #header > .logo {
     margin: 0;
     padding: 0;
-    font-weight: 400;
+    font-weight: normal;
     color: var(--color-on-primary);
+    user-select: none;
+
 }
 
 #navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-self: stretch;
 }
 
 #navigation > a {
     display: flex;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-family: 'Montserrat';
+    padding: 16px 1rem 8px;
+    transition: background-color 0.1s;
 }
 
 #navigation > a:hover,
-#navigation > a:focus,
-#navigation > a.active {
-    text-shadow: 0 0 1px black;
+#navigation > a:focus {
+    background-color: #00000011;
     outline: none;
+}
+
+#navigation > a.active {
+    text-shadow: 0 0 1px var(--color-on-primary);
 }
 
 
@@ -125,6 +133,15 @@ main > section {
     border-radius: 10px;
     background-color: var(--color-primary);
     color: var(--color-on-primary);
+    font-family: var(--font-interact);
+    box-shadow: 1px 1px 2px var(--color-on-primary);
+}
+
+.g-button:hover,
+.g-button:focus {
+    outline: none;
+    box-shadow: 1px 1px 8px var(--color-on-primary);
+    /* transition: box-shadow 2s; */
 }
 
 .g-button::before {
@@ -148,4 +165,4 @@ a.github::after {
     width: 1.2em;
     height: 1.2em;
     margin-left: 4px;
- }
+}
