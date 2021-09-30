@@ -1,0 +1,47 @@
+
+.g-button {
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+    gap: 0.25em;
+    padding: 0.7em 0.8em;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    font-family: var(--font-interact);
+    box-shadow: 1px 1px 2px var(--color-on-primary);
+}
+
+.g-button:hover,
+.g-button:focus {
+    outline: none;
+    box-shadow: 1px 1px 8px var(--color-on-primary);
+}
+
+.g-button::before {
+    content: '';
+    align-self: stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.g-button.send::before {
+    width: 1em;
+    background-image: url('/icon/send.svg');
+}
+
+.g-button.home::before {
+    width: 1em;
+    background-image: url('/icon/home.svg');
+}
+
+a.github::after {
+    content: '';
+    background-image: url(/icon/github.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.2em;
+    height: 1.2em;
+    margin-left: 4px;
+}

@@ -1,76 +1,13 @@
+@import url(blocks/intro.css);
+
 #index ul {
     padding-left: 0px;
     list-style: none;
 }
 
-#index #intro {
-    display: grid;
-    grid-template:
-        'header photo' auto
-        'name   photo' auto
-        'title  photo' 1fr
-        'button photo' auto;
-    grid-template-columns: 1fr auto;
-    padding-top: min(10vw, 10rem);
-    padding-bottom: min(10vw, 10rem);
-    clip-path: circle(500vw at 50% calc(100% - 500vw));
-    background-color: var(--color-secondary);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    color: var(--color-on-secondary);
-}
-
-#index #intro > * {
-    margin: 0;
-}
-
-#index #intro h2 {
-    color: var(--color-on-secondary)
-}
-
-#index #intro .name {
-    margin: 0;
-    padding: 0;
-    font-size: 2.8em;
-}
-
-#index #intro .title {
-    margin: 0;
-    font-size: 1em;
-    font-family: var(--font-header);
-}
-
-#index #intro .buttons {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    font-size: 0.85rem;
-}
-
-#index #intro .photo {
-    grid-area: photo;
-    display: flex;
-    justify-content: stretch;
-    width: min(24vw, 200px);
-    height: min(24vw, 200px);
-    box-shadow: inset 0 0 4px black;
-    border-radius: 50%;
-    user-select: none;
-    overflow: hidden;
-}
-
-#index #intro .photo > img {
-    width: 100%;
-    height: 100%;
-    font-size: 0;
-    background-color: lightslategray;
-    position: relative;
-    z-index: -1;
-}
 
 
-
-#index #skills .categories {
+section#skills .categories {
     display: grid;
     flex-wrap: wrap;
     grid-auto-flow: row;
@@ -79,20 +16,18 @@
 }
 
 @media screen and (min-width: 520px) {
-
-#index #skills .categories {
-    grid-template-columns: 1fr 1fr;
+    section#skills .categories {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-}
-
-#index #skills .category {
+section#skills .category {
     box-shadow: 0 0 4px var(--color-on-background);
     border-radius: 8px;
     padding: 0 1rem 1rem 1rem;
 }
 
-#index #skills .category li {
+section#skills .category li {
     list-style: none;
     background-image: url(/icon/arrow_circle_right.svg);
     background-size: 1.1em;
@@ -102,13 +37,15 @@
     padding-top: -2px;
 }
 
-#index #education img {
+
+
+section#education img {
     width: 3rem;
     height: auto;
     float: left;
 }
 
-#index #education p {
+section#education p {
     margin: 4px 0;
     margin-left: 3rem
 }
