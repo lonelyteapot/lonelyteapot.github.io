@@ -6,11 +6,11 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-header);
-    color: #3F51A2;
+    color: var(--color-secondary);
 }
 
 html {
-    --color-background: #FFF9FB;
+    --color-background: white;
     --color-on-background: #070707;
 
     --color-primary: #03C959;
@@ -19,19 +19,16 @@ html {
     --color-secondary: #3F51A2;
     --color-on-secondary: #FFF9FB;
 
-    /* --color-primary: #3F51A2; */
-    /* --color-primary-bg: #FFF9FB; */
-    /* --color-secondary: #3F51A2; */
-    /* --color-on-secondary: #FFF9FB; */
-    /* --color-tertiary: #FFF9FB; */
     --font-regular: 'Montserrat', sans-serif;
     --font-header: 'Open Sans', sans-serif;
+
     --side-padding: max(1rem, calc((100vw - 42rem) / 2));
+}
+
+html {
     min-width: 320px;
     height: 100%;
     scrollbar-width: thin;
-    font-family: var(--font-regular);
-    /* background-color: #FFF9FB; */
 }
 
 body {
@@ -40,6 +37,8 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto;
+    background-color: var(--color-background);
+    font-family: var(--font-regular);
 }
 
 main {
@@ -58,7 +57,7 @@ main > section {
 
 
 
-.siteheader {
+#header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -75,20 +74,20 @@ main > section {
     color: var(--color-on-primary);
 }
 
-.siteheader > .logo {
+#header > .logo {
     margin: 0;
     padding: 0;
     font-weight: 400;
     color: var(--color-on-primary);
 }
 
-.siteheader > nav {
+#header > nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.siteheader > nav > a {
+#header > nav > a {
     display: flex;
     align-items: center;
     padding-left: 1rem;
@@ -96,16 +95,16 @@ main > section {
     font-family: 'Montserrat';
 }
 
-.siteheader > nav > a:hover,
-.siteheader > nav > a:focus,
-.siteheader > nav > a.active {
+#header > nav > a:hover,
+#header > nav > a:focus,
+#header > nav > a.active {
     text-shadow: 0 0 1px black;
     outline: none;
 }
 
 
 
-.sitefooter {
+#footer {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -117,7 +116,7 @@ main > section {
 
 
 
-.button {
+.g-button {
     display: flex;
     align-items: center;
     max-width: max-content;
@@ -129,7 +128,7 @@ main > section {
     color: var(--color-on-primary);
 }
 
-.button::before {
+.g-button::before {
     content: '';
     align-self: stretch;
     background-repeat: no-repeat;
@@ -137,7 +136,7 @@ main > section {
     background-size: contain;
 }
 
-.button.send::before {
+.g-button.send::before {
     width: 1em;
     background-image: url('/icon/send.svg');
 }

@@ -1,4 +1,4 @@
-section#hi {
+#index #intro {
     display: grid;
     grid-template:
         'header photo' auto
@@ -15,31 +15,31 @@ section#hi {
     color: var(--color-on-secondary);
 }
 
-section#hi > * {
+#index #intro > * {
     margin: 0;
 }
 
-section#hi h2 {
+#index #intro h2 {
     color: var(--color-on-secondary)
 }
 
-section#hi .name {
+#index #intro .name {
     margin: 0;
     padding: 0;
     font-size: 2.6em;
 }
 
-section#hi .title {
+#index #intro .title {
     margin: 0;
     font-size: 0.9em;
     font-style: italic;
 }
 
-section#hi .button {
+#index #intro .g-button {
     margin-top: 1rem;
 }
 
-section#hi .photo {
+#index #intro .photo {
     grid-area: photo;
     width: 24vw;
     max-width: 200px;
@@ -52,7 +52,7 @@ section#hi .photo {
 
 
 
-section#skills .categories {
+#index #skills .categories {
     display: grid;
     flex-wrap: wrap;
     grid-auto-flow: row;
@@ -63,35 +63,37 @@ section#skills .categories {
 }
 
 @media screen and (min-width: 520px) {
-    section#skills .categories {
-        grid-template-columns: 1fr 1fr;
-    }
+
+#index #skills .categories {
+    grid-template-columns: 1fr 1fr;
 }
 
-section#skills .category {
+}
+
+#index #skills .category {
     box-shadow: 0 0 4px var(--color-on-background);
     border-radius: 8px;
     padding: 0 1rem 1rem 1rem;
 }
 
-section#skills .category li {
+#index #skills .category li {
     list-style-type: disc;
 }
 
 
 
-section#education ul {
+#index #education ul {
     padding-left: 0px;
     list-style: none;
 }
 
-section#education img {
+#index #education img {
     width: 3rem;
     height: auto;
     float: left;
 }
 
-section#education p {
+#index #education p {
     margin: 4px 0;
     margin-left: 3rem
 }
