@@ -1,8 +1,42 @@
 @import url(blocks/intro.css);
+@import url(blocks/card.css);
 
 #index ul {
     padding-left: 0px;
     list-style: none;
+}
+
+
+
+section#projects > ul {
+    display: grid;
+    gap: 1.5rem;
+}
+
+section#projects .card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#projects .card p {
+    width: 100%;
+}
+
+section#projects .card .links {
+    display: flex;
+    margin-left: auto;
+    gap: 0.5rem;
+}
+
+section#projects .card .screenshots {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section#projects .card .screenshots img {
+    width: 100%;
 }
 
 
@@ -21,13 +55,7 @@ section#skills .categories {
     }
 }
 
-section#skills .category {
-    box-shadow: 0 0 4px var(--color-on-background);
-    border-radius: 8px;
-    padding: 0 1rem 1rem 1rem;
-}
-
-section#skills .category li {
+section#skills .card li {
     list-style: none;
     background-image: url(/icon/arrow_circle_right.svg);
     background-size: 1.1em;
