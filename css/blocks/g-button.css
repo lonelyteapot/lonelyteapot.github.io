@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     max-width: max-content;
-    gap: 0.25em;
+    gap: 0.3em;
     padding: 0.7em 0.8em;
     border-radius: 10px;
     background-color: var(--color-primary);
@@ -18,30 +18,25 @@
     box-shadow: 1px 1px 8px var(--color-on-primary);
 }
 
-.g-button::before {
+.g-button.left-icon::before,
+.g-button.right-icon::after {
     content: '';
     align-self: stretch;
+    width: 1.25em;
+    background-image: var(--icon);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
-.g-button.send::before {
-    width: 1em;
-    background-image: url('/icon/send.svg');
+.g-button.send {
+    --icon: url('/icon/send.svg');
 }
 
-.g-button.home::before {
-    width: 1em;
-    background-image: url('/icon/home.svg');
+.g-button.home {
+    --icon: url('/icon/home.svg');
 }
 
-a.github::after {
-    content: '';
-    background-image: url(/icon/github.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 1.2em;
-    height: 1.2em;
-    margin-left: 4px;
+.g-button.github {
+    --icon: url('/icon/github.svg');
 }
