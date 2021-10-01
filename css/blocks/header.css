@@ -1,7 +1,6 @@
 #header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 var(--side-padding);
     width: 100%;
     min-height: 60px;
@@ -41,8 +40,12 @@
 #navigation > a {
     display: flex;
     align-items: center;
-    padding: 18px 1rem 10px;
+    padding: 5px 1rem;
     transition: background-color 0.1s;
+}
+
+#navigation > a:last-child {
+    margin-right: -1rem;
 }
 
 #navigation > a:hover,
@@ -51,8 +54,17 @@
     outline: none;
 }
 
-#navigation > a.active {
-    text-decoration: 2px overline;
+#navigation > a > span::before {
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 3px 0;
+    background-color: var(--color-on-primary);
+    visibility: hidden;
+}
+
+#navigation > a.active > span::before {
+    visibility: visible;
 }
 
 
