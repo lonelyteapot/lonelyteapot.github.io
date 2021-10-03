@@ -1,25 +1,25 @@
 
-.g-button {
+.Button {
     display: flex;
     align-items: center;
     max-width: max-content;
     gap: 0.3em;
     padding: 0.7em 0.8em;
     border-radius: 10px;
-    background-color: var(--color-primary);
-    color: var(--color-on-primary);
+    background-color: var(--color-background);
+    color: var(--color-text);
     font-family: var(--font-interact);
-    box-shadow: 1px 1px 2px var(--color-on-primary);
+    box-shadow: 1px 1px 2px var(--color-text);
 }
 
-.g-button:hover,
-.g-button:focus {
+.Button:hover,
+.Button:focus {
     outline: none;
-    box-shadow: 1px 1px 8px var(--color-on-primary);
+    box-shadow: 1px 1px 8px var(--color-text);
 }
 
-.g-button.left-icon::before,
-.g-button.right-icon::after {
+.Button.left-icon::before,
+.Button.right-icon::after {
     content: '';
     align-self: stretch;
     width: 1.25em;
@@ -29,14 +29,14 @@
     background-size: contain;
 }
 
-.g-button.send {
+.Button.send {
     --icon: url('/icon/send.svg');
 }
 
-.g-button.home {
+.Button.home {
     --icon: url('/icon/home.svg');
 }
 
-.g-button.github {
+.Button.github {
     --icon: url('/icon/github.svg');
 }

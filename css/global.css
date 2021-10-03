@@ -1,27 +1,27 @@
+@import url(colors.css);
 @import url(blocks/header.css);
-@import url(blocks/g-button.css);
+@import url(blocks/main.css);
+@import url(blocks/Button.css);
+@import url(blocks/Card.css);
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    color: inherit;
+    color: var(--color-text);
     text-decoration: inherit;
+}
+
+li {
+    list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-header);
-    color: var(--color-secondary);
+    color: var(--color-header);
 }
 
 html {
-    --color-background: white;
-    --color-on-background: #070707;
-
-    --color-primary: #03C959;
-    --color-on-primary: #070707;
-
-    --color-secondary: #3F51A2;
-    --color-on-secondary: #FFF9FB;
-
     --font-regular: 'Open Sans', sans-serif;
     --font-header: 'Raleway', sans-serif;
     --font-interact: 'Montserrat', sans-serif;
@@ -45,31 +45,15 @@ body {
     font-family: var(--font-regular);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+.wave {
+    height: 5rem;
+    background-color: var(--color-background);
 }
 
-/* Temporary reset */
-main * {
-    margin: 0;
+.upper.wave {
+    clip-path: ellipse(80% 100% at 50% 140%);
 }
 
-main > section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: var(--side-padding);
-    padding-right: var(--side-padding);
-}
-
-main > section > * {
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
-
-main > section > h2 {
-    margin-left: 0;
+.lower.wave {
+    clip-path: ellipse(80% 100% at 50% -20%);
 }

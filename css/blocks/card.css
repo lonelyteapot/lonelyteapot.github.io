@@ -1,9 +1,10 @@
-.card {
+.Card {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    box-shadow: 0 0 4px var(--color-on-background);
+    box-shadow: 0 0 4px var(--color-text);
+    background-color: var(--color-background);
     border-radius: 8px;
     overflow: hidden;
 }

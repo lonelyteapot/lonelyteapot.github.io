@@ -1,4 +1,4 @@
-section#intro {
+#intro {
     display: grid;
     grid-template:
         'header photo' auto
@@ -7,42 +7,29 @@ section#intro {
         'button photo' auto;
     grid-template-columns: 1fr auto;
     padding-top: min(10vw, 10rem);
-    padding-bottom: min(10vw, 10rem);
-    clip-path: circle(500vw at 50% calc(100% - 500vw));
-    background-color: var(--color-secondary);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    color: var(--color-on-secondary);
+    padding-bottom: min(5vw, 5rem);
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+    background-color: var(--color-background);
+    z-index: -10;
 }
 
-section#intro > * {
-    margin: 0;
-}
-
-section#intro h2 {
-    color: var(--color-on-secondary)
-}
-
-section#intro .name {
-    margin: 0;
-    padding: 0;
+#intro .name {
     font-size: 2.8em;
 }
 
-section#intro .title {
-    margin: 0;
-    font-size: 1em;
+#intro .title {
     font-family: var(--font-header);
 }
 
-section#intro .buttons {
+#intro .buttons {
     display: flex;
     gap: 0.5rem;
     margin-top: 1rem;
     font-size: 0.85rem;
 }
 
-section#intro .photo {
+#intro .photo {
     grid-area: photo;
     display: flex;
     justify-content: stretch;
@@ -54,7 +41,7 @@ section#intro .photo {
     overflow: hidden;
 }
 
-section#intro .photo > img {
+#intro .photo > img {
     width: 100%;
     height: 100%;
     font-size: 0;

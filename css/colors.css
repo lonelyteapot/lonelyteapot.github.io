@@ -1,0 +1,17 @@
+.light {
+    --color-background: white;
+    --color-header: #3F51A2;
+    --color-text: #070707;
+}
+
+.dark {
+    --color-background: #3F51A2;
+    --color-header: #FFF9FB;
+    --color-text: #FFF9FB;
+}
+
+.accent {
+    --color-background: #03C959;
+    --color-header: #070707;
+    --color-text: #070707;
+}

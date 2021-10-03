@@ -13,8 +13,8 @@
     <link rel="alternate icon" href="icon/favicon.ico">
     <title>LonelyTeapot | About</title>
 </head>
-<body>
-    <header id="header">
+<body class="light">
+    <header id="header" class="accent">
         <h1 class="logo">
             <a href="/" tabindex="-1">LonelyTeapot</a>
         </h1>
@@ -23,82 +23,24 @@
             <a href="https://github.com/lonelyteapot" target="_blank"><img src="icon/github.svg" alt="GitHub"></a>
         </nav>
     </header>
+    <header id="intro" class="dark">
+        <h2>Hi!</h2>
+        <div class="photo">
+            <img src="img/photo.png" alt="[Photo]" width="64" height="64">
+        </div>
+        <p class="name">I'm Dmitry</p>
+        <p class="title">— Software Developer</p>
+        <div class="buttons">
+            <a class="Button accent left-icon send" href="/contact-me">Contact me</a>
+            <a class="Button accent right-icon github" href="https://github.com/lonelyteapot" target="_blank">Go to GitHub</a>
+        </div>
+    </header>
+    <div class="dark lower wave"></div>
     <main id="index">
-        <section id="intro">
-            <h2>Hi!</h2>
-            <div class="photo">
-                <img src="img/photo.png" alt="[Photo]" width="64" height="64">
-            </div>
-            <p class="name">I'm Dmitry</p>
-            <p class="title">— Software Developer</p>
-            <div class="buttons">
-                <a class="g-button left-icon send" href="/contact-me">Contact me</a>
-                <a class="g-button right-icon github" href="https://github.com/lonelyteapot" target="_blank">Go to GitHub</a>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li class="card">
-                    <header>
-                        <h3>This Website</h3>
-                        <div class="links">
-                            <a class="website" href="https://lonelyteapot.github.io"><img src="icon/website.svg" height="24" alt="website"></a>
-                            <a class="github" href="https://github.com/lonelyteapot/lonelyteapot.github.io"><img src="icon/github.svg" height="24" alt="github"></a>
-                        </div>
-                    </header>
-                    <div class="content">
-                        <p>Find information about me and my projects</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <header>
-                        <h3>HowLong &mdash; Android App</h3>
-                        <div class="links">
-                            <a class="download" href="https://github.com/lonelyteapot/HowLong/releases/latest"><img src="icon/download.svg" height="24" alt="download"></a>
-                            <a class="github" href="https://github.com/lonelyteapot/HowLong"><img src="icon/github.svg" height="24" alt="github"></a>
-                        </div>
-                    </header>
-                    <div class="content">
-                        <p>Calculate how many days have passed since a given date</p>
-                        <div class="screenshots">
-                            <img src="img/screenshot_howlong1.png" alt="screenshot 1">
-                            <img src="img/screenshot_howlong2.png" alt="screenshot 2">
-                        </div>
-                    </div>
-                </li>
-                <li class="card">
-                    <header>
-                        <h3>Steamy Notes &mdash; Web App</h3>
-                        <div class="links">
-                            <a class="website" href="https://steamy-notes.web.app/"><img src="icon/website.svg" height="24" alt="website"></a>
-                            <a class="github" href="https://github.com/lonelyteapot/SteamyNotes"><img src="icon/github.svg" height="24" alt="github"></a>
-                        </div>
-                    </header>
-                    <div class="content">
-                        <p>Write and keep notes that are saved in the cloud tied to your Google account</p>
-                        <div class="screenshots">
-                            <img src="img/screenshot_steamynotes1.png" alt="screenshot 1">
-                        </div>
-                    </div>
-                </li>
-                <li class="card">
-                    <header>
-                        <h3>Just Dance &mdash; Computer vision game</h3>
-                        <div class="links">
-                            <a class="github" href="https://github.com/Gravens/JustDance"><img src="icon/github.svg" height="24" alt="github"></a>
-                        </div>
-                    </header>
-                    <div class="content">
-                        <p>Explore how neural networks behave while playing a Twister-like game using your webcam</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
         <section id="skills">
             <h2>Skills & Tech Stack</h2>
             <ul class="categories">
-                <li class="card">
+                <li class="Card">
                     <h3>Programming Languages</h3>
                     <ul>
                         <li>Python</li>
@@ -107,7 +49,7 @@
                         <li>Dart</li>
                     </ul>
                 </li>
-                <li class="card">
+                <li class="Card">
                     <h3>Development Tools</h3>
                     <ul>
                         <li>Algorithms and Data Structures</li>
@@ -116,7 +58,7 @@
                         <li>GitHub Actions</li>
                     </ul>
                 </li>
-                <li class="card">
+                <li class="Card">
                     <h3>Application Development</h3>
                     <ul>
                         <li>Qt Quick (QML)</li>
@@ -124,7 +66,7 @@
                         <li>Flutter (Dart)</li>
                     </ul>
                 </li>
-                <li class="card">
+                <li class="Card">
                     <h3>Web Development</h3>
                     <ul>
                         <li>HTML, CSS, JavaScript</li>
@@ -146,6 +88,67 @@
                 </li>
             </ul>
         </section>
+        <div class="dark upper wave"></div>
+        <section id="projects" class="dark">
+            <h2>Projects</h2>
+            <ul>
+                <li class="Card light">
+                    <header>
+                        <h3>This Website</h3>
+                        <div class="links">
+                            <a class="website" href="https://lonelyteapot.github.io"><img src="icon/website.svg" height="24" alt="website"></a>
+                            <a class="github" href="https://github.com/lonelyteapot/lonelyteapot.github.io"><img src="icon/github.svg" height="24" alt="github"></a>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <p>Find information about me and my projects</p>
+                    </div>
+                </li>
+                <li class="Card light">
+                    <header>
+                        <h3>HowLong &mdash; Android App</h3>
+                        <div class="links">
+                            <a class="download" href="https://github.com/lonelyteapot/HowLong/releases/latest"><img src="icon/download.svg" height="24" alt="download"></a>
+                            <a class="github" href="https://github.com/lonelyteapot/HowLong"><img src="icon/github.svg" height="24" alt="github"></a>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <p>Calculate how many days have passed since a given date</p>
+                        <div class="screenshots">
+                            <img src="img/screenshot_howlong1.png" alt="screenshot 1">
+                            <img src="img/screenshot_howlong2.png" alt="screenshot 2">
+                        </div>
+                    </div>
+                </li>
+                <li class="Card light">
+                    <header>
+                        <h3>Steamy Notes &mdash; Web App</h3>
+                        <div class="links">
+                            <a class="website" href="https://steamy-notes.web.app/"><img src="icon/website.svg" height="24" alt="website"></a>
+                            <a class="github" href="https://github.com/lonelyteapot/SteamyNotes"><img src="icon/github.svg" height="24" alt="github"></a>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <p>Write and keep notes that are saved in the cloud tied to your Google account</p>
+                        <div class="screenshots">
+                            <img src="img/screenshot_steamynotes1.png" alt="screenshot 1">
+                        </div>
+                    </div>
+                </li>
+                <li class="Card light">
+                    <header>
+                        <h3>Just Dance &mdash; Computer vision game</h3>
+                        <div class="links">
+                            <a class="github" href="https://github.com/Gravens/JustDance"><img src="icon/github.svg" height="24" alt="github"></a>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <p>Explore how neural networks behave while playing a Twister-like game using your webcam</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <div class="dark lower wave"></div>
     </main>
     <footer id="footer">
         &copy; 2021 Dmitry Semenov
