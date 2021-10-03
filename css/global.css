@@ -33,6 +33,7 @@ html {
     min-width: 320px;
     height: 100%;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 body {
