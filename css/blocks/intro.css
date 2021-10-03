@@ -12,6 +12,7 @@
     padding-right: var(--side-padding);
     background-color: var(--color-background);
     z-index: 0;
+    height: max-content;
 }
 
 #intro .name {
