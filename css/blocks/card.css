@@ -8,3 +8,21 @@
     border-radius: 8px;
     overflow: hidden;
 }
+
+.Card li {
+    padding-left: 1.5em;
+}
+
+.Card li::before {
+    content: '';
+    display: inline-block;
+    margin-left: -1.5em;
+    width: 1.5em;
+    height: 1.1em;
+    position: relative;
+    top: 3px;
+    background-color: var(--color-text);
+    mask: url(/icon/arrow_circle_right.svg);
+    mask-size: 1.1em;
+    mask-repeat: no-repeat;
+}

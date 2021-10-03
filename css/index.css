@@ -7,9 +7,17 @@
     gap: 1.5rem;
 }
 
+#projects > ul > li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 #projects > ul > li > header {
     display: flex;
     justify-content: space-between;
+    flex-basis: 100%;
 }
 
 #projects > ul > li > header > .links {
@@ -19,10 +27,9 @@
 }
 
 #projects > ul > li > .content {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-flow: row;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 #projects > ul > li .screenshots {
@@ -37,8 +44,9 @@
 }
 
 @media screen and (min-width: 640px) {
-    #projects > ul > li > .content {
-        grid-auto-flow: column;
+    #projects > ul > li > .content,
+    #projects > ul > li > .screenshots {
+        flex: 1;
     }
 }
 
@@ -56,24 +64,6 @@
     #skills .categories {
         grid-template-columns: 1fr 1fr;
     }
-}
-
-#skills .Card li {
-    padding-left: 1.5em;
-}
-
-#skills .Card li::before {
-    content: '';
-    display: inline-block;
-    margin-left: -1.5em;
-    width: 1.5em;
-    height: 1.1em;
-    position: relative;
-    top: 3px;
-    background-color: var(--color-text);
-    mask: url(/icon/arrow_circle_right.svg);
-    mask-size: 1.1em;
-    mask-repeat: no-repeat;
 }
 
 
