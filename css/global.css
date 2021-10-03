@@ -50,16 +50,26 @@ main {
     flex-direction: column;
 }
 
-main > section {
-    padding-left: var(--side-padding);
-    padding-right: var(--side-padding);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
+/* Temporary reset */
+main * {
+    margin: 0;
 }
 
-main > section > *:not(h2) {
+main > section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+}
+
+main > section > * {
     margin-left: 2vw;
     margin-right: 2vw;
+}
+
+main > section > h2 {
+    margin-left: 0;
 }
