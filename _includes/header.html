@@ -3,7 +3,9 @@
         <a href="/" tabindex="-1">LonelyTeapot</a>
     </h1>
     <nav id="navigation">
-        <a href="/" class="active"><span>About me</span></a>
+        {% for item in site.data.navigation.docs %}
+        <a href="{{ item.url }}" class="{% if item.url == page.url %}active{% endif %}"><span>{{ item.title }}</span></a>
+        {% endfor %}
         <a href="https://github.com/lonelyteapot" target="_blank"><img src="/icon/github.svg" alt="GitHub"></a>
     </nav>
 </header>
