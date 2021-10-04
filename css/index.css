@@ -4,7 +4,7 @@
 
 #projects > ul {
     display: grid;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 #projects > ul > li {
@@ -57,7 +57,7 @@
     flex-wrap: wrap;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.25rem;
 }
 
 @media screen and (min-width: 520px) {
