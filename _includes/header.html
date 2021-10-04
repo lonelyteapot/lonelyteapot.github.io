@@ -4,8 +4,14 @@
     </h1>
     <nav id="navigation">
         {% for item in site.data.navigation.docs %}
-        <a href="{{ item.url }}" class="{% if item.url == page.url %}active{% endif %}"><span>{{ item.title }}</span></a>
+        <a href="{{ item.url }}" class="{% if item.url == page.url %}active{% endif %}">
+            {% if item.title %}
+            <span>{{ item.title }}</span>
+            {% endif %}
+            {% if item.icon %}
+            <img src="/icon/{{ item.icon }}.svg" alt="{{ item.icon }}"></a>
+            {% endif %}
+        </a>
         {% endfor %}
-        <a href="https://github.com/lonelyteapot" target="_blank"><img src="/icon/github.svg" alt="GitHub"></a>
     </nav>
 </header>
