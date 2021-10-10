@@ -1,48 +1,47 @@
 #intro {
-    display: grid;
-    grid-template:
-        'header photo' auto
-        'name   photo' auto
-        'title  photo' 1fr
-        'button photo' auto;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding-top: min(10vw, 10rem);
     padding-bottom: min(5vw, 5rem);
-    padding-left: var(--side-padding);
-    padding-right: var(--side-padding);
-    background-color: var(--color-background);
     z-index: 0;
-    height: max-content;
 }
 
-#intro .name {
-    font-size: 2.8em;
+#intro > .content {
+    flex: 1;
 }
 
-#intro .title {
+#intro > .content > * {
     font-family: var(--font-header);
 }
 
-#intro .buttons {
+#intro > .content > .greeting {
+    font-size: 1.625rem;
+}
+
+#intro > .content > .name {
+    font-size: 2.75rem;
+}
+
+#intro > .content > .buttons {
     display: flex;
     gap: 0.5rem;
     margin-top: 1rem;
     font-size: 0.85rem;
 }
 
-#intro .photo {
-    grid-area: photo;
+#intro > .photo {
     display: flex;
     justify-content: stretch;
-    width: min(24vw, 200px);
-    height: min(24vw, 200px);
+    width: min(25vw, 200px);
+    height: min(25vw, 200px);
     box-shadow: inset 0 0 4px black;
     border-radius: 50%;
     user-select: none;
     overflow: hidden;
 }
 
-#intro .photo > img {
+#intro > .photo > img {
     width: 100%;
     height: 100%;
     font-size: 0;
