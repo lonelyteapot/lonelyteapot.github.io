@@ -1,8 +1,6 @@
 docs:
   - title: About me
     url: /
-  - title: Contact me
-    url: /contact-me
   - title: Visuals
     url: /visuals
   - icon: github
