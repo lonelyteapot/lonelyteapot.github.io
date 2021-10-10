@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-header);
 }
 
+h2 {
+    font-size: 1.625rem;
+}
+
 html {
     --font-regular: 'Open Sans', sans-serif;
     --font-header: 'Raleway', sans-serif;

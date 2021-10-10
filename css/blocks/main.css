@@ -16,11 +16,6 @@ main > section {
     background-color: var(--color-background);
 }
 
-main > section > * {
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
-
 main > section > h2 {
-    margin-left: 0;
+    align-self: center;
 }
