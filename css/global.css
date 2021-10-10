@@ -19,6 +19,7 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-header);
     color: var(--color-header);
+    font-weight: 500;
 }
 
 h2 {
