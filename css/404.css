@@ -1,1 +1,4 @@
-@import url(blocks/intro.css);
+#error {
+    margin: auto 0;
+    align-items: center;
+}
