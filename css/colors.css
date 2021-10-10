@@ -6,8 +6,8 @@
 
 .dark {
     --color-background: #3F51A2;
-    --color-header: #FFF9FB;
-    --color-text: #FFF9FB;
+    --color-header: white;
+    --color-text: white;
 }
 
 .accent {
