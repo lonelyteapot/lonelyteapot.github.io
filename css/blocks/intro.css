@@ -15,6 +15,10 @@
     height: max-content;
 }
 
+#intro > * {
+    margin: 0;
+}
+
 #intro .name {
     font-size: 2.8em;
 }
