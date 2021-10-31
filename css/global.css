@@ -31,8 +31,6 @@ html {
     --font-regular: 'Open Sans', sans-serif;
     --font-header: 'Raleway', sans-serif;
     --font-interact: 'Montserrat', sans-serif;
-
-    --side-padding: max(1rem, calc((100vw - 44rem) / 2));
 }
 
 html {
