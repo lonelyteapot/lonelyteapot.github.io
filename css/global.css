@@ -1,9 +1,9 @@
 @import url(colors.css);
-@import url(blocks/header.css);
-@import url(blocks/footer.css);
-@import url(blocks/main.css);
-@import url(blocks/Button.css);
-@import url(blocks/Card.css);
+@import url(sections/header.css);
+@import url(sections/footer.css);
+@import url(sections/main.css);
+@import url(components/Button.css);
+@import url(components/Card.css);
 
 * {
     margin: 0;
