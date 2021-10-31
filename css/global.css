@@ -42,8 +42,12 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr minmax(0, 768px) 1fr;
+    grid-template-areas: 'head head head'
+                         '.... main ....'
+                         'foot foot foot';
     margin: 0;
     min-height: 100%;
     background-color: var(--color-background);
