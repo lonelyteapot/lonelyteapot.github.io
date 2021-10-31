@@ -1,8 +1,9 @@
 @import url(colors.css);
-@import url(blocks/header.css);
-@import url(blocks/main.css);
-@import url(blocks/Button.css);
-@import url(blocks/Card.css);
+@import url(sections/header.css);
+@import url(sections/footer.css);
+@import url(sections/main.css);
+@import url(components/Button.css);
+@import url(components/Card.css);
 
 * {
     margin: 0;
@@ -30,8 +31,6 @@ html {
     --font-regular: 'Open Sans', sans-serif;
     --font-header: 'Raleway', sans-serif;
     --font-interact: 'Montserrat', sans-serif;
-
-    --side-padding: max(1rem, calc((100vw - 44rem) / 2));
 }
 
 html {
@@ -42,23 +41,14 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr minmax(0, 768px) 1fr;
+    grid-template-areas: 'head head head'
+                         '.... main ....'
+                         'foot foot foot';
     margin: 0;
     min-height: 100%;
     background-color: var(--color-background);
     font-family: var(--font-regular);
-}
-
-.wave {
-    height: 5rem;
-    background-color: var(--color-background);
-}
-
-.upper.wave {
-    clip-path: ellipse(80% 100% at 50% 140%);
-}
-
-.lower.wave {
-    clip-path: ellipse(80% 100% at 50% -20%);
 }
