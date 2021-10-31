@@ -54,16 +54,3 @@ body {
     background-color: var(--color-background);
     font-family: var(--font-regular);
 }
-
-.wave {
-    height: 5rem;
-    background-color: var(--color-background);
-}
-
-.upper.wave {
-    clip-path: ellipse(80% 100% at 50% 140%);
-}
-
-.lower.wave {
-    clip-path: ellipse(80% 100% at 50% -20%);
-}
