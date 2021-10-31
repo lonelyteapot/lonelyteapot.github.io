@@ -1,17 +1,19 @@
 <header id="header" class="accent">
-    <h1 class="logo">
-        <a href="/" tabindex="-1">LonelyTeapot</a>
-    </h1>
-    <nav id="navigation">
-        {% for item in site.data.navigation.docs %}
-        <a href="{{ item.url }}" class="{% if item.url == page.url %}active{% endif %}">
-            {% if item.title %}
-            <span>{{ item.title }}</span>
-            {% endif %}
-            {% if item.icon %}
-            <img src="/icon/{{ item.icon }}.svg" alt="{{ item.icon }}"></a>
-            {% endif %}
-        </a>
-        {% endfor %}
-    </nav>
+    <div class="wrapper">
+        <h1 class="logo">
+            <a href="/" tabindex="-1">LonelyTeapot</a>
+        </h1>
+        <nav id="navigation">
+            {% for item in site.data.navigation.docs %}
+            <a href="{{ item.url }}" class="{% if item.url == page.url %}active{% endif %}">
+                {% if item.title %}
+                <span>{{ item.title }}</span>
+                {% endif %}
+                {% if item.icon %}
+                <img src="/icon/{{ item.icon }}.svg" alt="{{ item.icon }}"></a>
+                {% endif %}
+            </a>
+            {% endfor %}
+        </nav>
+    </div>
 </header>
