@@ -76,13 +76,21 @@
 
 #footer {
     grid-area: foot;
-    --color-text: #999;
+    display: grid;
+    grid-template-rows: minmax(56px, 1fr);
+    grid-template-columns: 1fr minmax(0, 768px) 1fr;
+    grid-template-columns: subgrid;
+    grid-template-areas: '. wrapper .';
+}
+
+#footer .wrapper {
+    grid-area: wrapper;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     justify-items: center;
     align-items: center;
-    padding: 10px var(--side-padding);
     font-size: 0.8rem;
+    --color-text: #999;
 }
 
 #footer .Button {
