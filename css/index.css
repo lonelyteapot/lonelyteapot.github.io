@@ -47,6 +47,7 @@
 
 #intro .photo {
     grid-area: photo;
+    display: flex;
     box-shadow: inset 0 0 4px black;
     border-radius: 44%;
     user-select: none;
