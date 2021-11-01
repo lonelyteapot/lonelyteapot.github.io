@@ -2,7 +2,6 @@
 .Button {
     display: flex;
     align-items: center;
-    max-width: max-content;
     gap: 0.3em;
     padding: 0.7em 0.8em;
     border-radius: 10px;
