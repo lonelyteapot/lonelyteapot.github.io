@@ -1,3 +1,13 @@
+section:not(#intro) {
+    animation: fadein 1.5s 0.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 #intro {
     display: grid;
     grid-template-rows: auto auto auto;

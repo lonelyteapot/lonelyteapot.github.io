@@ -23,6 +23,10 @@
     display: flex;
 }
 
+#header .logo {
+    width: 64px;
+}
+
 #header .logo a {
     display: flex;
     align-items: center;
