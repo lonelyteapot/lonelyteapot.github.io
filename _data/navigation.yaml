@@ -2,7 +2,8 @@ docs:
   - title: About me
     url: /
   - title: Visuals
-    url: /visuals
+    url: /visuals/
+
 icons:
   - icon: github
     url: https://github.com/lonelyteapot
