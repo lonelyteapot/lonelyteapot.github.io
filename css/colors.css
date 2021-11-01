@@ -1,23 +1,23 @@
 .light, .Card {
     --color-background: white;
-    --color-header: #4558B0;
-    --color-text: #070707;
+    --color-header: #3F51A2;
+    --color-text: #080F0F;
 }
 
 .dark {
-    --color-background: #1E1F20;
-    --color-header: #E0E0E0;
-    --color-text: #E0E0E0;
+    --color-background: #3F51A2;
+    --color-header: #FFFFFF;
+    --color-text: #EFF7FF;
 }
 
 .dark .Button {
-    --color-background: #FFF37F;
-    --color-header: #070707;
-    --color-text: #070707;
+    --color-background: #F7C978;
+    --color-header: #080F0F;
+    --color-text: #080F0F;
 }
 
 #header {
-    --color-background: #4558B0;
-    --color-header: #E0E0E0;
-    --color-text: #E0E0E0;
+    --color-background: #14B891;
+    --color-header: #080F0F;
+    --color-text: #080F0F;
 }
