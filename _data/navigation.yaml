@@ -3,5 +3,6 @@ docs:
     url: /
   - title: Visuals
     url: /visuals
+icons:
   - icon: github
     url: https://github.com/lonelyteapot
