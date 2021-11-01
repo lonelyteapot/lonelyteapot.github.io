@@ -155,3 +155,38 @@ section:not(#intro) {
     margin-left: 0;
     width: 100%;
 }
+
+#rsidebar {
+    display: none;
+    grid-area: rside;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 1rem;
+    overflow: hidden;
+    position: sticky;
+    top: 56px;
+}
+
+#rsidebar > * {
+    max-width: 200px;
+}
+
+#rsidebar .Card {
+    --color-background: #272D2D;
+    --color-text: #BBBBBB;
+    border-radius: 16px;
+    opacity: 0.85;
+    transition: opacity 0.05s;
+}
+
+#rsidebar .Card:hover {
+    opacity: 1;
+}
+
+@media screen and (min-width: 1230px) {
+    #rsidebar {
+        display: flex;
+    }
+}
