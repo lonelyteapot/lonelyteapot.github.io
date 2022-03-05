@@ -244,7 +244,7 @@ body {
 
 #software > ul {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-self: center;
     gap: 0.5rem;
     width: 100%;
@@ -255,11 +255,16 @@ body {
 #software .project {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 0 100%;
     gap: 1rem;
     background-color: rgb(var(--canvas-color));
     border-radius: 16px;
     padding: 1rem;
     box-shadow: var(--shadow-2);
+}
+
+#software .project.narrow {
+    flex-basis: 400px;
 }
 
 #software .project > .content {
