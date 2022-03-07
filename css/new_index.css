@@ -34,30 +34,39 @@ img {
     mask-size: contain;
     mask-position: center;
     mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
 }
 
 .iconed.github::before {
     mask-image: url('/icon/github.svg');
+    -webkit-mask-image: url('/icon/github.svg');
 }
 
 .iconed.telegram::before {
     mask-image: url('/icon/telegram.svg');
+    -webkit-mask-image: url('/icon/telegram.svg');
 }
 
 .iconed.download::before {
     mask-image: url('/icon/download.svg');
+    -webkit-mask-image: url('/icon/download.svg');
 }
 
 .iconed.website::before {
     mask-image: url('/icon/website.svg');
+    -webkit-mask-image: url('/icon/website.svg');
 }
 
 .iconed.expand_more::before {
     mask-image: url('/icon/expand_more.svg');
+    -webkit-mask-image: url('/icon/expand_more.svg');
 }
 
 .iconed.email::before {
     mask-image: url('/icon/email.svg');
+    -webkit-mask-image: url('/icon/email.svg');
 }
 
 .button {
