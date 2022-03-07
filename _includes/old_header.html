@@ -1,0 +1,23 @@
+<header id="header">
+    <div class="wrapper">
+        <div class="menu logo">
+            <a href="/" tabindex="-1">
+                <img src="/icons/favicon.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="menu nav">
+        {% for item in site.data.navigation.docs %}
+            <a href="{{ item.url }}" class="item {% if item.url == page.url %}active{% endif %}">
+                <span>{{ item.title }}</span>
+            </a>
+        {% endfor %}
+        </nav>
+        <div class="menu icons">
+        {% for item in site.data.navigation.icons %}
+            <a href="{{ item.url }}" class="item {% if item.url == page.url %}active{% endif %}">
+                <img src="/icons/{{ item.icon }}.svg" alt="{{ item.icon }}"></a>
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+</header>

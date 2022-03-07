@@ -1,0 +1,115 @@
+#my-software {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    margin-top: -40px;
+    color: rgb(var(--canvas-color));
+}
+
+#my-software > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 8px;
+    width: 100%;
+    color: #000000cc;
+}
+
+#my-software .project {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+    gap: 1rem;
+}
+
+#my-software .project.narrow {
+    flex-basis: 400px;
+}
+
+#my-software .project > .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 360px;
+    gap: 1rem;
+    margin-top: -0.25rem;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#my-software .project h3 {
+    font-size: 1.75rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    color: rgb(0, 0, 0);
+}
+
+#my-software .project .keypoints {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+#my-software .stage {
+    display: flex;
+    margin-top: auto;
+    font-size: 14px;
+    opacity: 0.6;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+#my-software .button {
+    --icon-color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(var(--primary-color), 0.5);
+}
+
+#my-software .links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: -12px;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#my-software .project > .images {
+    display: flex;
+    flex: 1 1 360px;
+    box-shadow: var(--shadow-1);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#my-software .project .images > img {
+    flex: 1 1;
+    max-width: 100%;
+}
+
+#contact-me form {
+    flex: 1 1 480px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: minmax(200px, auto) auto;
+    grid-template-areas: 'message message' 'email submit';
+    gap: 8px;
+}
+
+#contact-me .message {
+    grid-area: message;
+}
+
+#contact-me .email {
+    grid-area: email;
+    grid-row: 2;
+}
+
+#contact-me .submit {
+    grid-area: submit;
+    grid-row: 2;
+    font-size: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: rgba(var(--primary-color), 0.4);
+    border: none;
+    cursor: pointer;
+}

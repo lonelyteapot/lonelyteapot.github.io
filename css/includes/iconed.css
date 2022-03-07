@@ -1,0 +1,61 @@
+.iconed::before {
+    content: '';
+    width: var(--icon-size, 1.5em);
+    height: var(--icon-size, 1.5em);
+    background-color: var(--icon-color, black);
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.iconed.github::before {
+    mask-image: url('/icons/github.svg');
+    -webkit-mask-image: url('/icons/github.svg');
+}
+
+.iconed.telegram::before {
+    mask-image: url('/icons/telegram.svg');
+    -webkit-mask-image: url('/icons/telegram.svg');
+}
+
+.iconed.download::before {
+    mask-image: url('/icons/download.svg');
+    -webkit-mask-image: url('/icons/download.svg');
+}
+
+.iconed.website::before {
+    mask-image: url('/icons/website.svg');
+    -webkit-mask-image: url('/icons/website.svg');
+}
+
+.iconed.expand_more::before {
+    mask-image: url('/icons/expand_more.svg');
+    -webkit-mask-image: url('/icons/expand_more.svg');
+}
+
+.iconed.email::before {
+    mask-image: url('/icons/email.svg');
+    -webkit-mask-image: url('/icons/email.svg');
+}
+
+.button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.4em 0.6em;
+    border-radius: 6px;
+    font-family: var(--header-font);
+    font-size: smaller;
+    box-shadow: var(--shadow-2);
+    transition: box-shadow 200ms;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    box-shadow: var(--shadow-6);
+}

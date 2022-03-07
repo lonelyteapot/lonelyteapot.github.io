@@ -1,4 +1,6 @@
-#error {
-    margin: auto 0;
-    align-items: center;
-}
+@import url(reset.css);
+@import url(includes/global.css);
+@import url(includes/root.css);
+@import url(includes/iconed.css);
+@import url(includes/intro-header.css);
+@import url(includes/footer.css);
