@@ -423,7 +423,7 @@ main {
     cursor: pointer;
 }
 
-footer {
+#footer {
     grid-area: footer;
     display: flex;
     justify-content: center;
