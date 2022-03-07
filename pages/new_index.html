@@ -11,7 +11,7 @@ permalink: /new_index
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine&display=block">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/new_index.css">
@@ -34,98 +34,103 @@ permalink: /new_index
                 </a>
             </div>
         </div>
-        <nav id="header-nav">
-            <a href="/#" class="active">About</a>
-            <a href="/#software">My Software</a>
-            <a href="/404">Bustracker</a>
-        </nav>
+        <div id="header-row">
+            <div id="header-logo">@lonelyteapot</div>
+            <nav id="header-nav">
+                <a href="#">About</a>
+                <a href="#software">My Software</a>
+                <a href="/404">Bustracker</a>
+            </nav>
+        </div>
     </header>
-    <section id="software">
-        <!-- <h2>My Software</h2> -->
-        <ul>
-            <li class="project narrow">
-                <div class="content">
-                    <h3>Bustracker</h3>
-                    <p class="description">
-                        A platform about mass transit navigation.
-                        Plan your route and track public transport in real time.
-                    </p>
-                    <ul class="keypoints">
-                        <li>Built with <strong>Flutter</strong> UI framework</li>
-                        <li>Runs on a custom <strong>Django</strong> backend</li>
-                    </ul>
-                    <div class="stage">In development</div>
-                </div>
-            </li>
-            <li class="project">
-                <div class="content">
-                    <h3>HowLong</h3>
-                    <p class="description">
-                        A minimalistic mobile app that calculates duration between dates.
-                    </p>
-                    <ul class="keypoints">
-                        <li>Designed to be simple and intuitive</li>
-                        <li>Built with <strong>Android SDK</strong> in <strong>Kotlin</strong></li>
-                    </ul>
-                    <div class="stage">Deployed / Alpha</div>
-                    <div class="links">
-                        <a class="iconed github button" href="https://github.com/lonelyteapot/HowLong" target="_blank">
-                            <span>GitHub</span>
-                        </a>
-                        <a class="iconed download button" href="https://github.com/lonelyteapot/HowLong/releases/latest" target="_blank">
-                            <span>Android APK</span>
-                        </a>
+    <main>
+        <section id="software">
+            <h2>My Software</h2>
+            <ul>
+                <li class="project narrow">
+                    <div class="content">
+                        <h3>Bustracker</h3>
+                        <p class="description">
+                            A platform about mass transit navigation.
+                            Plan your route and track public transport in real time.
+                        </p>
+                        <ul class="keypoints">
+                            <li>Built with <strong>Flutter</strong> UI framework</li>
+                            <li>Runs on a custom <strong>Django</strong> backend</li>
+                        </ul>
+                        <div class="stage">In development</div>
                     </div>
-                </div>
-                <div class="images">
-                    <img src="/img/screenshot_howlong.png" alt="screenshot">
-                </div>
-            </li>
-            <li class="project narrow">
-                <div class="content">
-                    <h3>SteamyNotes</h3>
-                    <p class="description">
-                        A note-keeping web app.
-                    </p>
-                    <ul class="keypoints">
-                        <li>Stores your notes in the cloud, tied to your Google account</li>
-                        <li>Built with <strong>Flutter</strong> UI framework</li>
-                        <li>Runs on <strong>Firebase</strong> BaaS</li>
-                    </ul>
-                    <div class="stage">Deployed / Alpha</div>
-                    <div class="links">
-                        <a class="iconed github button" href="https://github.com/lonelyteapot/SteamyNotes" target="_blank">
-                            <span>GitHub</span>
-                        </a>
-                        <a class="iconed website button" href="https://steamy-notes.web.app" target="_blank">
-                            <span>Web App</span>
-                        </a>
+                </li>
+                <li class="project">
+                    <div class="content">
+                        <h3>HowLong</h3>
+                        <p class="description">
+                            A minimalistic mobile app that calculates duration between dates.
+                        </p>
+                        <ul class="keypoints">
+                            <li>Designed to be simple and intuitive</li>
+                            <li>Built with <strong>Android SDK</strong> in <strong>Kotlin</strong></li>
+                        </ul>
+                        <div class="stage">Deployed / Alpha</div>
+                        <div class="links">
+                            <a class="iconed github button" href="https://github.com/lonelyteapot/HowLong" target="_blank">
+                                <span>GitHub</span>
+                            </a>
+                            <a class="iconed download button" href="https://github.com/lonelyteapot/HowLong/releases/latest" target="_blank">
+                                <span>Android APK</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li class="project narrow">
-                <div class="content">
-                    <h3>Just Dance</h3>
-                    <p class="description">
-                        A computer game that imitates <em>Just Dance</em> and <em>Osu</em>.
-                    </p>
-                    <ul class="keypoints">
-                        <li>Analyzes real-time videocam feed</li>
-                        <li>Detects body parts using <strong>neural networks</strong></li>
-                        <li>Built with Intel's <strong>OpenVINO</strong> toolkit</li>
-                        <li>Made for <em>Intel Computer Vision Summer Camp 2021</em></li>
-                    </ul>
-                    <br>
-                    <div class="stage">Not for production</div>
-                    <div class="links">
-                        <a class="iconed github button" href="https://github.com/Gravens/JustDance" target="_blank">
-                            <span>GitHub</span>
-                        </a>
+                    <div class="images">
+                        <img src="/img/screenshot_howlong.png" alt="screenshot">
                     </div>
-                </div>
-            </li>
-        </ul>
-    </section>
+                </li>
+                <li class="project narrow">
+                    <div class="content">
+                        <h3>SteamyNotes</h3>
+                        <p class="description">
+                            A note-keeping web app.
+                        </p>
+                        <ul class="keypoints">
+                            <li>Stores your notes in the cloud, tied to your Google account</li>
+                            <li>Built with <strong>Flutter</strong> UI framework</li>
+                            <li>Runs on <strong>Firebase</strong> BaaS</li>
+                        </ul>
+                        <div class="stage">Deployed / Alpha</div>
+                        <div class="links">
+                            <a class="iconed github button" href="https://github.com/lonelyteapot/SteamyNotes" target="_blank">
+                                <span>GitHub</span>
+                            </a>
+                            <a class="iconed website button" href="https://steamy-notes.web.app" target="_blank">
+                                <span>Web App</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project narrow">
+                    <div class="content">
+                        <h3>Just Dance</h3>
+                        <p class="description">
+                            A computer game that imitates <em>Just Dance</em> and <em>Osu</em>.
+                        </p>
+                        <ul class="keypoints">
+                            <li>Analyzes real-time videocam feed</li>
+                            <li>Detects body parts using <strong>neural networks</strong></li>
+                            <li>Built with Intel's <strong>OpenVINO</strong> toolkit</li>
+                            <li>Made for <em>Intel Computer Vision Summer Camp 2021</em></li>
+                        </ul>
+                        <br>
+                        <div class="stage">Not for production</div>
+                        <div class="links">
+                            <a class="iconed github button" href="https://github.com/Gravens/JustDance" target="_blank">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <span>© Dmitry Semenov, 2022.</span>
