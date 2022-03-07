@@ -172,7 +172,7 @@ body {
 
 #intro .title {
     font-size: 1.5rem;
-    color: rgba(var(--canvas-color), 0.95);
+    color: rgba(var(--canvas-color), 0.875);
 }
 
 #intro .links {
@@ -270,6 +270,7 @@ main {
 
 #software .project {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
     flex: 1 0 100%;
     gap: 1rem;
@@ -312,7 +313,7 @@ main {
 #software .button {
     --icon-color: rgba(0, 0, 0, 0.9);
     color: rgba(0, 0, 0, 0.9);
-    background-color: rgba(var(--primary-color), 0.4);
+    background-color: rgba(var(--primary-color), 0.5);
 }
 
 #software .links {
