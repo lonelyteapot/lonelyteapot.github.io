@@ -1,9 +1,9 @@
 docs:
-  - title: About me
-    url: /
-  - title: Visuals
-    url: /visuals/
-
-icons:
-  - icon: github
-    url: https://github.com/lonelyteapot
+  - title: About
+    url: /#
+  - title: My Software
+    url: /#my-software
+  - title: Contact me
+    url: /#contact-me
+  - title: Old Homepage
+    url: /old_index

@@ -1,159 +1,111 @@
 ---
 id: index
-title: About me
+title: Dmitry Semenov
 layout: default
-permalink: /new_index
+permalink: /
 ---
 <main>
-    <section id="intro" class="dark">
-        <h1>Hi!</h1>
-        <div class="content">
-            <h2 class="name">I'm Dmitry</h2>
-            <p class="title">— Software Developer</p>
-        </div>
-        <div class="photo">
-            <img src="/img/photo.png" alt="[Photo]" width="64" height="64">
-        </div>
-        <div class="buttons">
-            <a class="Button left-icon send" href="#contact-me">Contact me</a>
-            <a class="Button right-icon github" href="https://github.com/lonelyteapot" target="_blank">Visit GitHub</a>
-        </div>
-    </section>
-    <section id="skills">
-        <h2>Skills & Tech Stack</h2>
-        <ul class="categories">
-            <li class="Card">
-                <h3>Frontend Development</h3>
-                <ul>
-                    <li>Qt (Quick/QML)</li>
-                    <li>Web (HTML, CSS, JS, React)</li>
-                    <li>Android (Kotlin)</li>
-                    <li>Flutter (Dart)</li>
-                </ul>
-            </li>
-            <li class="Card">
-                <h3>Backend Development</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>C/C++</li>
-                    <li>Java</li>
-                    <li>Data Structures and Algorithms</li>
-                </ul>
-            </li>
-            <li class="Card">
-                <h3>Development Tools</h3>
-                <ul>
-                    <li>Version Control (Git)</li>
-                    <li>Linux terminal</li>
-                    <li>Visual Studio Code</li>
-                </ul>
-            </li>
-            <li class="Card">
-                <h3>Cloud Services & CI</h3>
-                <ul>
-                    <li>GitHub (Actions, Pages)</li>
-                    <li>Firebase (DB, Auth, Hosting)</li>
-                    <li>Docker containers</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
+    <section id="my-software">
+        <h2>My Software</h2>
         <ul>
-            <li>
-                <img src="/img/unn_logo.png" alt="" height="54" style="float: left;">
-                <p>Lobachevsky State University of Nizhny Novgorod</p>
-                <p><i>Institute of Information Technology, Mathematics and Mechanics</i></p>
-                <p>Bachelor of <b>Software Engineering</b> (expected in 2024)</p>
-            </li>
-        </ul>
-    </section>
-    <section id="projects" class="dark">
-        <h2>Projects</h2>
-        <ul>
-            <li class="Card">
-                <header>
-                    <h3>This Website</h3>
-                    <div class="links">
-                        <a class="website" href="https://lonelyteapot.github.io"><img src="/icon/website.svg" height="24" alt="website"></a>
-                        <a class="github" href="https://github.com/lonelyteapot/lonelyteapot.github.io"><img src="/icon/github.svg" height="24" alt="github"></a>
-                    </div>
-                </header>
+            <li class="project narrow card">
                 <div class="content">
-                    <p>Find information about me and my projects</p>
-                    <ul>
-                        <li>Written in <b>HTML5</b> and <b>CSS</b></li>
-                        <li>Hosted on <b>GitHub Pages</b></li>
+                    <h3>Bustracker</h3>
+                    <p class="description">
+                        A platform about mass transit navigation.
+                        Plan your route and track public transport in real time.
+                    </p>
+                    <ul class="keypoints">
+                        <li>Built with <strong>Flutter</strong> UI framework</li>
+                        <li>Runs on a custom <strong>Django</strong> backend</li>
                     </ul>
+                    <div class="stage yellow">In development</div>
                 </div>
             </li>
-            <li class="Card">
-                <header>
-                    <h3>HowLong &mdash; Android App</h3>
-                    <div class="links">
-                        <a class="download" href="https://github.com/lonelyteapot/HowLong/releases/latest"><img src="/icon/download.svg" height="24" alt="download"></a>
-                        <a class="github" href="https://github.com/lonelyteapot/HowLong"><img src="/icon/github.svg" height="24" alt="github"></a>
-                    </div>
-                </header>
+            <li class="project card">
                 <div class="content">
-                    <p>Calculate how many days have passed since a given date</p>
-                    <ul>
-                        <li>Clean and intuinive layout</li>
-                        <li>Built with <b>Android Studio</b></li>
-                        <li>Written in <b>Kotlin</b></li>
+                    <h3>HowLong</h3>
+                    <p class="description">
+                        A minimalistic mobile app that calculates duration between dates.
+                    </p>
+                    <ul class="keypoints">
+                        <li>Designed to be simple and intuitive</li>
+                        <li>Built with <strong>Android SDK</strong> in <strong>Kotlin</strong></li>
                     </ul>
+                    <div class="stage yellow">Deployed / Alpha</div>
+                    <div class="links">
+                        <a class="iconed github button" href="https://github.com/lonelyteapot/HowLong" target="_blank">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="iconed download button" href="https://github.com/lonelyteapot/HowLong/releases/latest" target="_blank">
+                            <span>Android APK</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="screenshots">
-                    <img src="/img/screenshot_howlong1.png" alt="screenshot 1">
-                    <img src="/img/screenshot_howlong2.png" alt="screenshot 2">
+                <div class="images">
+                    <img src="/images/screenshot_howlong.png" alt="screenshot">
                 </div>
             </li>
-            <li class="Card">
-                <header>
-                    <h3>Steamy Notes &mdash; Web App</h3>
-                    <div class="links">
-                        <a class="website" href="https://steamy-notes.web.app/"><img src="/icon/website.svg" height="24" alt="website"></a>
-                        <a class="github" href="https://github.com/lonelyteapot/SteamyNotes"><img src="/icon/github.svg" height="24" alt="github"></a>
-                    </div>
-                </header>
+            <li class="project card">
                 <div class="content">
-                    <p>Write and keep notes that are saved in the cloud tied to your Google account</p>
-                    <ul>
-                        <li>Hosted on <b>Firebase</b></li>
-                        <li>Built with <b>Flutter</b></li>
-                        <li>Uses <b>Firestore</b> database and <b>Firebase Auth</b></li>
+                    <h3>SteamyNotes</h3>
+                    <p class="description">
+                        A note-keeping web app.
+                    </p>
+                    <ul class="keypoints">
+                        <li>Stores your notes in the cloud, tied to your Google account</li>
+                        <li>Built with <strong>Flutter</strong> UI framework</li>
+                        <li>Runs on <strong>Firebase</strong> BaaS</li>
                     </ul>
+                    <div class="stage yellow">Deployed / Alpha</div>
+                    <div class="links">
+                        <a class="iconed github button" href="https://github.com/lonelyteapot/SteamyNotes" target="_blank">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="iconed website button" href="https://steamy-notes.web.app" target="_blank">
+                            <span>Web App</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="screenshots">
-                    <img src="/img/screenshot_steamynotes1.png" alt="screenshot 1">
+                <div class="images">
+                    <img src="/images/screenshot_steamynotes1.png" alt="screenshot">
                 </div>
             </li>
-            <li class="Card">
-                <header>
-                    <h3>Just Dance &mdash; Computer vision game</h3>
-                    <div class="links">
-                        <a class="github" href="https://github.com/Gravens/JustDance"><img src="/icon/github.svg" height="24" alt="github"></a>
-                    </div>
-                </header>
+            <li class="project narrow card">
                 <div class="content">
-                    <p>Explore how neural networks behave while playing a Twister-like game using your webcam</p>
-                    <ul>
-                        <li>Built with <b>OpenVINO</b> toolkit</li>
-                        <li>Uses <b>Google's MediaPipe</b> and <b>Intel's OpenModelZoo</b> neural networks</li>
+                    <h3>Just Dance</h3>
+                    <p class="description">
+                        A computer game that imitates <em>Just Dance</em> and <em>Osu</em>.
+                    </p>
+                    <ul class="keypoints">
+                        <li>Analyzes real-time videocam feed</li>
+                        <li>Detects body parts using <strong>neural networks</strong></li>
+                        <li>Built with Intel's <strong>OpenVINO</strong> toolkit</li>
+                        <li>Made for <em>Intel Computer Vision Summer Camp 2021</em></li>
                     </ul>
+                    <br>
+                    <div class="stage gray">Not for production</div>
+                    <div class="links">
+                        <a class="iconed github button" href="https://github.com/Gravens/JustDance" target="_blank">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
                 </div>
             </li>
         </ul>
     </section>
     <section id="contact-me">
-        <h2>Contact Me</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc9nz6meFQysdi2392hdYS9SMpv6jO9YM7XkmjcoRgL8-FJqw/viewform?embedded=true" width="640" height="648" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <h2>Contact me</h2>
+        <form action="https://formspree.io/f/myyojnjw" method="POST">
+            <label class="input-container message">
+                <textarea class="input" name="message" placeholder="" required></textarea>
+                <span class="input-label">Message</span>
+            </label>
+            <label class="input-container email">
+                <input class="input" type="email" name="email" placeholder="" required>
+                <span class="input-label">email@to-reply.to</span>
+            </label>
+            <button class="submit button" type="submit">Send</button>
+        </form>
     </section>
 </main>
-<aside id="rsidebar">
-    <a class="Card dark" href="/visuals/">
-        <h3><span>Check out </span>Visuals</h3>
-        <img src="/img/screenshot_visuals1.png">
-    </a>
-</aside>

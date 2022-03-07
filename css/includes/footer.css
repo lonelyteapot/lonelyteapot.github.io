@@ -1,0 +1,10 @@
+#footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3rem;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
