@@ -3,12 +3,11 @@
         <h1 class="name">Dmitry Semenov</h1>
         <p class="title">— Software Developer</p>
         <div class="links">
-            <a class="iconed github" href="https://github.com/lonelyteapot" target="_blank">
-                <span>GitHub</span>
+            {% for link in site.data.social.links %}
+            <a class="iconed {{ link.class }}" href="{{ link.url }}" target="_blank">
+                <span>{{ link.title }}</span>
             </a>
-            <a class="iconed telegram" href="https://t.me/lonelyteapot" target="_blank">
-                <span>Telegram</span>
-            </a>
+            {% endfor %}
         </div>
     </div>
     <div id="header-row">

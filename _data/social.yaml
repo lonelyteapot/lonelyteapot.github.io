@@ -1,0 +1,9 @@
+links:
+  - class: github
+    title: GitHub
+    url: https://github.com/lonelyteapot
+    icon: /icons/github.svg
+  - class: telegram
+    title: Telegram
+    url: https://t.me/lonelyteapot
+    icon: /icons/telegram.svg
