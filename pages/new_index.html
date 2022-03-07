@@ -22,32 +22,24 @@ permalink: /new_index
 
 <body>
     <header id="header">
-        <a class="logo" href="/">lonelyteapot</a>
+        <div id="intro">
+            <h1 class="name">Dmitry Semenov</h1>
+            <p class="title">Software Developer</p>
+            <div class="links">
+                <a class="iconed github" href="https://github.com/lonelyteapot" target="_blank">
+                    <span>GitHub</span>
+                </a>
+                <a class="iconed telegram" href="https://t.me/lonelyteapot" target="_blank">
+                    <span>Telegram</span>
+                </a>
+            </div>
+        </div>
         <nav id="header-nav">
-            <a href="/#">About</a>
+            <a href="/#" class="active">About</a>
             <a href="/#software">My Software</a>
             <a href="/404">Bustracker</a>
         </nav>
     </header>
-    <section id="landing">
-        <div class="whoami">
-            <h1>Dmitry Semenov</h1>
-            <p>Software Developer</p>
-        </div>
-        <div class="links">
-            <a class="iconed github" href="https://github.com/lonelyteapot" target="_blank">
-                <span>GitHub</span>
-            </a>
-            <a class="iconed telegram" href="https://t.me/lonelyteapot" target="_blank">
-                <span>Telegram</span>
-            </a>
-        </div>
-        <div class="scrollers">
-            <a class="iconed expand_more" href="#software">
-                <span>My Software</span>
-            </a>
-        </div>
-    </section>
     <section id="software">
         <!-- <h2>My Software</h2> -->
         <ul>
@@ -138,21 +130,6 @@ permalink: /new_index
     <footer>
         <span>© Dmitry Semenov, 2022.</span>
     </footer>
-
-    <script>
-        // Hide header shadow when it's on the top
-        const header = document.getElementById('header');
-        header.classList.remove('header-shadow');
-        toggleShadow = function() {
-            if (window.pageYOffset > 0) {
-                header.classList.add('header-shadow');
-            } else {
-                header.classList.remove('header-shadow');
-            }
-        };
-        window.onscroll = toggleShadow;
-        toggleShadow();
-    </script>
 </body>
 
 </html>
