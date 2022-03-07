@@ -1,0 +1,22 @@
+<header id="header">
+    <div id="intro">
+        <h1 class="name">Dmitry Semenov</h1>
+        <p class="title">— Software Developer</p>
+        <div class="links">
+            <a class="iconed github" href="https://github.com/lonelyteapot" target="_blank">
+                <span>GitHub</span>
+            </a>
+            <a class="iconed telegram" href="https://t.me/lonelyteapot" target="_blank">
+                <span>Telegram</span>
+            </a>
+        </div>
+    </div>
+    <div id="header-row">
+        <div id="header-logo">@lonelyteapot</div>
+        <nav id="header-nav">
+            {% for item in site.data.navigation.docs %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
+    </div>
+</header>
