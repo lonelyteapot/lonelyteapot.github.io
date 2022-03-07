@@ -39,6 +39,7 @@ permalink: /
             <nav id="header-nav">
                 <a href="/#">About</a>
                 <a href="/#software">My Software</a>
+                <a href="/#contact-me">Contact me</a>
                 <a href="/new_index">Old Homepage</a>
             </nav>
         </div>
@@ -47,7 +48,7 @@ permalink: /
         <section id="software">
             <h2>My Software</h2>
             <ul>
-                <li class="project narrow">
+                <li class="project narrow card">
                     <div class="content">
                         <h3>Bustracker</h3>
                         <p class="description">
@@ -61,7 +62,7 @@ permalink: /
                         <div class="stage yellow">In development</div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project card">
                     <div class="content">
                         <h3>HowLong</h3>
                         <p class="description">
@@ -85,7 +86,7 @@ permalink: /
                         <img src="/img/screenshot_howlong.png" alt="screenshot">
                     </div>
                 </li>
-                <li class="project narrow">
+                <li class="project narrow card">
                     <div class="content">
                         <h3>SteamyNotes</h3>
                         <p class="description">
@@ -107,7 +108,7 @@ permalink: /
                         </div>
                     </div>
                 </li>
-                <li class="project narrow">
+                <li class="project narrow card">
                     <div class="content">
                         <h3>Just Dance</h3>
                         <p class="description">
@@ -129,6 +130,20 @@ permalink: /
                     </div>
                 </li>
             </ul>
+        </section>
+        <section id="contact-me">
+            <h2>Contact me</h2>
+            <form action="https://formspree.io/f/myyojnjw" method="POST">
+                <label class="input-container message">
+                    <textarea class="input" name="message" placeholder="" required></textarea>
+                    <span class="input-label">Message</span>
+                </label>
+                <label class="input-container email">
+                    <input class="input" type="email" name="email" placeholder="" required>
+                    <span class="input-label">email@to-reply.to</span>
+                </label>
+                <button class="submit button" type="submit">Send</button>
+            </form>
         </section>
     </main>
 
