@@ -29,13 +29,13 @@
 }
 
 .Button.send {
-    --icon: url('/icon/send.svg');
+    --icon: url('/icons/send.svg');
 }
 
 .Button.home {
-    --icon: url('/icon/home.svg');
+    --icon: url('/icons/home.svg');
 }
 
 .Button.github {
-    --icon: url('/icon/github.svg');
+    --icon: url('/icons/github.svg');
 }

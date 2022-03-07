@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="menu logo">
             <a href="/" tabindex="-1">
-                <img src="/icon/favicon.svg" alt="logo">
+                <img src="/icons/favicon.svg" alt="logo">
             </a>
         </div>
         <nav class="menu nav">
@@ -15,7 +15,7 @@
         <div class="menu icons">
         {% for item in site.data.navigation.icons %}
             <a href="{{ item.url }}" class="item {% if item.url == page.url %}active{% endif %}">
-                <img src="/icon/{{ item.icon }}.svg" alt="{{ item.icon }}"></a>
+                <img src="/icons/{{ item.icon }}.svg" alt="{{ item.icon }}"></a>
             </a>
         {% endfor %}
         </div>
