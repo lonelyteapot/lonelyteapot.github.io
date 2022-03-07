@@ -132,7 +132,7 @@ html {
 body {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 900px) 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: max-content auto max-content;
     grid-template-areas: 'header header header' '. main .' '. footer .';
     min-height: 100vh;
     line-height: 1.2;
@@ -251,7 +251,7 @@ main {
     flex-direction: column;
 }
 
-#software {
+#my-software {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
@@ -259,7 +259,7 @@ main {
     color: rgb(var(--canvas-color));
 }
 
-#software > ul {
+#my-software > ul {
     display: flex;
     flex-wrap: wrap;
     align-self: center;
@@ -268,7 +268,7 @@ main {
     color: #000000cc;
 }
 
-#software .project {
+#my-software .project {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -276,11 +276,11 @@ main {
     gap: 1rem;
 }
 
-#software .project.narrow {
+#my-software .project.narrow {
     flex-basis: 400px;
 }
 
-#software .project > .content {
+#my-software .project > .content {
     display: flex;
     flex-direction: column;
     flex: 1 1 360px;
@@ -289,19 +289,19 @@ main {
     color: rgba(0, 0, 0, 0.9);
 }
 
-#software .project h3 {
+#my-software .project h3 {
     font-size: 1.75rem;
     padding-bottom: 0.25rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     color: rgb(0, 0, 0);
 }
 
-#software .project .keypoints {
+#my-software .project .keypoints {
     list-style-type: disc;
     padding-left: 1rem;
 }
 
-#software .stage {
+#my-software .stage {
     display: flex;
     margin-top: auto;
     font-size: 14px;
@@ -310,13 +310,13 @@ main {
     text-transform: lowercase;
 }
 
-#software .button {
+#my-software .button {
     --icon-color: rgba(0, 0, 0, 0.9);
     color: rgba(0, 0, 0, 0.9);
     background-color: rgba(var(--primary-color), 0.5);
 }
 
-#software .links {
+#my-software .links {
     display: flex;
     gap: 0.5rem;
     margin-top: -12px;
@@ -324,7 +324,7 @@ main {
     border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-#software .project > .images {
+#my-software .project > .images {
     display: flex;
     flex: 1 1 360px;
     box-shadow: var(--shadow-1);
@@ -333,7 +333,7 @@ main {
     overflow: hidden;
 }
 
-#software .project .images > img {
+#my-software .project .images > img {
     flex: 1 1;
     max-width: 100%;
 }
