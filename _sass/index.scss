@@ -3,7 +3,7 @@
     flex-direction: column;
     padding-top: 40px;
     margin-top: -40px;
-    color: rgb(var(--canvas-color));
+    color: transparentize($color: $color-on-canvas, $amount: 0.35);
 }
 
 #my-software > ul {
@@ -12,7 +12,6 @@
     align-self: center;
     gap: 8px;
     width: 100%;
-    color: #000000cc;
 }
 
 #my-software .project {
@@ -33,14 +32,13 @@
     flex: 1 1 360px;
     gap: 1rem;
     margin-top: -0.25rem;
-    color: rgba(0, 0, 0, 0.9);
 }
 
 #my-software .project h3 {
     font-size: 1.75rem;
     padding-bottom: 0.25rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    color: rgb(0, 0, 0);
+    color: $color-on-canvas;
 }
 
 #my-software .project .keypoints {
@@ -57,12 +55,6 @@
     text-transform: lowercase;
 }
 
-#my-software .button {
-    --icon-color: rgba(0, 0, 0, 0.9);
-    color: rgba(0, 0, 0, 0.9);
-    background-color: rgba(var(--primary-color), 0.5);
-}
-
 #my-software .links {
     display: flex;
     gap: 0.5rem;
@@ -74,7 +66,7 @@
 #my-software .project > .images {
     display: flex;
     flex: 1 1 360px;
-    box-shadow: var(--shadow-1);
+    box-shadow: $shadow-1;
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -100,16 +92,9 @@
 
 #contact-me .email {
     grid-area: email;
-    grid-row: 2;
 }
 
 #contact-me .submit {
     grid-area: submit;
-    grid-row: 2;
     font-size: 18px;
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: rgba(var(--primary-color), 0.4);
-    border: none;
-    cursor: pointer;
 }

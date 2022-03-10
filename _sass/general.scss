@@ -1,0 +1,69 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 900px) 1fr;
+    grid-template-rows: max-content auto max-content;
+    grid-template-areas: 'header header header' '. main .' '. footer .';
+    min-height: 100vh;
+    line-height: 1.2;
+    font-family: $content-font;
+    background-color: $background-color;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+    font-weight: 500;
+}
+
+strong {
+    font-weight: bold;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.yellow {
+    color: #756303;
+}
+
+.green {
+    color: #29C785;
+}
+
+.gray {
+    color: #666666;
+}
+
+section > h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding-bottom: 4px;
+    width: 100%;
+    font-size: 2rem;
+    color: transparentize($color: $color-on-background, $amount: 0.15);
+}
+
+section > h2::before,
+section > h2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    margin-top: 4px;
+    background-color: transparentize($color: $color-on-background, $amount: 0.88);
+}
