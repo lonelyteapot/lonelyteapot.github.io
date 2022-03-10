@@ -3,7 +3,7 @@
     flex-direction: column;
     padding-top: 40px;
     margin-top: -40px;
-    color: $canvas-color;
+    color: transparentize($color: $color-on-canvas, $amount: 0.35);
 }
 
 #my-software > ul {
@@ -12,7 +12,6 @@
     align-self: center;
     gap: 8px;
     width: 100%;
-    color: #000000cc;
 }
 
 #my-software .project {
@@ -33,14 +32,13 @@
     flex: 1 1 360px;
     gap: 1rem;
     margin-top: -0.25rem;
-    color: rgba(0, 0, 0, 0.9);
 }
 
 #my-software .project h3 {
     font-size: 1.75rem;
     padding-bottom: 0.25rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    color: rgb(0, 0, 0);
+    color: $color-on-canvas;
 }
 
 #my-software .project .keypoints {
