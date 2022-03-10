@@ -57,12 +57,6 @@
     text-transform: lowercase;
 }
 
-#my-software .button {
-    --icon-color: rgba(0, 0, 0, 0.9);
-    color: rgba(0, 0, 0, 0.9);
-    background-color: rgba(var(--primary-color), 0.5);
-}
-
 #my-software .links {
     display: flex;
     gap: 0.5rem;
@@ -106,9 +100,4 @@
 #contact-me .submit {
     grid-area: submit;
     font-size: 18px;
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: rgba(var(--primary-color), 0.4);
-    border: none;
-    cursor: pointer;
 }

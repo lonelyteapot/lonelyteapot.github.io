@@ -2,7 +2,7 @@
     content: '';
     width: var(--icon-size, 1.5em);
     height: var(--icon-size, 1.5em);
-    background-color: var(--icon-color, black);
+    background-color: currentColor;
     mask-size: contain;
     mask-position: center;
     mask-repeat: no-repeat;
