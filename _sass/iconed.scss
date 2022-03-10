@@ -40,22 +40,3 @@
     mask-image: url('/icons/email.svg');
     -webkit-mask-image: url('/icons/email.svg');
 }
-
-.button {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.4em;
-    padding: 0.4em 0.6em;
-    border-radius: 6px;
-    font-family: var(--header-font);
-    font-size: smaller;
-    box-shadow: var(--shadow-2);
-    transition: box-shadow 200ms;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-    box-shadow: var(--shadow-6);
-}
