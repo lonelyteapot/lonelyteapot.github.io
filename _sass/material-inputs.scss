@@ -1,6 +1,6 @@
 .input-container {
     position: relative;
-    padding: 0;
+    padding: 0 !important;
     border-bottom: 0.125rem solid transparentize($color: $color-on-canvas, $amount: 0.4);
     overflow: hidden;
 }
@@ -27,7 +27,7 @@
 
 .input-container > .input-label {
     position: absolute;
-    top: 0.9375rem;
+    top: 0.75rem;
     left: 0.875rem;
     line-height: 140%;
     color: rgba(0, 0, 0, 0.6);
