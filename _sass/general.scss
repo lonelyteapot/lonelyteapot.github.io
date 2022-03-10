@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     line-height: 1.2;
     font-family: $content-font;
-    background-color: #f3f3f3;
+    background-color: $background-color;
 }
 
 main {
@@ -48,7 +48,7 @@ img {
 }
 
 .card {
-    background-color: #fbfbfb;
+    background-color: $canvas-color;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: $shadow-2;
@@ -63,7 +63,7 @@ section > h2 {
     padding-bottom: 4px;
     width: 100%;
     font-size: 2rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: transparentize($color: $color-on-background, $amount: 0.15);
 }
 
 section > h2::before,
@@ -72,5 +72,5 @@ section > h2::after {
     flex: 1;
     height: 1px;
     margin-top: 4px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: transparentize($color: $color-on-background, $amount: 0.88);
 }
