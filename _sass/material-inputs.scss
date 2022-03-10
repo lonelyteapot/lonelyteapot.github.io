@@ -18,8 +18,8 @@
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     outline: none;
-    border-radius: 8px;
     background: #fbfbfb;
+    transition: background-color 200ms;
 }
 
 .input-container > .input-label {
