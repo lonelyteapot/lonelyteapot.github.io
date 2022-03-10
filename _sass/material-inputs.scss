@@ -34,7 +34,7 @@
 
 
 .input-container > .input:hover {
-    background-color: rgba(var(--primary-color), 0.09);
+    background-color: transparentize($color: $primary-color, $amount: 0.95);
     border-color: #121212;
 }
 
@@ -46,9 +46,9 @@
 }
 
 .input-container > .input:focus + .input-label {
-    color: rgba(var(--primary-color));
+    color: $primary-color;
 }
 
 .input-container > .input:focus {
-    border-color: rgba(var(--primary-color));
+    border-color: transparentize($color: $primary-color, $amount: 0.2);
 }

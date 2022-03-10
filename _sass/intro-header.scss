@@ -7,8 +7,7 @@
     position: sticky;
     top: -48vh;
     z-index: 10;
-    background-color: rgb(var(--primary-color));
-    // background-color: #28af77;
+    background-color: $primary-color;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
@@ -20,7 +19,7 @@
     align-items: flex-start;
     gap: 24px;
     padding: 16px;
-    color: rgb(var(--canvas-color));
+    color: $canvas-color;
 }
 
 #intro .name {
@@ -31,12 +30,11 @@
 
 #intro .title {
     font-size: 1.5rem;
-    color: rgba(var(--canvas-color), 0.875);
+    color: transparentize($canvas-color, 0.125);
 }
 
 #intro .links {
     --icon-size: 1.625rem;
-    --icon-color: rgba(var(--canvas-color));
     display: flex;
     justify-content: space-between;
     justify-self: stretch;
@@ -85,7 +83,7 @@
     white-space: nowrap;
     height: 100%;
     font-size: 14px;
-    font-family: var(--header-font);
+    font-family: $header-font;
     color: rgba(0, 0, 0, 0.7);
 }
 

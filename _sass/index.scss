@@ -3,7 +3,7 @@
     flex-direction: column;
     padding-top: 40px;
     margin-top: -40px;
-    color: rgb(var(--canvas-color));
+    color: $canvas-color;
 }
 
 #my-software > ul {
@@ -68,7 +68,7 @@
 #my-software .project > .images {
     display: flex;
     flex: 1 1 360px;
-    box-shadow: var(--shadow-1);
+    box-shadow: $shadow-1;
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.2);
     overflow: hidden;
