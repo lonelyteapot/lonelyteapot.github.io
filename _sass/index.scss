@@ -10,7 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     align-self: center;
-    gap: 8px;
+    gap: 1rem;
     width: 100%;
 }
 
@@ -83,7 +83,7 @@
     grid-template-columns: 1fr auto;
     grid-template-rows: minmax(200px, auto) auto;
     grid-template-areas: 'message message' 'email submit';
-    gap: 8px;
+    gap: 1rem;
 }
 
 #contact-me .message {
