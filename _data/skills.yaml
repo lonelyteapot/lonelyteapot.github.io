@@ -1,0 +1,25 @@
+- type: Frontend Development
+  points:
+    - Flutter cross-platform framework
+    - Qt cross-platform framework (mainly Quick/QML)
+    - Web (HTML, CSS, JS)
+
+- type: Backend Development
+  points:
+    - Django framework
+    - Firebase BaaS
+    - Google Cloud Platform
+
+- type: Programming Languages
+  points:
+    - Python
+    - C++11
+    - Dart
+    - JavaScript
+    - Java, Kotlin
+
+- type: Development Workflows
+  points:
+    - Version Control (Git)
+    - Continuous Integration (GitHub Actions)
+    - Containerization (Docker)
