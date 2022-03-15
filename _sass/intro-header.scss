@@ -12,54 +12,6 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-#intro {
-    grid-area: intro;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
-    padding: 16px;
-    color: transparentize($color: $color-on-primary, $amount: 0.08);
-}
-
-#intro .name {
-    margin-left: -6px;
-    line-height: 0.8;
-    font-size: min(10vw, 4.5rem);
-}
-
-#intro .title {
-    font-size: 1.5rem;
-}
-
-#intro .links {
-    --icon-size: 1.625rem;
-    display: flex;
-    justify-content: space-between;
-    justify-self: stretch;
-    align-items: center;
-    align-self: flex-start;
-    gap: 1em;
-}
-
-#intro .links a {
-    display: flex;
-    align-items: center;
-    opacity: 0.75;
-    transition: opacity 200ms;
-}
-
-#intro .links a:hover,
-#intro .links a:focus {
-    opacity: 1;
-    outline: none;
-}
-
-#intro .links span {
-    font-size: 0;
-}
-
 #header-row {
     grid-area: nav;
     display: flex;
@@ -92,9 +44,57 @@
     padding: 0 16px;
     transition-property: background-color;
     transition-duration: 200ms;
+
+    &.active,
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.09);
+    }
 }
 
-#header-row a.active,
-#header-row a:hover {
-    background-color: rgba(0, 0, 0, 0.09);
+#intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 16px;
+    color: transparentize($color: $color-on-primary, $amount: 0.08);
+
+    .name {
+        margin-left: -6px;
+        line-height: 0.8;
+        font-size: min(10vw, 4.5rem);
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .links {
+        --icon-size: 1.625rem;
+        display: flex;
+        justify-content: space-between;
+        justify-self: stretch;
+        align-items: center;
+        align-self: flex-start;
+        gap: 1em;
+
+        a {
+            display: flex;
+            align-items: center;
+            opacity: 0.75;
+            transition: opacity 200ms;
+
+            span {
+                font-size: 0;
+            }
+
+            &:hover,
+            &:focus {
+                opacity: 1;
+                outline: none;
+            }
+        }
+    }
 }
