@@ -13,12 +13,12 @@
     box-shadow: $shadow-2;
     transition: box-shadow 200ms;
     color: $color-on-primary;
-    background-color: transparentize($color: $primary-color, $amount: 0.4)
-}
+    background-color: transparentize($color: $primary-color, $amount: 0.4);
 
-.button:hover,
-.button:focus,
-.button:active {
-    box-shadow: $shadow-6;
-    outline: none;
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: $shadow-6;
+        outline: none;
+    }
 }
