@@ -1,3 +1,18 @@
+---
+---
+ignore {$front-matter: lint};
+
+@import 'variables';
+@import 'reset';
+@import 'general';
+@import 'material-inputs';
+@import 'intro-header';
+@import 'footer';
+@import 'components/icon';
+@import 'components/button';
+@import 'components/card';
+@import 'components/divided-button';
+
 #software {
     display: flex;
     flex-direction: column;
