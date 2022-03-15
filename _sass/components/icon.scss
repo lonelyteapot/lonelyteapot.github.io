@@ -1,0 +1,23 @@
+.icon::after {
+    content: '';
+    display: inline-block;
+    width: var(--icon-size, 1.5em);
+    height: var(--icon-size, 1.5em);
+    background-color: currentColor;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+}
+
+$icons: (github, telegram, website, download, send, arrow-up);
+
+@each $icon in $icons {
+    .icon.#{$icon}::after {
+        $url: url('/icons/#{$icon}.svg');
+        mask-image: $url;
+        -webkit-mask-image: $url;
+    }
+}
