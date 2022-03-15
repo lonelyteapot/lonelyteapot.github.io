@@ -71,11 +71,9 @@
 
 #header-logo {
     order: 1;
-    align-self: center;
     padding: 0 12px;
     font-family: 'Work Sans', sans-serif;
     font-size: 1.125rem;
-    cursor: default;
 }
 
 #header-nav {
@@ -86,7 +84,7 @@
     font-family: $header-font;
 }
 
-#header-nav > * {
+#header-row a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +94,7 @@
     transition-duration: 200ms;
 }
 
-#header-nav > .active,
-#header-nav > :hover {
+#header-row a.active,
+#header-row a:hover {
     background-color: rgba(0, 0, 0, 0.09);
 }
