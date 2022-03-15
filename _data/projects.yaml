@@ -5,11 +5,13 @@
     - Runs on a custom <strong>Django</strong> backend
   stage: In development
 
+
 - name: HowLong
-  description: A minimalistic mobile app that calculates duration between dates.
+  description: A minimal mobile app that counts days between dates.
   keypoints:
-    - Designed to be simple and intuitive
-    - Built with <strong>Android SDK</strong> in <strong>Kotlin</strong>
+    - Clean & Intuitive
+    - Built with <strong>Android SDK</strong>
+    - Written in <strong>Kotlin</strong>
   stage: Deployed / Alpha
   links:
     - type: github
@@ -21,12 +23,13 @@
   images:
     - screenshot_howlong.png
 
+
 - name: SteamyNotes
-  description: A note-keeping web app.
+  description: A cloud-based note-keeping web app.
   keypoints:
-    - Stores your notes in the cloud, tied to your Google account
-    - Built with <strong>Flutter</strong> UI framework
-    - Runs on <strong>Firebase</strong> BaaS
+    - Stores notes in the cloud, tied to your Google account
+    - Built cross-platform with <strong>Flutter</strong>
+    - Powered by and hosted on <strong>Firebase</strong>
   stage: Deployed / Alpha
   links:
     - type: github
@@ -38,21 +41,23 @@
   images:
     - screenshot_steamynotes1.png
 
+
 - name: Just Dance
-  description: A computer game that imitates Just Dance and Osu.
+  description: A computer vision game that imitates Just Dance and Osu.
   keypoints:
-    - Analyzes real-time videocam feed
-    - Detects body parts using <strong>neural networks</strong>
-    - Built with Intel's <strong>OpenVINO</strong> toolkit
-    - Made for <em>Intel Computer Vision Summer Camp 2021</em>
+    - Detects body parts on a real-time video feed using neural networks from <strong>OpenModelZoo</strong> & <strong>MediaPipe</strong>
+    - Built with <strong>OpenVINO</strong> toolkit
+    - Built for <strong>Intel CV Summer Camp 2021</strong>
   stage: <span class="gray">Not for production</span>
   links:
     - type: github
       text: GitHub
       href: https://github.com/Gravens/JustDance
 
+
 - name: This Website
   keypoints:
-    - Built with <strong>HTML</strong>, <strong>SASS</strong> and <strong>Jekyll</strong> static generator
+    - Built with <strong>HTML</strong> & <strong>SASS</strong>
+    - Statically generated with <strong>Jekyll</strong>
     - Hosted on <strong>GitHub Pages</strong>
   stage: Deployed
