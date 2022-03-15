@@ -1,0 +1,52 @@
+- name: Bustracker
+  description: A platform about mass transit navigation. Plan your route and track public transport in real time.
+  keypoints:
+    - Built with <strong>Flutter</strong> UI framework
+    - Runs on a custom <strong>Django</strong> backend
+  stage: In development
+
+- name: HowLong
+  description: A minimalistic mobile app that calculates duration between dates.
+  keypoints:
+    - Designed to be simple and intuitive
+    - Built with <strong>Android SDK</strong> in <strong>Kotlin</strong>
+  stage: Deployed / Alpha
+  links:
+    - type: github
+      text: GitHub
+      href: https://github.com/lonelyteapot/HowLong
+    - type: download
+      text: Android APK
+      href: https://github.com/lonelyteapot/HowLong/releases/latest
+  images:
+    - screenshot_howlong.png
+
+- name: SteamyNotes
+  description: A note-keeping web app.
+  keypoints:
+    - Stores your notes in the cloud, tied to your Google account
+    - Built with <strong>Flutter</strong> UI framework
+    - Runs on <strong>Firebase</strong> BaaS
+  stage: Deployed / Alpha
+  links:
+    - type: github
+      text: GitHub
+      href: https://github.com/lonelyteapot/SteamyNotes
+    - type: website
+      text: Web App
+      href: https://steamy-notes.web.app
+  images:
+    - screenshot_steamynotes1.png
+
+- name: Just Dance
+  description: A computer game that imitates Just Dance and Osu.
+  keypoints:
+    - Analyzes real-time videocam feed
+    - Detects body parts using <strong>neural networks</strong>
+    - Built with Intel's <strong>OpenVINO</strong> toolkit
+    - Made for <em>Intel Computer Vision Summer Camp 2021</em>
+  stage: <span class="gray">Not for production</span>
+  links:
+    - type: github
+      text: GitHub
+      href: https://github.com/Gravens/JustDance
