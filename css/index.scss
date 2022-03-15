@@ -31,8 +31,6 @@ ignore {$front-matter: lint};
 #software {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-    margin-top: -40px;
     color: transparentize($color: $color-on-canvas, $amount: 0.35);
 }
 

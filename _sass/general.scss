@@ -21,6 +21,10 @@ main {
 }
 
 section {
+    // Adjust anchoring position for header height
+    padding-top: $header-height - 4px;
+    margin-top: -$header-height + 4px;
+
     > ul {
         display: flex;
         flex-wrap: wrap;
