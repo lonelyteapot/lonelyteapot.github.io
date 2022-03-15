@@ -1,0 +1,33 @@
+.divided-button {
+    display: grid;
+    grid-template-columns: 2.75em max-content;
+    grid-template-rows: 2em;
+    justify-content: end;
+    align-content: end;
+    grid-auto-flow: dense;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 0.75rem;
+    box-shadow: $shadow-1;
+    font-family: $header-font;
+    transition: 200ms box-shadow;
+    background: linear-gradient(to right, $primary-color 3em, transparent 3em);
+
+    & > * {
+        align-self: center;
+    }
+
+    & > :first-child {
+        grid-column: -2 / -1;
+        padding: 0 12px;
+    }
+
+    &::after {
+        margin: 3px 8px;
+        align-self: center;
+    }
+
+    &:hover, &:focus {
+        box-shadow: $shadow-4;
+    }
+}
