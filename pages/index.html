@@ -26,7 +26,10 @@ permalink: /
             {% for project in site.data.projects %}
             <li class="project card{% unless project.images %} narrow{% endunless %}">
                 <div class="content">
-                    <h3>{{ project.name }}</h3>
+                    <header>
+                        <h3>{{ project.name }}</h3>
+                        <div class="stage yellow">{{ project.stage }}</div>
+                    </header>
                     {% if project.description %}
                     <p class="description">{{ project.description }}</p>
                     {% endif %}
@@ -35,7 +38,6 @@ permalink: /
                         <li>{{ keypoint }}</li>
                         {% endfor %}
                     </ul>
-                    <div class="stage yellow">{{ project.stage }}</div>
                     {% if project.links %}
                     <div class="links">
                         {% for link in project.links %}

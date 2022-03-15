@@ -48,14 +48,29 @@ ignore {$front-matter: lint};
 #software .project > .content {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     flex: 1 1 360px;
     gap: 1rem;
     margin-top: -0.25rem;
 
-    h3 {
-        font-size: 1.75rem;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
         padding-bottom: 0.25rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .stage {
+        margin-bottom: 0.125rem;
+        font-size: 14px;
+        opacity: 0.6;
+        font-variant: small-caps;
+        text-transform: lowercase;
     }
 
     .keypoints {
@@ -63,19 +78,10 @@ ignore {$front-matter: lint};
         padding-left: 1em;
     }
 
-    .stage {
-        display: flex;
-        margin-top: auto;
-        font-size: 14px;
-        opacity: 0.6;
-        font-variant: small-caps;
-        text-transform: lowercase;
-    }
-
     .links {
         display: flex;
         gap: 0.5rem;
-        margin-top: -12px;
+        margin-top: auto;
         padding-top: 0.5rem;
         border-top: 1px solid rgba(0, 0, 0, 0.12);
     }
