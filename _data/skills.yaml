@@ -1,25 +1,25 @@
-- type: Frontend Development
-  points:
+- category: Frontend Development
+  skills:
     - Flutter cross-platform framework
     - Qt cross-platform framework (mainly Quick/QML)
     - Web (HTML, CSS, JS)
 
-- type: Backend Development
-  points:
+- category: Backend Development
+  skills:
     - Django framework
     - Firebase BaaS
     - Google Cloud Platform
 
-- type: Programming Languages
-  points:
+- category: Programming Languages
+  skills:
     - Python
     - C++11
     - Dart
     - JavaScript
     - Java, Kotlin
 
-- type: Development Workflows
-  points:
+- category: Development Workflows
+  skills:
     - Version Control (Git)
     - Continuous Integration (GitHub Actions)
     - Containerization (Docker)
