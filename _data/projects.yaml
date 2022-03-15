@@ -50,3 +50,9 @@
     - type: github
       text: GitHub
       href: https://github.com/Gravens/JustDance
+
+- name: This Website
+  keypoints:
+    - Built with <strong>HTML</strong>, <strong>SASS</strong> and <strong>Jekyll</strong> static generator
+    - Hosted on <strong>GitHub Pages</strong>
+  stage: Deployed

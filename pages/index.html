@@ -12,7 +12,9 @@ permalink: /
             <li class="project card{% unless project.images %} narrow{% endunless %}">
                 <div class="content">
                     <h3>{{ project.name }}</h3>
+                    {% if project.description %}
                     <p class="description">{{ project.description }}</p>
+                    {% endif %}
                     <ul class="keypoints">
                         {% for keypoint in project.keypoints %}
                         <li>{{ keypoint }}</li>
