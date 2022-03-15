@@ -1,7 +1,7 @@
 - category: Frontend Development
   skills:
-    - Flutter cross-platform framework
-    - Qt cross-platform framework (mainly Quick/QML)
+    - Flutter framework
+    - Qt framework (mostly Quick/QML)
     - Web (HTML, CSS, JS)
 
 - category: Backend Development
@@ -14,9 +14,8 @@
   skills:
     - Python
     - C++11
-    - Dart
-    - JavaScript
     - Java, Kotlin
+    - JavaScript
 
 - category: Development Workflows
   skills:
