@@ -50,7 +50,7 @@ ignore {$front-matter: lint};
     flex-direction: column;
     justify-content: start;
     flex: 1 1 360px;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-top: -0.25rem;
 
     header {
@@ -110,7 +110,7 @@ ignore {$front-matter: lint};
     grid-template-columns: 1fr auto;
     grid-template-rows: minmax(200px, auto) auto;
     grid-template-areas: 'message message' 'email submit';
-    gap: 1rem;
+    gap: 0.75rem;
 
     .message {
         grid-area: message;
