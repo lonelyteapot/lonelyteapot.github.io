@@ -85,6 +85,8 @@ ignore {$front-matter: lint};
         gap: 0.25rem;
         margin: -0.5rem;
         margin-top: auto;
+        // Fix anchoring fix mouse hover drawbacks
+        z-index: 1;
     }
 }
 
