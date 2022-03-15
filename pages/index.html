@@ -5,93 +5,58 @@ layout: default
 permalink: /
 ---
 <main>
-    <section id="my-software">
+    <section id="skills">
+        <h2>My Skills & Tech Stack</h2>
+        <ul>
+            {% for category in site.data.skills %}
+            <li class="card">
+                <h3>{{ category.category }}</h3>
+                <ul>
+                    {% for skill in category.skills %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section id="software">
         <h2>My Software</h2>
         <ul>
-            <li class="project narrow card">
+            {% for project in site.data.projects %}
+            <li class="project card{% unless project.images %} narrow{% endunless %}">
                 <div class="content">
-                    <h3>Bustracker</h3>
-                    <p class="description">
-                        A platform about mass transit navigation.
-                        Plan your route and track public transport in real time.
-                    </p>
+                    <header>
+                        <h3>{{ project.name }}</h3>
+                        <div class="stage yellow">{{ project.stage }}</div>
+                    </header>
+                    {% if project.description %}
+                    <p class="description">{{ project.description }}</p>
+                    {% endif %}
                     <ul class="keypoints">
-                        <li>Built with <strong>Flutter</strong> UI framework</li>
-                        <li>Runs on a custom <strong>Django</strong> backend</li>
+                        {% for keypoint in project.keypoints %}
+                        <li>{{ keypoint }}</li>
+                        {% endfor %}
                     </ul>
-                    <div class="stage yellow">In development</div>
-                </div>
-            </li>
-            <li class="project card">
-                <div class="content">
-                    <h3>HowLong</h3>
-                    <p class="description">
-                        A minimalistic mobile app that calculates duration between dates.
-                    </p>
-                    <ul class="keypoints">
-                        <li>Designed to be simple and intuitive</li>
-                        <li>Built with <strong>Android SDK</strong> in <strong>Kotlin</strong></li>
-                    </ul>
-                    <div class="stage yellow">Deployed / Alpha</div>
+                    {% if project.links %}
                     <div class="links">
-                        <a class="divided-button icon github" href="https://github.com/lonelyteapot/HowLong" target="_blank">
-                            <span>GitHub</span>
+                        {% for link in project.links %}
+                        <a class="vertical-link icon {{ link.type }}" href="{{ link.href }}" target="_blank">
+                            <span>{{ link.text }}</span>
                         </a>
-                        <a class="divided-button icon download" href="https://github.com/lonelyteapot/HowLong/releases/latest" target="_blank">
-                            <span>Android APK</span>
-                        </a>
+                        {% endfor %}
                     </div>
+                    {% endif %}
                 </div>
+                {% if project.images %}
                 <div class="images">
-                    <img src="/images/screenshot_howlong.png" alt="screenshot">
+                    {% for image in project.images %}
+                    <img src="/images/{{ image }}" alt="screenshot">
+                    {% endfor %}
                 </div>
+                {% endif %}
             </li>
-            <li class="project card">
-                <div class="content">
-                    <h3>SteamyNotes</h3>
-                    <p class="description">
-                        A note-keeping web app.
-                    </p>
-                    <ul class="keypoints">
-                        <li>Stores your notes in the cloud, tied to your Google account</li>
-                        <li>Built with <strong>Flutter</strong> UI framework</li>
-                        <li>Runs on <strong>Firebase</strong> BaaS</li>
-                    </ul>
-                    <div class="stage yellow">Deployed / Alpha</div>
-                    <div class="links">
-                        <a class="divided-button icon github" href="https://github.com/lonelyteapot/SteamyNotes" target="_blank">
-                            <span>GitHub</span>
-                        </a>
-                        <a class="divided-button icon website" href="https://steamy-notes.web.app" target="_blank">
-                            <span>Web App</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="images">
-                    <img src="/images/screenshot_steamynotes1.png" alt="screenshot">
-                </div>
-            </li>
-            <li class="project narrow card">
-                <div class="content">
-                    <h3>Just Dance</h3>
-                    <p class="description">
-                        A computer game that imitates <em>Just Dance</em> and <em>Osu</em>.
-                    </p>
-                    <ul class="keypoints">
-                        <li>Analyzes real-time videocam feed</li>
-                        <li>Detects body parts using <strong>neural networks</strong></li>
-                        <li>Built with Intel's <strong>OpenVINO</strong> toolkit</li>
-                        <li>Made for <em>Intel Computer Vision Summer Camp 2021</em></li>
-                    </ul>
-                    <br>
-                    <div class="stage gray">Not for production</div>
-                    <div class="links">
-                        <a class="divided-button icon github" href="https://github.com/Gravens/JustDance" target="_blank">
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                </div>
-            </li>
+            {% endfor %}
         </ul>
     </section>
     <section id="contact-me">

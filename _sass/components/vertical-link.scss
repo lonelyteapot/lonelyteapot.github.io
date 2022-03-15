@@ -1,0 +1,16 @@
+.vertical-link {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.25em;
+    padding: 0.5em;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-family: $header-font;
+    color: lighten($secondary-color, 10%);
+    transition: background-color 200ms;
+
+    &:hover, &:focus {
+        background-color: transparentize(black, 0.95);
+    }
+}

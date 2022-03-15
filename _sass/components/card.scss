@@ -1,6 +1,9 @@
 .card {
-    background-color: $canvas-color;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     padding: 1rem;
+    border-radius: 8px;
+    background-color: $canvas-color;
     box-shadow: $shadow-2;
 }

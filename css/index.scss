@@ -1,0 +1,130 @@
+---
+---
+ignore {$front-matter: lint};
+
+@import 'variables';
+@import 'reset';
+@import 'general';
+@import 'material-inputs';
+@import 'intro-header';
+@import 'footer';
+@import 'components/icon';
+@import 'components/button';
+@import 'components/card';
+@import 'components/divided-button';
+@import 'components/vertical-link';
+
+#skills > ul > li {
+    gap: 0.5rem;
+    flex-basis: 300px;
+
+    h3 {
+        font-size: 1.375rem;
+    }
+
+    li {
+        list-style-type: disc;
+        margin-left: 1em;
+        color: transparentize($color: $color-on-canvas, $amount: 0.25);
+    }
+}
+
+#software {
+    display: flex;
+    flex-direction: column;
+    color: transparentize($color: $color-on-canvas, $amount: 0.35);
+}
+
+#software .project {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+    gap: 1rem;
+
+    &.narrow {
+        flex-basis: 400px;
+    }
+}
+
+#software .project > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex: 1 1 360px;
+    gap: 0.5rem;
+    margin-top: -0.25rem;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .stage {
+        margin-bottom: 0.125rem;
+        font-size: 14px;
+        opacity: 0.6;
+        font-variant: small-caps;
+        text-transform: lowercase;
+    }
+
+    .keypoints {
+        list-style-type: disc;
+        padding-left: 1em;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0.25rem;
+        margin: -0.5rem;
+        margin-top: auto;
+        // Fix anchoring fix mouse hover drawbacks
+        z-index: 1;
+    }
+}
+
+
+
+#software .project > .images {
+    display: flex;
+    flex: 1 1 360px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+    outline: 1px solid rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    position: relative;
+
+    img {
+        flex: 1 1;
+        max-width: 100%;
+    }
+}
+
+#contact-me form {
+    flex: 1 1 480px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: minmax(200px, auto) auto;
+    grid-template-areas: 'message message' 'email submit';
+    gap: 0.75rem;
+
+    .message {
+        grid-area: message;
+    }
+
+    .email {
+        grid-area: email;
+    }
+
+    .submit {
+        grid-area: submit;
+        font-size: 18px;
+    }
+}

@@ -1,9 +1,9 @@
 docs:
   - title: About
     url: /#
+  - title: My Skills
+    url: /#skills
   - title: My Software
-    url: /#my-software
-  - title: Contact me
+    url: /#software
+  - title: Contact Me
     url: /#contact-me
-  - title: Old Homepage
-    url: /old_index
