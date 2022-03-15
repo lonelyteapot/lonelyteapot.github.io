@@ -20,9 +20,40 @@ main {
     flex-direction: column;
 }
 
+section {
+    > ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        > li {
+            flex: 1 1 100%;
+        }
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font;
     font-weight: 500;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding-left: 16px;
+    padding-bottom: 4px;
+    width: 100%;
+    font-size: 1.825rem;
+    color: transparentize($color: $color-on-background, $amount: 0.12);
+    border-left: 1px solid transparentize($color: $color-on-background, $amount: 0.88);
+    border-right: 1px solid transparentize($color: $color-on-background, $amount: 0.88);
+}
+
+h3 {
+    color: $secondary-color;
 }
 
 strong {
@@ -46,19 +77,4 @@ img {
 
 .gray {
     color: #666666;
-}
-
-section > h2 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    margin: 1rem 0;
-    padding-left: 16px;
-    padding-bottom: 4px;
-    width: 100%;
-    font-size: 1.825rem;
-    color: transparentize($color: $color-on-background, $amount: 0.12);
-    border-left: 1px solid transparentize($color: $color-on-background, $amount: 0.88);
-    border-right: 1px solid transparentize($color: $color-on-background, $amount: 0.88);
 }
