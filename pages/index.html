@@ -5,6 +5,21 @@ layout: default
 permalink: /
 ---
 <main>
+    <section id="my-skills">
+        <h2>My Skills & Tech Stack</h2>
+        <ul>
+            {% for category in site.data.skills %}
+            <li class="card">
+                <h3>{{ category.category }}</h3>
+                <ul>
+                    {% for skill in category.skills %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
     <section id="my-software">
         <h2>My Software</h2>
         <ul>
