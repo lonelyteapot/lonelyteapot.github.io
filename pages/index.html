@@ -41,7 +41,7 @@ permalink: /
                     {% if project.links %}
                     <div class="links">
                         {% for link in project.links %}
-                        <a class="divided-button icon {{ link.type }}" href="{{ link.href }}" target="_blank">
+                        <a class="vertical-link icon {{ link.type }}" href="{{ link.href }}" target="_blank">
                             <span>{{ link.text }}</span>
                         </a>
                         {% endfor %}

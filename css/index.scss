@@ -12,6 +12,7 @@ ignore {$front-matter: lint};
 @import 'components/button';
 @import 'components/card';
 @import 'components/divided-button';
+@import 'components/vertical-link';
 
 #skills > ul > li {
     gap: 0.5rem;
@@ -80,10 +81,10 @@ ignore {$front-matter: lint};
 
     .links {
         display: flex;
-        gap: 0.5rem;
+        justify-content: space-evenly;
+        gap: 0.25rem;
+        margin: -0.5rem;
         margin-top: auto;
-        padding-top: 0.5rem;
-        border-top: 1px solid rgba(0, 0, 0, 0.12);
     }
 }
 
