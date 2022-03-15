@@ -61,3 +61,7 @@
     - Statically generated with <strong>Jekyll</strong>
     - Hosted on <strong>GitHub Pages</strong>
   stage: Deployed
+  links:
+    - type: github
+      text: GitHub
+      href: https://github.com/lonelyteapot/lonelyteapot.github.io
