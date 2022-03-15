@@ -7,17 +7,17 @@
     color: transparentize($color: $color-on-background, $amount: 0.8);
     font-size: 14px;
     letter-spacing: 0.5px;
-}
 
-#footer .icon {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 8px;
-    transition: 200ms color;
-    color: transparentize($color: $color-on-background, $amount: 0.7);
-}
+    .icon {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 8px;
+        transition: 200ms color;
+        color: transparentize($color: $color-on-background, $amount: 0.7);
 
-#footer .icon:hover  {
-    color: $color-on-background;
+        &:hover  {
+            color: $color-on-background;
+        }
+    }
 }
