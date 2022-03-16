@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap">
     <link rel="stylesheet" href="/css/{{ page.id }}.css">
     <title>{{ page.title }}</title>
+    <!-- Open Graph Protocol for social media representation -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="profile">
+    <meta property="og:profile:first_name" content="Dmitry">
+    <meta property="og:profile:last_name" content="Semenov">
+    <meta property="og:profile:username" content="lonelyteapot">
+    <meta property="og:image" content="https://lonelyteapot.github.io/images/screenshot.webp">
+    <meta property="og:url" content="https://lonelyteapot.github.io">
 </head>
 
 <body>
