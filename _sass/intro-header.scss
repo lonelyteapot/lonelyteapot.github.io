@@ -1,12 +1,13 @@
+
 #header {
-    $intro-height: min(48vh, 70vw);
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr minmax(auto, 900px) 1fr;
-    grid-template-rows: $intro-height $header-height;
+    grid-template-rows: 1fr $header-height;
     grid-template-areas: '. intro .' '. nav .';
+    min-height: $full-header-height;
     position: sticky;
-    top: calc(-1 * #{$intro-height});
+    top: calc(#{$header-height} - #{$full-header-height});
     z-index: 10;
     background-color: $primary-color;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
