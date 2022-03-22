@@ -6,7 +6,7 @@ ignore {$front-matter: lint};
 @import 'reset';
 @import 'general';
 @import 'material-inputs';
-@import 'intro-header';
+@import 'full-header';
 @import 'footer';
 @import 'components/icon';
 @import 'components/button';
@@ -30,27 +30,28 @@ ignore {$front-matter: lint};
 }
 
 #software {
-    display: flex;
-    flex-direction: column;
     color: transparentize($color: $color-on-canvas, $amount: 0.35);
 }
 
 #software .project {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     flex: 1 0 100%;
     gap: 1rem;
 
     &.narrow {
         flex-basis: 400px;
     }
+
+    @media (min-width: 750px) {
+        flex-direction: row;
+    }
 }
 
-#software .project > .content {
+#software .content {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    flex: 1 1 360px;
+    flex: 1;
     gap: 0.5rem;
     margin-top: -0.25rem;
 
@@ -92,18 +93,19 @@ ignore {$front-matter: lint};
 
 
 
-#software .project > .images {
+#software .images {
     display: flex;
-    flex: 1 1 360px;
-    border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.2);
-    outline: 1px solid rgba(0, 0, 0, 0.12);
-    overflow: hidden;
-    position: relative;
+    justify-content: space-evenly;
+    gap: 0.75rem;
+    max-height: 25rem;
+    flex: 1;
 
     img {
-        flex: 1 1;
         max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: $shadow-1;
     }
 }
 
