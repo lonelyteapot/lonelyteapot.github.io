@@ -54,6 +54,7 @@ h2 {
     color: transparentize($color: $color-on-background, $amount: 0.12);
     border-left: 1px solid transparentize($color: $color-on-background, $amount: 0.88);
     border-right: 1px solid transparentize($color: $color-on-background, $amount: 0.88);
+    font-family: $content-font
 }
 
 h3 {
@@ -61,7 +62,7 @@ h3 {
 }
 
 strong {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 img {
