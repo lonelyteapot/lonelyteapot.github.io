@@ -73,6 +73,7 @@ ignore {$front-matter: lint};
         opacity: 0.6;
         font-variant: small-caps;
         text-transform: lowercase;
+        font-family: $header-font;
     }
 
     .keypoints {
