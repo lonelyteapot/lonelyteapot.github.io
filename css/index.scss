@@ -51,6 +51,7 @@ ignore {$front-matter: lint};
     display: flex;
     flex-direction: column;
     justify-content: start;
+    flex: 1;
     gap: 0.5rem;
     margin-top: -0.25rem;
 
@@ -97,10 +98,11 @@ ignore {$front-matter: lint};
     justify-content: space-evenly;
     gap: 0.75rem;
     max-height: 25rem;
-    flex: 1 1 360px;
+    flex: 1;
 
     img {
         max-width: 100%;
+        height: auto;
         border-radius: 6px;
         background-color: rgba(0, 0, 0, 0.2);
         box-shadow: $shadow-1;
