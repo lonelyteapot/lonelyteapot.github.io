@@ -7,7 +7,7 @@
     border-radius: 8px;
     font-size: 0.75rem;
     font-family: $header-font;
-    color: lighten($secondary-color, 10%);
+    color: saturate(lighten($secondary-color, 10%), 5%);
     transition: background-color 200ms;
 
     &:hover, &:focus {
