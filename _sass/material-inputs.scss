@@ -3,6 +3,7 @@
     padding: 0 !important;
     border-bottom: 0.125rem solid transparentize($color: $color-on-canvas, $amount: 0.4);
     overflow: hidden;
+    transition: background-color 200ms;
 }
 
 .input-container > textarea {
