@@ -21,7 +21,8 @@
       text: Android APK
       href: https://github.com/lonelyteapot/HowLong/releases/latest
   images:
-    - screenshot_howlong.png
+    - screenshot_howlong1.png
+    - screenshot_howlong2.png
 
 
 - name: SteamyNotes

@@ -98,15 +98,19 @@ ignore {$front-matter: lint};
     display: flex;
     justify-content: space-evenly;
     gap: 0.75rem;
-    max-height: 25rem;
     flex: 1;
+
+    .wrapper {
+        border-radius: 6px;
+        background-color: transparentize(black, 0.8);
+        box-shadow: $shadow-1;
+        overflow: hidden;
+    }
 
     img {
         max-width: 100%;
-        height: auto;
-        border-radius: 6px;
-        background-color: rgba(0, 0, 0, 0.2);
-        box-shadow: $shadow-1;
+        max-height: 25rem;
+        height: 100%;
     }
 }
 

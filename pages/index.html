@@ -51,7 +51,9 @@ permalink: /
                 {% if project.images %}
                 <div class="images">
                     {% for image in project.images %}
-                    <img src="/images/{{ image }}" alt="screenshot">
+                    <div class="wrapper">
+                        <img src="/images/{{ image }}" alt="screenshot">
+                    </div>
                     {% endfor %}
                 </div>
                 {% endif %}
