@@ -3,6 +3,7 @@
     - Flutter framework
     - Qt framework (mostly Quick/QML)
     - Web (HTML, CSS, JS)
+    - Android SDK
 
 - category: Backend Development
   skills:
@@ -20,5 +21,5 @@
 - category: Development Workflows
   skills:
     - Version Control (Git)
-    - Continuous Integration (GitHub Actions)
     - Containerization (Docker)
+    - Continuous Integration (GitHub Actions)

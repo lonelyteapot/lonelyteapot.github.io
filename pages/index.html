@@ -51,7 +51,9 @@ permalink: /
                 {% if project.images %}
                 <div class="images">
                     {% for image in project.images %}
-                    <img src="/images/{{ image }}" alt="screenshot">
+                    <div class="wrapper">
+                        <img src="/images/{{ image }}" alt="screenshot">
+                    </div>
                     {% endfor %}
                 </div>
                 {% endif %}
@@ -62,13 +64,13 @@ permalink: /
     <section id="contact-me">
         <h2>Contact me</h2>
         <form action="https://formspree.io/f/myyojnjw" method="POST">
-            <label class="input-container message card">
-                <textarea class="input" name="message" placeholder=" " required></textarea>
-                <span class="input-label">Message</span>
+            <label class="input message card">
+                <textarea name="message" placeholder=" " required></textarea>
+                <span class="label">Message</span>
             </label>
-            <label class="input-container email card">
-                <input class="input" type="email" name="email" placeholder=" " required>
-                <span class="input-label">email@to-reply.to</span>
+            <label class="input email card">
+                <input type="email" name="email" placeholder=" " required>
+                <span class="label">email@to-reply.to</span>
             </label>
             <button class="submit button icon send" type="submit">Send</button>
         </form>
