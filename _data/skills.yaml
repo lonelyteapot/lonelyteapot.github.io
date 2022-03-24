@@ -21,5 +21,5 @@
 - category: Development Workflows
   skills:
     - Version Control (Git)
-    - Continuous Integration (GitHub Actions)
     - Containerization (Docker)
+    - Continuous Integration (GitHub Actions)
