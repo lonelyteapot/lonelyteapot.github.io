@@ -31,86 +31,84 @@ ignore {$front-matter: lint};
 
 #software {
     color: transparentize($color: $color-on-canvas, $amount: 0.35);
-}
 
-#software .project {
-    flex-direction: column;
-    flex: 1 1 100%;
-    gap: 1rem;
+    .project {
+        flex-direction: column;
+        flex: 1 1 100%;
+        gap: 1rem;
 
-    &.narrow {
-        flex-basis: 400px;
+        &.narrow {
+            flex-basis: 400px;
+        }
+
+        @media (min-width: 750px) {
+            flex-direction: row;
+        }
     }
 
-    @media (min-width: 750px) {
-        flex-direction: row;
-    }
-}
-
-#software .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    flex: 1;
-    gap: 0.5rem;
-    margin-top: -0.25rem;
-
-    header {
+    .content {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding-bottom: 0.25rem;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        flex-direction: column;
+        justify-content: start;
+        flex: 1;
+        gap: 0.5rem;
+        margin-top: -0.25rem;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 0.25rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+        h3 {
+            font-size: 1.75rem;
+        }
+
+        .stage {
+            margin-bottom: 0.125rem;
+            font-size: 14px;
+            opacity: 0.6;
+            font-variant: small-caps;
+            text-transform: lowercase;
+            font-family: $header-font;
+        }
+
+        .keypoints {
+            list-style-type: disc;
+            padding-left: 1em;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 0.25rem;
+            margin: -0.5rem;
+            margin-top: auto;
+            // Fix mouse hover problems caused by anchoring fix
+            z-index: 1;
+        }
     }
 
-    h3 {
-        font-size: 1.75rem;
-    }
-
-    .stage {
-        margin-bottom: 0.125rem;
-        font-size: 14px;
-        opacity: 0.6;
-        font-variant: small-caps;
-        text-transform: lowercase;
-        font-family: $header-font;
-    }
-
-    .keypoints {
-        list-style-type: disc;
-        padding-left: 1em;
-    }
-
-    .links {
+    .images {
         display: flex;
         justify-content: space-evenly;
-        gap: 0.25rem;
-        margin: -0.5rem;
-        margin-top: auto;
-        // Fix anchoring fix mouse hover drawbacks
-        z-index: 1;
-    }
-}
+        gap: 0.75rem;
+        flex: 1;
 
+        .wrapper {
+            border-radius: 6px;
+            background-color: transparentize(black, 0.8);
+            box-shadow: $shadow-1;
+            overflow: hidden;
+        }
 
-
-#software .images {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 0.75rem;
-    flex: 1;
-
-    .wrapper {
-        border-radius: 6px;
-        background-color: transparentize(black, 0.8);
-        box-shadow: $shadow-1;
-        overflow: hidden;
-    }
-
-    img {
-        max-width: 100%;
-        max-height: 25rem;
-        height: 100%;
+        img {
+            max-width: 100%;
+            max-height: 25rem;
+            height: 100%;
+        }
     }
 }
 
