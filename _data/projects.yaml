@@ -21,8 +21,8 @@
       text: Android APK
       href: https://github.com/lonelyteapot/HowLong/releases/latest
   images:
-    - screenshot_howlong1.png
-    - screenshot_howlong2.png
+    - howlong_bright.webp
+    - howlong_dark.webp
 
 
 - name: SteamyNotes
@@ -40,7 +40,7 @@
       text: Web App
       href: https://steamy-notes.web.app
   images:
-    - screenshot_steamynotes1.png
+    - steamynotes.webp
 
 
 - name: Just Dance
