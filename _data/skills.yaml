@@ -26,6 +26,8 @@
       icon: python-logo.svg
     - text: C++11
       icon: cpp-logo.svg
+    - text: Dart
+      icon: dart-logo.svg
     - text: Java, Kotlin
       icon: java-logo.svg
     - text: JavaScript
