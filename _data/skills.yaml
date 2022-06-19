@@ -11,6 +11,8 @@
 
 - category: Backend Development
   skills:
+    - text: FastAPI
+      icon: fastapi-logo.svg
     - text: Django
       icon: django-logo.svg
     - text: Firebase
