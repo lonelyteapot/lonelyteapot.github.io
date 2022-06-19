@@ -1,25 +1,39 @@
 - category: Frontend Development
   skills:
-    - Flutter framework
-    - Qt framework (mostly Quick/QML)
-    - Web (HTML, CSS, JS)
-    - Android SDK
+    - text: Flutter framework
+      icon: flutter-logo.svg
+    - text: Qt framework (mostly Quick/QML)
+      icon: qt-logo.svg
+    - text: Web (HTML, CSS, JS)
+      icon: web-logo.svg
+    - text: Android SDK
+      icon: android-logo.svg
 
 - category: Backend Development
   skills:
-    - Django framework
-    - Firebase BaaS
-    - Google Cloud Platform
+    - text: Django framework
+      icon: django-logo.svg
+    - text: Firebase BaaS
+      icon: firebase-logo.svg
+    - text: Google Cloud Platform
+      icon: google-cloud-logo.svg
 
 - category: Programming Languages
   skills:
-    - Python
-    - C++11
-    - Java, Kotlin
-    - JavaScript
+    - text: Python
+      icon: python-logo.svg
+    - text: C++11
+      icon: cpp-logo.svg
+    - text: Java, Kotlin
+      icon: java-logo.svg
+    - text: JavaScript
+      icon: javascript-logo.svg
 
 - category: Development Workflows
   skills:
-    - Version Control (Git)
-    - Containerization (Docker)
-    - Continuous Integration (GitHub Actions)
+    - text: Version Control (Git)
+      icon: git-logo.svg
+    - text: Containerization (Docker)
+      icon: docker-logo.svg
+    - text: Continuous Integration (GitHub Actions)
+      icon: github-actions-logo.svg
