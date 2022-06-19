@@ -4,10 +4,10 @@
       icon: flutter-logo.svg
     - text: Qt (QML)
       icon: qt-logo.svg
+    - text: HTML, CSS, JS
+      icon: web-logo.svg
     - text: Android SDK
       icon: android-logo.svg
-    - text: Web (HTML+CSS)
-      icon: web-logo.svg
 
 - category: Backend Development
   skills:
@@ -24,14 +24,12 @@
   skills:
     - text: Python
       icon: python-logo.svg
-    - text: C++11
+    - text: C++
       icon: cpp-logo.svg
     - text: Dart
       icon: dart-logo.svg
     - text: Java, Kotlin
       icon: java-logo.svg
-    - text: JavaScript
-      icon: javascript-logo.svg
 
 - category: Development Workflows
   skills:
