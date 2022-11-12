@@ -65,7 +65,7 @@
     .name {
         margin-left: -8px;
         line-height: 0.8;
-        font-size: min(10vw, 4.5rem);
+        font-size: calc(min(10vw, 4.5rem));
     }
 
     .title {
