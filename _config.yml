@@ -4,3 +4,10 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+sass:
+  implementation: sass-embedded
+  style: expanded
+  sass_dir: _sass
+  line_comments: false
+  sourcemap: always
