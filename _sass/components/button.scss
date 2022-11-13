@@ -1,24 +1,24 @@
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.4em;
-    padding: 0.5em 0.75em;
-    min-width: 6em;
-    border-radius: 6px;
-    font-family: $header-font;
-    font-size: smaller;
-    border: none;
-    cursor: pointer;
-    box-shadow: $shadow-2;
-    transition: box-shadow 200ms;
-    color: $color-on-primary;
-    background-color: transparentize($color: $primary-color, $amount: 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em 0.75em;
+  min-width: 6em;
+  border-radius: 6px;
+  font-family: $header-font;
+  font-size: smaller;
+  border: none;
+  cursor: pointer;
+  box-shadow: $shadow-2;
+  transition: box-shadow 200ms;
+  color: $color-on-primary;
+  background-color: transparentize($color: $primary-color, $amount: 0.4);
 
-    &:hover,
-    &:focus,
-    &:active {
-        box-shadow: $shadow-4;
-        outline: none;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: $shadow-4;
+    outline: none;
+  }
 }

@@ -1,78 +1,83 @@
 html {
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr minmax(auto, 900px) 1fr;
-    grid-template-rows: max-content auto max-content;
-    grid-template-areas: 'header header header' '. main .' '. footer .';
-    column-gap: 0.75rem;
-    min-height: 100vh;
-    line-height: 1.2;
-    font-family: $content-font;
-    background-color: $background-color;
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 900px) 1fr;
+  grid-template-rows: max-content auto max-content;
+  grid-template-areas: "header header header" ". main ." ". footer .";
+  column-gap: 0.75rem;
+  min-height: 100vh;
+  line-height: 1.2;
+  font-family: $content-font;
+  background-color: $background-color;
 }
 
 main {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
-    // Adjust anchoring position for header height
-    padding-top: $header-height - 4px;
-    margin-top: -$header-height + 4px;
+  // Adjust anchoring position for header height
+  padding-top: $header-height - 4px;
+  margin-top: -$header-height + 4px;
 
-    > ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 
-        > li {
-            flex: 1 1 100%;
-        }
+    > li {
+      flex: 1 1 100%;
     }
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $header-font;
-    font-weight: 500;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  font-weight: 500;
 }
 
 h2 {
-    text-align: center;
-    margin: 1.5rem 0;
-    font-size: 1.825rem;
-    color: transparentize($color: $color-on-background, $amount: 0.12);
-    font-family: $content-font;
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.825rem;
+  color: transparentize($color: $color-on-background, $amount: 0.12);
+  font-family: $content-font;
 }
 
 h3 {
-    color: $secondary-color;
+  color: $secondary-color;
 }
 
 strong {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .yellow {
-    color: #756303;
+  color: #756303;
 }
 
 .green {
-    color: #29C785;
+  color: #29c785;
 }
 
 .gray {
-    color: #666666;
+  color: #666;
 }
