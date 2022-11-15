@@ -17,6 +17,10 @@ defaults:
     values:
       image: /images/screenshot.webp
 
+analytics:
+  google:
+    id: G-4N4MCBCG3C
+
 
 # Custom variables
 main_header_title: Dmitry Semenov

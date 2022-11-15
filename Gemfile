@@ -25,3 +25,5 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem "jekyll-github-metadata"
 end
+
+gem "dotenv", "~> 2.8"

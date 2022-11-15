@@ -15,10 +15,15 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
         />
         <link rel="stylesheet" href="/css/{{ page.id }}.css" />
+        <!-- prettier-ignore -->
         {% seo %}
+        {% include google-analytics-tag.html %}
     </head>
 
     <body>
-        {% include full-header.html %} {{ content }} {% include footer.html %}
+        <!-- prettier-ignore -->
+        {% include full-header.html %}
+        {{ content }}
+        {% include footer.html %}
     </body>
 </html>
