@@ -1,3 +1,23 @@
+# Metadata
+title: Dmitry Semenov
+tagline: Software Developer
+description: Personal Website
+username: lonelyteapot
+
+twitter:
+  username: LonelyTeapot
+
+social:
+  links:
+    - https://github.com/lonelyteapot
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/screenshot.webp
+
+
 # Custom variables
 main_header_title: Dmitry Semenov
 main_header_bio: Software Developer
@@ -13,6 +33,10 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+plugins:
+  # - jekyll-default-layout
+  - jekyll-seo-tag
 
 sass:
   implementation: sass-embedded

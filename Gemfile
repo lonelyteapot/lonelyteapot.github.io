@@ -18,3 +18,9 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.1", :platforms => [:jruby]
 
 gem "sass-embedded", "~> 1.54.9"
+
+
+group :jekyll_plugins do
+  # gem "jekyll-default-layout", "~> 0.1.5"
+  gem 'jekyll-seo-tag', "~> 2.8.0"
+end
