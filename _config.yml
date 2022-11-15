@@ -1,48 +1,39 @@
-# Metadata
-title: Dmitry Semenov
-tagline: Software Developer
-description: Personal Website
-username: lonelyteapot
-
-twitter:
-  username: LonelyTeapot
-
-social:
-  links:
-    - https://github.com/lonelyteapot
-
+# Jekyll
+permalink: /:slug
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - package.json
 defaults:
   - scope:
       path: ""
     values:
       image: /images/screenshot.webp
 
-analytics:
-  google:
-    id: G-4N4MCBCG3C
-
-
 # Custom variables
 main_header_title: Dmitry Semenov
 main_header_bio: Software Developer
 main_header_nickname: "@lonelyteapot"
-
 copyright_name: Dmitry Semenov
 copyright_year: 2022
+analytics:
+  google:
+    id: G-4N4MCBCG3C
 
-# Jekyll settings
-permalink: /:slug
+# Metadata plugin
+title: Dmitry Semenov
+tagline: Software Developer
+description: Personal Website
+username: lonelyteapot
+twitter:
+  username: LonelyTeapot
+social:
+  links:
+    - https://github.com/lonelyteapot
 
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-
-plugins:
-  # - jekyll-default-layout
-  - jekyll-seo-tag
-  - jekyll-github-metadata
-
+# Sass Converter plugin
 sass:
   implementation: sass-embedded
   style: expanded
