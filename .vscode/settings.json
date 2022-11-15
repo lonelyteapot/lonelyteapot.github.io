@@ -1,4 +1,15 @@
 {
+    "prettier.tabWidth": 4,
+    "[html]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[sass]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "stylelint.vscode-stylelint",
+        "editor.formatOnSave": false
+    },
     "cSpell.words": [
         "postcss",
         "stylelint"

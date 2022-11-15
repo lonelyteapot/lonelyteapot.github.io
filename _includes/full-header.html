@@ -4,7 +4,11 @@
         <p class="title">— Software Developer</p>
         <div class="links">
             {% for link in site.data.social.links %}
-            <a class="icon {{ link.class }}" href="{{ link.url }}" target="_blank">
+            <a
+                class="icon {{ link.class }}"
+                href="{{ link.url }}"
+                target="_blank"
+            >
                 <span>{{ link.title }}</span>
             </a>
             {% endfor %}

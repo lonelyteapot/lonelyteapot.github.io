@@ -4,6 +4,7 @@ title: Dmitry Semenov
 layout: default
 permalink: /
 ---
+
 <main>
     <section id="skills">
         <h2>My Skills & Tech Stack</h2>
@@ -14,7 +15,12 @@ permalink: /
                 <ul>
                     {% for skill in category.skills %}
                     <li>
-                        <img src="/icons/{{ skill.icon }}" alt="icon" width="40" height="40">
+                        <img
+                            src="/icons/{{ skill.icon }}"
+                            alt="icon"
+                            width="40"
+                            height="40"
+                        />
                         <span>{{ skill.text }}</span>
                     </li>
                     {% endfor %}
@@ -27,7 +33,9 @@ permalink: /
         <h2>My Software</h2>
         <ul>
             {% for project in site.data.projects %}
-            <li class="project card{% unless project.images %} narrow{% endunless %}">
+            <li
+                class="project card{% unless project.images %} narrow{% endunless %}"
+            >
                 <div class="content">
                     <header>
                         <h3>{{ project.name }}</h3>
@@ -44,7 +52,11 @@ permalink: /
                     {% if project.links %}
                     <div class="links">
                         {% for link in project.links %}
-                        <a class="vertical-link icon {{ link.type }}" href="{{ link.href }}" target="_blank">
+                        <a
+                            class="vertical-link icon {{ link.type }}"
+                            href="{{ link.href }}"
+                            target="_blank"
+                        >
                             <span>{{ link.text }}</span>
                         </a>
                         {% endfor %}
@@ -55,7 +67,7 @@ permalink: /
                 <div class="images">
                     {% for image in project.images %}
                     <div class="wrapper">
-                        <img src="/images/{{ image }}" alt="screenshot">
+                        <img src="/images/{{ image }}" alt="screenshot" />
                     </div>
                     {% endfor %}
                 </div>
@@ -72,7 +84,7 @@ permalink: /
                 <span class="label">Message</span>
             </label>
             <label class="input email card">
-                <input type="email" name="email" placeholder=" " required>
+                <input type="email" name="email" placeholder=" " required />
                 <span class="label">email@to-reply.to</span>
             </label>
             <button class="submit button icon send" type="submit">Send</button>
