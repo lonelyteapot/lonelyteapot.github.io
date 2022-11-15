@@ -1,9 +1,12 @@
+@use "sass:color";
+
 #header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 900px) 1fr;
-  grid-template-rows: 1fr $header-height;
-  grid-template-areas: ". intro ." ". nav .";
+  grid-template:
+    ". intro ." 1fr
+    ".  nav  ." #{$header-height}
+    / 1fr minmax(auto, 900px) 1fr;
   min-height: $full-header-height;
   position: sticky;
   top: calc(#{$header-height} - #{$full-header-height});
@@ -18,7 +21,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   overflow-y: hidden;
-  color: transparentize($color: $color-on-primary, $amount: 0.08);
+  color: color.scale($color-on-primary, $alpha: -8%);
 }
 
 #header-logo {

@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .vertical-link {
   display: flex;
   flex-direction: column-reverse;
@@ -12,6 +14,6 @@
 
   &:hover,
   &:focus {
-    background-color: transparentize(black, 0.95);
+    background-color: color.scale(black, $alpha: -95%);
   }
 }

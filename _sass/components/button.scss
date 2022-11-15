@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .button {
   display: flex;
   justify-content: center;
@@ -13,7 +15,7 @@
   box-shadow: $shadow-2;
   transition: box-shadow 200ms;
   color: $color-on-primary;
-  background-color: transparentize($color: $primary-color, $amount: 0.4);
+  background-color: color.scale($primary-color, $alpha: -40%);
 
   &:hover,
   &:focus,
