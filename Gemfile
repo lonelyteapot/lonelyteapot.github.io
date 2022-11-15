@@ -21,6 +21,7 @@ gem "sass-embedded", "~> 1.54.9"
 
 
 group :jekyll_plugins do
-  # gem "jekyll-default-layout", "~> 0.1.5"
-  gem 'jekyll-seo-tag', "~> 2.8.0"
+  # gem "jekyll-default-layout"
+  gem 'jekyll-seo-tag'
+  gem "jekyll-github-metadata"
 end
