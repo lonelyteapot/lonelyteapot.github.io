@@ -2,10 +2,8 @@ name: Deploy Jekyll site to Pages
 
 on:
   # Runs when build workflow completes on the main branch
-  workflow_run:
-    workflows: [Build Jekyll site]
+  push:
     branches: [main]
-    types: [completed]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,12 +20,14 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  build:
+    uses: ./.github/workflows/jekyll-build.yml
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
