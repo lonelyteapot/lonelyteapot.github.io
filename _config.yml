@@ -1,6 +1,22 @@
-permalink: /:categories/:year/:month/:day/:title:output_ext
+# Custom variables
+main_header_title: Dmitry Semenov
+main_header_bio: Software Developer
+main_header_nickname: "@lonelyteapot"
+
+copyright_name: Dmitry Semenov
+copyright_year: 2022
+
+# Jekyll settings
+permalink: /:slug
 
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+sass:
+  implementation: sass-embedded
+  style: expanded
+  sass_dir: _sass
+  line_comments: false
+  sourcemap: always

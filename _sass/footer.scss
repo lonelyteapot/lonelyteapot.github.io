@@ -1,24 +1,26 @@
+@use "sass:color";
+
 #footer {
-    grid-area: footer;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  min-height: 3rem;
+  color: color.scale($color-on-background, $alpha: -80%);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+
+  .icon {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
-    margin-top: 2rem;
-    min-height: 3rem;
-    color: transparentize($color: $color-on-background, $amount: 0.8);
-    font-size: 14px;
-    letter-spacing: 0.5px;
+    gap: 8px;
+    transition: 200ms color;
+    color: color.scale($color-on-background, $alpha: -70%);
 
-    .icon {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        gap: 8px;
-        transition: 200ms color;
-        color: transparentize($color: $color-on-background, $amount: 0.7);
-
-        &:hover  {
-            color: $color-on-background;
-        }
+    &:hover {
+      color: $color-on-background;
     }
+  }
 }
