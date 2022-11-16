@@ -1,21 +1,27 @@
 <header id="header">
     <div id="intro">
-        <h1 class="name">{{ site.main_header_title }}</h1>
-        <p class="title">{{ site.main_header_bio }}</p>
+        <h1 class="name">{{ site.title }}</h1>
+        <p class="title">{{ site.tagline }}</p>
         <div class="links">
-            {% for link in site.data.social.links %}
-            <a
-                class="icon {{ link.class }}"
-                href="{{ link.url }}"
-                target="_blank"
-            >
-                <span>{{ link.title }}</span>
+            <!-- prettier-ignore -->
+            {% for link in site.social.links -%}
+            {% assign domain = link | split: "://" | last | split: "/" | first -%}
+            {% case domain %}
+                {% when "github.com" %}
+                    {% assign link_class = "github" %}
+                    {% assign link_title = "GitHub" %}
+                {% when "t.me" %}
+                    {% assign link_class = "telegram" %}
+                    {% assign link_title = "Telegram" %}
+            {% endcase -%}
+            <a class="icon {{ link_class }}" href="{{ link }}" target="_blank">
+                <span>{{ link_title }}</span>
             </a>
             {% endfor %}
         </div>
     </div>
     <div id="header-row">
-        <a id="header-logo" href="/">{{ site.main_header_nickname }}</a>
+        <a id="header-logo" href="/">@{{ site.username }}</a>
         <nav id="header-nav">
             {% for item in site.data.navigation.docs %}
             <a href="{{ item.url }}">{{ item.title }}</a>

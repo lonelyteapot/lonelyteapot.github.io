@@ -7,9 +7,8 @@ gem "sass-embedded", "~> 1.54.9"
 gem "dotenv", "~> 2.8"
 
 group :jekyll_plugins do
-  # gem "jekyll-default-layout"
+  gem "jekyll-default-layout"
   gem "jekyll-seo-tag"
-  gem "jekyll-github-metadata"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

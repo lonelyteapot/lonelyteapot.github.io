@@ -1,3 +1,14 @@
+# Metadata
+title: Dmitry Semenov
+tagline: Software Developer
+description: Personal Website
+url: https://lonelyteapot.github.io
+username: lonelyteapot
+social:
+  links:
+    - https://github.com/lonelyteapot
+    - https://t.me/lonelyteapot
+
 # Jekyll
 permalink: /:slug
 exclude:
@@ -21,17 +32,6 @@ copyright_year: 2022
 analytics:
   google:
     id: G-4N4MCBCG3C
-
-# Metadata plugin
-title: Dmitry Semenov
-tagline: Software Developer
-description: Personal Website
-username: lonelyteapot
-twitter:
-  username: LonelyTeapot
-social:
-  links:
-    - https://github.com/lonelyteapot
 
 # Sass Converter plugin
 sass:
