@@ -8,6 +8,7 @@ import projects from "../../data/projects.yaml";
 import skillCategories from "../../data/skills.yaml";
 import ProjectIconLink from "../components/ProjectIconLink.astro";
 import { Icon } from "astro-iconify";
+import Button from "../components/Button.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -97,7 +98,7 @@ import { Icon } from "astro-iconify";
                     <input type="email" name="email" placeholder=" " required />
                     <span class="label">email@to-reply.to</span>
                 </label>
-                <button class="submit button" type="submit">Send</button>
+                <Button type="submit">Send</Button>
             </form>
         </section>
     </main>
