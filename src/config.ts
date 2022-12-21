@@ -1,3 +1,10 @@
+export const PAGE_TITLE = "Dmitry Semenov | Software Developer";
+
+export const HEADER_TITLE = "Dmitry Semenov";
+export const HEADER_TAGLINE = "Software Developer";
+export const HEADER_USERNAME = "lonelyteapot";
+export const FOOTER_FULLNAME = "Dmitry Semenov";
+
 export const SOCIAL_LINKS = ["https://github.com/lonelyteapot", "https://t.me/lonelyteapot"];
 
 export const NAV_ITEMS = [

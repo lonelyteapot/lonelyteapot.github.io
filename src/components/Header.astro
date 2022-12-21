@@ -2,27 +2,19 @@
 import HeaderNavLink from "./HeaderNavLink.astro";
 import HeaderSocialLink from "./HeaderSocialLink.astro";
 
-import { SOCIAL_LINKS, NAV_ITEMS } from "../config";
-
-export interface Props {
-    fullName: string;
-    tagline: string;
-    username: string;
-}
-
-const { fullName, tagline, username } = Astro.props;
+import { HEADER_TITLE, HEADER_TAGLINE, HEADER_USERNAME, SOCIAL_LINKS, NAV_ITEMS } from "../config";
 ---
 
 <header id="header">
     <div id="intro">
-        <h1 class="name">{fullName}</h1>
-        <p class="title">{tagline}</p>
+        <h1 class="name">{HEADER_TITLE}</h1>
+        <p class="title">{HEADER_TAGLINE}</p>
         <div class="links">
             {SOCIAL_LINKS.map((link) => <HeaderSocialLink link={link} />)}
         </div>
     </div>
     <div id="header-row">
-        <a id="header-logo" href="/">@{username}</a>
+        <a id="header-logo" href="/">@{HEADER_USERNAME}</a>
         <nav id="header-nav">
             {NAV_ITEMS.map((item) => <HeaderNavLink url={item.url} title={item.title} />)}
         </nav>

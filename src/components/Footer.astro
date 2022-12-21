@@ -1,15 +1,12 @@
 ---
-export interface Props {
-    fullName: string;
-}
+import { FOOTER_FULLNAME } from "../config";
 
-const { fullName } = Astro.props;
 const today = new Date();
 ---
 
 <footer id="footer">
     <a href="#" class="icon arrow-up">Scroll to top</a>
-    <span>&copy; {fullName}, {today.getFullYear()}</span>
+    <span>&copy; {FOOTER_FULLNAME}, {today.getFullYear()}</span>
 </footer>
 
 <style lang="scss">
