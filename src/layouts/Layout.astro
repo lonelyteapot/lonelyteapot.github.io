@@ -7,6 +7,7 @@ import "normalize.css";
 import "@fontsource/work-sans";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/600.css";
+import "../styles/variables.css";
 import "../styles/icon_adjustments.css";
 import "../styles/input.scss";
 import { GOOGLE_ANALYTICS_ID } from "../config";
@@ -54,7 +55,6 @@ const IS_PRODUCTION = import.meta.env.PROD;
 
 <style lang="scss" is:global>
   @use "sass:color";
-  @import "../styles/variables.scss";
 
   html {
     scroll-behavior: smooth;
@@ -71,8 +71,9 @@ const IS_PRODUCTION = import.meta.env.PROD;
     column-gap: 0.75rem;
     min-height: 100vh;
     line-height: 1.2;
-    font-family: $content-font;
-    background-color: $background-color;
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--color-on-background);
   }
 
   main {
@@ -83,8 +84,8 @@ const IS_PRODUCTION = import.meta.env.PROD;
 
   section {
     // Adjust anchoring position for header height
-    padding-top: $header-height - 4px;
-    margin-top: -$header-height + 4px;
+    padding-top: calc(var(--header-height) - 4px);
+    margin-top: calc(4px - var(--header-height));
 
     > ul {
       display: flex;
@@ -103,7 +104,7 @@ const IS_PRODUCTION = import.meta.env.PROD;
   h4,
   h5,
   h6 {
-    font-family: $header-font;
+    font-family: var(--secondary-font);
     font-weight: 500;
   }
 
@@ -111,12 +112,11 @@ const IS_PRODUCTION = import.meta.env.PROD;
     text-align: center;
     margin: 1.5rem 0;
     font-size: 1.825rem;
-    color: color.scale($color-on-background, $alpha: -12%);
-    font-family: $content-font;
+    font-family: var(--primary-font);
   }
 
   h3 {
-    color: $secondary-color;
+    color: var(--secondary-color);
   }
 
   strong {

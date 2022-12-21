@@ -1,21 +1,16 @@
 @use "sass:color";
-@import "variables.scss";
 
 .input {
   display: grid;
   position: relative;
   padding: 0;
-  border-bottom: 0.125rem solid color.scale($color-on-canvas, $alpha: -50%);
+  border-bottom: 0.125rem solid var(--color-on-canvas);
   overflow: hidden;
   transition: background-color 200ms, border-bottom 200ms;
 
-  &:hover {
-    background-color: color.mix($canvas-color, $primary-color, 90%);
-  }
-
   &:hover,
   &:focus-within {
-    border-color: color.scale($color-on-canvas, $alpha: -15%);
+    border-color: var(--color-on-canvas);
   }
 
   textarea {
@@ -26,12 +21,13 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    color: color.scale(black, $alpha: -40%);
+    color: var(--color-on-canvas);
+    opacity: 60%;
     transition: top 200ms;
   }
 
   &:focus-within > .label {
-    color: $primary-color;
+    color: var(--primary-color);
   }
 
   input,

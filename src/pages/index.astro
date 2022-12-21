@@ -94,8 +94,6 @@ import Button from "../components/Button.astro";
 </Layout>
 
 <style is:global lang="scss">
-  @import "../styles/variables.scss";
-
   #skills {
     > ul {
       margin: 0;
@@ -129,7 +127,7 @@ import Button from "../components/Button.astro";
 
         span {
           text-align: center;
-          color: transparentize($color: $color-on-canvas, $amount: 0.25);
+          color: var(--color-on-canvas);
           font-size: 0.825rem;
           line-height: 1;
         }
@@ -138,7 +136,7 @@ import Button from "../components/Button.astro";
   }
 
   #software {
-    color: transparentize($color: $color-on-canvas, $amount: 0.35);
+    color: var(--color-on-canvas);
 
     > ul {
       margin: 0;
@@ -193,7 +191,7 @@ import Button from "../components/Button.astro";
         opacity: 0.6;
         font-variant: small-caps;
         text-transform: lowercase;
-        font-family: $header-font;
+        font-family: var(--secondary-font);
       }
 
       .keypoints {
@@ -221,7 +219,7 @@ import Button from "../components/Button.astro";
       .wrapper {
         border-radius: 6px;
         background-color: transparentize(black, 0.8);
-        box-shadow: $shadow-1;
+        box-shadow: var(--shadow);
         overflow: hidden;
       }
 
