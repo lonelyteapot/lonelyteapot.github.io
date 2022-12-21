@@ -10,5 +10,11 @@ export default defineConfig({
     vite: {
         plugins: [Yaml()],
     },
-    integrations: [partytown()],
+    integrations: [
+        partytown({
+            config: {
+                forward: ["dataLayer.push"],
+            },
+        }),
+    ],
 });
