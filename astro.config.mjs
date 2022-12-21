@@ -6,15 +6,15 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://astronaut.github.io",
-    vite: {
-        plugins: [Yaml()],
-    },
-    integrations: [
-        partytown({
-            config: {
-                forward: ["dataLayer.push"],
-            },
-        }),
-    ],
+  site: "https://astronaut.github.io",
+  vite: {
+    plugins: [Yaml()],
+  },
+  integrations: [
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+  ],
 });

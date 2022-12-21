@@ -2,55 +2,55 @@
 @import "variables.scss";
 
 .input {
-    display: grid;
-    position: relative;
-    padding: 0;
-    border-bottom: 0.125rem solid color.scale($color-on-canvas, $alpha: -50%);
-    overflow: hidden;
-    transition: background-color 200ms, border-bottom 200ms;
+  display: grid;
+  position: relative;
+  padding: 0;
+  border-bottom: 0.125rem solid color.scale($color-on-canvas, $alpha: -50%);
+  overflow: hidden;
+  transition: background-color 200ms, border-bottom 200ms;
 
-    &:hover {
-        background-color: color.mix($canvas-color, $primary-color, 90%);
+  &:hover {
+    background-color: color.mix($canvas-color, $primary-color, 90%);
+  }
+
+  &:hover,
+  &:focus-within {
+    border-color: color.scale($color-on-canvas, $alpha: -15%);
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: color.scale(black, $alpha: -40%);
+    transition: top 200ms;
+  }
+
+  &:focus-within > .label {
+    color: $primary-color;
+  }
+
+  input,
+  textarea {
+    border: none;
+    padding: 1rem;
+    padding-bottom: 0.75rem;
+    outline: none;
+    background-color: transparent;
+    transition: background-color 200ms;
+    z-index: 1;
+
+    &:not(:placeholder-shown),
+    &:focus,
+    &:valid {
+      + .label {
+        top: 4px;
+        font-size: 12px;
+      }
     }
-
-    &:hover,
-    &:focus-within {
-        border-color: color.scale($color-on-canvas, $alpha: -15%);
-    }
-
-    textarea {
-        resize: none;
-    }
-
-    .label {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        color: color.scale(black, $alpha: -40%);
-        transition: top 200ms;
-    }
-
-    &:focus-within > .label {
-        color: $primary-color;
-    }
-
-    input,
-    textarea {
-        border: none;
-        padding: 1rem;
-        padding-bottom: 0.75rem;
-        outline: none;
-        background-color: transparent;
-        transition: background-color 200ms;
-        z-index: 1;
-
-        &:not(:placeholder-shown),
-        &:focus,
-        &:valid {
-            + .label {
-                top: 4px;
-                font-size: 12px;
-            }
-        }
-    }
+  }
 }

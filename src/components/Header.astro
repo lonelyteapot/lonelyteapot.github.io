@@ -6,106 +6,106 @@ import { HEADER_TITLE, HEADER_TAGLINE, HEADER_USERNAME, SOCIAL_LINKS, NAV_ITEMS 
 ---
 
 <header>
-    <div id="intro">
-        <h1 class="name">{HEADER_TITLE}</h1>
-        <p class="title">{HEADER_TAGLINE}</p>
-        <div class="socials">
-            {SOCIAL_LINKS.map((item) => <HeaderSocialLink url={item.url} icon={item.icon} />)}
-        </div>
+  <div id="intro">
+    <h1 class="name">{HEADER_TITLE}</h1>
+    <p class="title">{HEADER_TAGLINE}</p>
+    <div class="socials">
+      {SOCIAL_LINKS.map((item) => <HeaderSocialLink url={item.url} icon={item.icon} />)}
     </div>
-    <div class="navbar">
-        <a class="logo" href="/">@{HEADER_USERNAME}</a>
-        <nav>
-            {NAV_ITEMS.map((item) => <HeaderNavLink url={item.url} title={item.title} />)}
-        </nav>
-    </div>
+  </div>
+  <div class="navbar">
+    <a class="logo" href="/">@{HEADER_USERNAME}</a>
+    <nav>
+      {NAV_ITEMS.map((item) => <HeaderNavLink url={item.url} title={item.title} />)}
+    </nav>
+  </div>
 </header>
 
 <style>
-    header {
-        grid-area: header;
-        display: grid;
-        grid-template:
-            ". intro ." 1fr
-            ".  nav  ." var(--header-height)
-            / 1fr minmax(auto, 900px) 1fr;
-        min-height: var(--full-header-height);
-        position: sticky;
-        top: calc(var(--header-height) - var(--full-header-height));
-        z-index: 10;
-        background-color: var(--color-primary);
-        box-shadow: 0 2px 5px rgb(0 0 0 / 26%);
-    }
+  header {
+    grid-area: header;
+    display: grid;
+    grid-template:
+      ". intro ." 1fr
+      ".  nav  ." var(--header-height)
+      / 1fr minmax(auto, 900px) 1fr;
+    min-height: var(--full-header-height);
+    position: sticky;
+    top: calc(var(--header-height) - var(--full-header-height));
+    z-index: 10;
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 5px rgb(0 0 0 / 26%);
+  }
 
-    .navbar {
-        grid-area: nav;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        overflow-y: hidden;
-        color: rgb(0 0 0 / 82%);
-    }
+  .navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    color: rgb(0 0 0 / 82%);
+  }
 
-    .navbar :global(a) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 16px;
-        transition-property: background-color;
-        transition-duration: 200ms;
-    }
+  .navbar :global(a) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 16px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
 
-    .navbar :global(a).active,
-    .navbar :global(a).hover {
-        background-color: rgb(0 0 0 / 9%);
-    }
+  .navbar :global(a).active,
+  .navbar :global(a).hover {
+    background-color: rgb(0 0 0 / 9%);
+  }
 
-    .logo {
-        order: 1;
-        padding: 0 12px;
-        font-family: "Work Sans", sans-serif;
-        font-size: 1.125rem;
-        color: inherit;
-        text-decoration: none;
-    }
+  .logo {
+    order: 1;
+    padding: 0 12px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.125rem;
+    color: inherit;
+    text-decoration: none;
+  }
 
-    nav {
-        display: flex;
-        white-space: nowrap;
-        height: 100%;
-        font-size: 14px;
-        font-family: var(--font-header);
-    }
+  nav {
+    display: flex;
+    white-space: nowrap;
+    height: 100%;
+    font-size: 14px;
+    font-family: var(--font-header);
+  }
 
-    #intro {
-        grid-area: intro;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 24px;
-        padding: 16px;
-        color: black;
-    }
+  #intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 16px;
+    color: black;
+  }
 
-    .name {
-        margin: 0 0 0 -8px;
-        line-height: 0.8;
-        font-size: min(10vw, 4.5rem);
-    }
+  .name {
+    margin: 0 0 0 -8px;
+    line-height: 0.8;
+    font-size: min(10vw, 4.5rem);
+  }
 
-    .title {
-        margin: 0;
-        font-size: 1.5rem;
-    }
+  .title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
 
-    .socials {
-        display: flex;
-        justify-content: space-between;
-        justify-self: stretch;
-        align-items: center;
-        align-self: flex-start;
-        gap: 1em;
-    }
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    justify-self: stretch;
+    align-items: center;
+    align-self: flex-start;
+    gap: 1em;
+  }
 </style>

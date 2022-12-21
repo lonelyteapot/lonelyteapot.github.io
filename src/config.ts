@@ -8,21 +8,21 @@ export const FOOTER_FULLNAME = "Dmitry Semenov";
 
 // Browse icons: https://icon-sets.iconify.design/
 export const SOCIAL_LINKS = [
-    {
-        url: "https://github.com/lonelyteapot",
-        icon: "mdi:github",
-    },
-    {
-        url: "https://t.me/lonelyteapot",
-        icon: "ic:baseline-telegram",
-    },
+  {
+    url: "https://github.com/lonelyteapot",
+    icon: "mdi:github",
+  },
+  {
+    url: "https://t.me/lonelyteapot",
+    icon: "ic:baseline-telegram",
+  },
 ];
 
 export const GOOGLE_ANALYTICS_ID = "G-4N4MCBCG3C";
 
 export const NAV_ITEMS = [
-    { title: "About", url: "/#" },
-    { title: "My Skills", url: "/#skills" },
-    { title: "My Software", url: "/#software" },
-    { title: "Contact Me", url: "/#contact-me" },
+  { title: "About", url: "/#" },
+  { title: "My Skills", url: "/#skills" },
+  { title: "My Software", url: "/#software" },
+  { title: "Contact Me", url: "/#contact-me" },
 ];
