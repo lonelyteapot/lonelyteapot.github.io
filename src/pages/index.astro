@@ -111,6 +111,10 @@ import skillCategories from "../../data/skills.yaml";
     @import "../styles/variables.scss";
 
     #skills {
+        > ul {
+            margin: 0;
+            padding: 0;
+        }
         > ul > li {
             display: grid;
             flex-basis: 300px;
@@ -149,6 +153,15 @@ import skillCategories from "../../data/skills.yaml";
 
     #software {
         color: transparentize($color: $color-on-canvas, $amount: 0.35);
+
+        > ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+        }
 
         .project {
             display: grid;

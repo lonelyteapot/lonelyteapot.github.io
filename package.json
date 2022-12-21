@@ -18,7 +18,8 @@
     "@fontsource/montserrat": "^4.5.13",
     "@fontsource/work-sans": "^4.5.12",
     "astro": "^1.7.2",
-    "astro-seo": "^0.6.1"
+    "astro-seo": "^0.6.1",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^4.0.1",
