@@ -1,4 +1,5 @@
 ---
+import { SEO } from "astro-seo";
 import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -16,25 +17,37 @@ import { GOOGLE_ANALYTICS_ID } from "../config";
 
 export interface Props {
     title: string;
+    description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
 const IS_PRODUCTION = import.meta.env.PROD;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
-    <!-- TODO Include prefix="og: https://ogp.me/ns#" -->
+<html lang="en" prefix="og: https://ogp.me/ns#">
     <head>
-        <!-- prettier-ignore -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content={Astro.generator} />
-        <!-- TODO Include SEO tags -->
+        <SEO
+            title={title}
+            description={description}
+            openGraph={{
+                basic: {
+                    title: title,
+                    type: "website",
+                    image: `${Astro.url.origin}/images/scheenshot.webp`,
+                },
+                optional: {
+                    description: description,
+                    locale: "en_US",
+                },
+            }}
+        />
         {IS_PRODUCTION && <GoogleAnalytics id={GOOGLE_ANALYTICS_ID} partytown />}
-        <title>{title}</title>
     </head>
     <body>
         <Header />
