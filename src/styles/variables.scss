@@ -31,8 +31,12 @@ $shadow-6: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
 $shadow-8: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
 
 html {
+    --font-header: #{$header-font};
+    --font-content: #{$content-font};
+
     --color-canvas: #{$canvas-color};
     --color-primary: #{$primary-color};
+    --color-secondary: #{$secondary-color};
 
     --shadow: #{$shadow-1};
     --shadow-md: #{$shadow-2};

@@ -6,6 +6,7 @@ import Card from "../components/Card.astro";
 import projects from "../../data/projects.yaml";
 // @ts-ignore;
 import skillCategories from "../../data/skills.yaml";
+import ProjectIconLink from "../components/ProjectIconLink.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -59,18 +60,12 @@ import skillCategories from "../../data/skills.yaml";
                                     </ul>
                                     {project.links && (
                                         <div class="links">
-                                            {project.links.map((link) => (
-                                                <a
-                                                    class:list={[
-                                                        "vertical-link",
-                                                        "icon",
-                                                        link.type,
-                                                    ]}
-                                                    href={link.href}
-                                                    target="_blank"
-                                                >
-                                                    <span>{link.text}</span>
-                                                </a>
+                                            {project.links.map((item) => (
+                                                <ProjectIconLink
+                                                    text={item.text}
+                                                    url={item.url}
+                                                    icon={item.icon}
+                                                />
                                             ))}
                                         </div>
                                     )}

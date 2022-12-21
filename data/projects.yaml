@@ -5,7 +5,6 @@
     - Runs on a custom <strong>Django</strong> backend
   stage: In development
 
-
 - name: HowLong
   description: A minimal mobile app that counts days between dates.
   keypoints:
@@ -14,16 +13,15 @@
     - Written in <strong>Kotlin</strong>
   stage: Deployed / Alpha
   links:
-    - type: github
+    - url: https://github.com/lonelyteapot/HowLong
       text: GitHub
-      href: https://github.com/lonelyteapot/HowLong
-    - type: download
+      icon: mdi:github
+    - url: https://github.com/lonelyteapot/HowLong/releases/latest
       text: Android APK
-      href: https://github.com/lonelyteapot/HowLong/releases/latest
+      icon: material-symbols:download
   images:
     - howlong_bright.webp
     - howlong_dark.webp
-
 
 - name: SteamyNotes
   description: A cloud-based note-keeping web app.
@@ -33,15 +31,14 @@
     - Powered by and hosted on <strong>Firebase</strong>
   stage: Deployed / Alpha
   links:
-    - type: github
+    - url: https://github.com/lonelyteapot/SteamyNotes
       text: GitHub
-      href: https://github.com/lonelyteapot/SteamyNotes
-    - type: website
+      icon: mdi:github
+    - url: https://steamy-notes.web.app
       text: Web App
-      href: https://steamy-notes.web.app
+      icon: material-symbols:open-in-new
   images:
     - steamynotes.webp
-
 
 - name: Just Dance
   description: A computer vision game that imitates Just Dance and Osu.
@@ -51,10 +48,9 @@
     - Built for <strong>Intel CV Summer Camp 2021</strong>
   stage: <span class="gray">Not for production</span>
   links:
-    - type: github
+    - url: https://github.com/Gravens/JustDance
       text: GitHub
-      href: https://github.com/Gravens/JustDance
-
+      icon: mdi:github
 
 - name: This Website
   keypoints:
@@ -63,6 +59,6 @@
     - Hosted on <strong>GitHub Pages</strong>
   stage: Deployed
   links:
-    - type: github
+    - url: https://github.com/lonelyteapot/lonelyteapot.github.io
       text: GitHub
-      href: https://github.com/lonelyteapot/lonelyteapot.github.io
+      icon: mdi:github
