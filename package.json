@@ -11,16 +11,7 @@
     "astro": "astro"
   },
   "prettier": {
-    "trailingComma": "es5",
-    "tabWidth": 4,
-    "overrides": [
-      {
-        "files": "*.json",
-        "options": {
-          "tabWidth": 2
-        }
-      }
-    ]
+    "trailingComma": "es5"
   },
   "dependencies": {
     "astro": "^1.7.2"

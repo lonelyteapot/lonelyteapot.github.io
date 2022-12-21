@@ -38,26 +38,14 @@ import skillCategories from "../../data/skills.yaml";
             <ul>
                 {
                     projects.map((project) => (
-                        <li
-                            class:list={[
-                                "project",
-                                "card",
-                                { narrow: !project.images },
-                            ]}
-                        >
+                        <li class:list={["project", "card", { narrow: !project.images }]}>
                             <div class="content">
                                 <header>
                                     <h3>{project.name}</h3>
-                                    <div
-                                        class="stage yellow"
-                                        set:html={project.stage}
-                                    />
+                                    <div class="stage yellow" set:html={project.stage} />
                                 </header>
                                 {project.description && (
-                                    <p
-                                        class="description"
-                                        set:html={project.description}
-                                    />
+                                    <p class="description" set:html={project.description} />
                                 )}
                                 <ul class="keypoints">
                                     {project.keypoints.map((keypoint) => (
@@ -68,11 +56,7 @@ import skillCategories from "../../data/skills.yaml";
                                     <div class="links">
                                         {project.links.map((link) => (
                                             <a
-                                                class:list={[
-                                                    "vertical-link",
-                                                    "icon",
-                                                    link.type,
-                                                ]}
+                                                class:list={["vertical-link", "icon", link.type]}
                                                 href={link.href}
                                                 target="_blank"
                                             >
@@ -86,10 +70,7 @@ import skillCategories from "../../data/skills.yaml";
                                 <div class="images">
                                     {project.images.map((image) => (
                                         <div class="wrapper">
-                                            <img
-                                                src={"/images/" + image}
-                                                alt="screenshot"
-                                            />
+                                            <img src={"/images/" + image} alt="screenshot" />
                                         </div>
                                     ))}
                                 </div>
@@ -103,17 +84,14 @@ import skillCategories from "../../data/skills.yaml";
             <h2>Contact me</h2>
             <form action="https://formspree.io/f/myyojnjw" method="POST">
                 <label class="input message card">
-                    <textarea name="message" placeholder=" " required
-                    ></textarea>
+                    <textarea name="message" placeholder=" " required></textarea>
                     <span class="label">Message</span>
                 </label>
                 <label class="input email card">
                     <input type="email" name="email" placeholder=" " required />
                     <span class="label">email@to-reply.to</span>
                 </label>
-                <button class="submit button icon send" type="submit"
-                    >Send</button
-                >
+                <button class="submit button icon send" type="submit">Send</button>
             </form>
         </section>
     </main>

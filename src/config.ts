@@ -1,7 +1,4 @@
-export const SOCIAL_LINKS = [
-    "https://github.com/lonelyteapot",
-    "https://t.me/lonelyteapot",
-];
+export const SOCIAL_LINKS = ["https://github.com/lonelyteapot", "https://t.me/lonelyteapot"];
 
 export const NAV_ITEMS = [
     { title: "About", url: "/#" },

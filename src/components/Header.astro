@@ -24,11 +24,7 @@ const { fullName, tagline, username } = Astro.props;
     <div id="header-row">
         <a id="header-logo" href="/">@{username}</a>
         <nav id="header-nav">
-            {
-                NAV_ITEMS.map((item) => (
-                    <HeaderNavLink url={item.url} title={item.title} />
-                ))
-            }
+            {NAV_ITEMS.map((item) => <HeaderNavLink url={item.url} title={item.title} />)}
         </nav>
     </div>
 </header>
