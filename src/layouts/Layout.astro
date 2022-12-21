@@ -1,0 +1,148 @@
+---
+import { SEO } from "astro-seo";
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "@fontsource/work-sans";
+import "@fontsource/montserrat/400.css";
+import "@fontsource/montserrat/600.css";
+import "../styles/reset.scss";
+import "../styles/button.scss";
+import "../styles/card.scss";
+import "../styles/divided-button.scss";
+import "../styles/icon.scss";
+import "../styles/input.scss";
+import "../styles/vertical-link.scss";
+import { GOOGLE_ANALYTICS_ID } from "../config";
+
+export interface Props {
+    title: string;
+    description?: string;
+}
+
+const { title, description } = Astro.props;
+
+const IS_PRODUCTION = import.meta.env.PROD;
+---
+
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+        <SEO
+            title={title}
+            description={description}
+            openGraph={{
+                basic: {
+                    title: title,
+                    type: "website",
+                    image: `${Astro.url.origin}/images/scheenshot.webp`,
+                },
+                optional: {
+                    description: description,
+                    locale: "en_US",
+                },
+            }}
+        />
+        {IS_PRODUCTION && <GoogleAnalytics id={GOOGLE_ANALYTICS_ID} partytown />}
+    </head>
+    <body>
+        <Header />
+        <slot />
+        <Footer />
+    </body>
+</html>
+
+<style lang="scss" is:global>
+    @use "sass:color";
+    @import "../styles/variables.scss";
+
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+    }
+
+    body {
+        display: grid;
+        grid-template:
+            "header header header" max-content
+            "  .     main    .   " auto
+            "  .    footer   .   " max-content
+            / 1fr minmax(auto, 900px) 1fr;
+        column-gap: 0.75rem;
+        min-height: 100vh;
+        line-height: 1.2;
+        font-family: $content-font;
+        background-color: $background-color;
+    }
+
+    main {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        // Adjust anchoring position for header height
+        padding-top: $header-height - 4px;
+        margin-top: -$header-height + 4px;
+
+        > ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+
+            > li {
+                flex: 1 1 100%;
+            }
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $header-font;
+        font-weight: 500;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 1.5rem 0;
+        font-size: 1.825rem;
+        color: color.scale($color-on-background, $alpha: -12%);
+        font-family: $content-font;
+    }
+
+    h3 {
+        color: $secondary-color;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .yellow {
+        color: #756303;
+    }
+
+    .green {
+        color: #29c785;
+    }
+
+    .gray {
+        color: #666;
+    }
+</style>
