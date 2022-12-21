@@ -6,7 +6,17 @@ export const HEADER_TAGLINE = "Software Developer";
 export const HEADER_USERNAME = "lonelyteapot";
 export const FOOTER_FULLNAME = "Dmitry Semenov";
 
-export const SOCIAL_LINKS = ["https://github.com/lonelyteapot", "https://t.me/lonelyteapot"];
+// Browse icons: https://icon-sets.iconify.design/
+export const SOCIAL_LINKS = [
+    {
+        url: "https://github.com/lonelyteapot",
+        icon: "mdi:github",
+    },
+    {
+        url: "https://t.me/lonelyteapot",
+        icon: "ic:baseline-telegram",
+    },
+];
 
 export const GOOGLE_ANALYTICS_ID = "G-4N4MCBCG3C";
 

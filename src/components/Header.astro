@@ -10,7 +10,7 @@ import { HEADER_TITLE, HEADER_TAGLINE, HEADER_USERNAME, SOCIAL_LINKS, NAV_ITEMS 
         <h1 class="name">{HEADER_TITLE}</h1>
         <p class="title">{HEADER_TAGLINE}</p>
         <div class="links">
-            {SOCIAL_LINKS.map((link) => <HeaderSocialLink link={link} />)}
+            {SOCIAL_LINKS.map((item) => <HeaderSocialLink url={item.url} icon={item.icon} />)}
         </div>
     </div>
     <div id="header-row">
