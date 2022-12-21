@@ -1,0 +1,11 @@
+[astro-icon="simple-icons:fastapi"] {
+    color: #05998b;
+}
+
+[astro-icon="vscode-icons:file-type-django"] {
+    transform: scale(1.3);
+}
+
+[astro-icon="vscode-icons:file-type-cpp3"] {
+    transform: scale(1.2);
+}

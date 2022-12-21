@@ -7,6 +7,7 @@ import projects from "../../data/projects.yaml";
 // @ts-ignore;
 import skillCategories from "../../data/skills.yaml";
 import ProjectIconLink from "../components/ProjectIconLink.astro";
+import { Icon } from "astro-iconify";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -22,11 +23,11 @@ import ProjectIconLink from "../components/ProjectIconLink.astro";
                                 <ul>
                                     {category.skills.map((skill) => (
                                         <li>
-                                            <img
-                                                src={"/icons/" + skill.icon}
-                                                alt="icon"
+                                            <Icon
                                                 width="40"
                                                 height="40"
+                                                color={skill.iconColor}
+                                                name={skill.icon}
                                             />
                                             <span>{skill.text}</span>
                                         </li>

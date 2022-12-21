@@ -1,41 +1,41 @@
 - category: Frontend Development
   skills:
     - text: Flutter
-      icon: flutter-logo.svg
+      icon: logos:flutter
     - text: Qt (QML)
-      icon: qt-logo.svg
+      icon: logos:qt
     - text: HTML, CSS, JS
-      icon: web-logo.svg
+      icon: vscode-icons:file-type-cssmap
     - text: Android SDK
-      icon: android-logo.svg
+      icon: logos:android-icon
 
 - category: Backend Development
   skills:
     - text: FastAPI
-      icon: fastapi-logo.svg
+      icon: simple-icons:fastapi
     - text: Django
-      icon: django-logo.svg
+      icon: vscode-icons:file-type-django
     - text: Firebase
-      icon: firebase-logo.svg
+      icon: logos:firebase
     - text: Google Cloud Platform
-      icon: google-cloud-logo.svg
+      icon: logos:google-cloud
 
 - category: Programming Languages
   skills:
     - text: Python
-      icon: python-logo.svg
+      icon: logos:python
     - text: C++
-      icon: cpp-logo.svg
+      icon: vscode-icons:file-type-cpp3
     - text: Dart
-      icon: dart-logo.svg
+      icon: logos:dart
     - text: Java, Kotlin
-      icon: java-logo.svg
+      icon: logos:java
 
 - category: Development Workflows
   skills:
     - text: Git version control
-      icon: git-logo.svg
+      icon: logos:git-icon
     - text: Docker containers
-      icon: docker-logo.svg
+      icon: logos:docker-icon
     - text: GitHub Actions CI/CD
-      icon: github-actions-logo.svg
+      icon: logos:github-actions
