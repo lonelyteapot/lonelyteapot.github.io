@@ -4,6 +4,7 @@ import HeaderSocialLink from "./HeaderSocialLink.astro";
 
 // @ts-ignore
 import { navLinks } from "../../data/navigation.yaml";
+import { SOCIAL_LINKS } from "../config";
 
 export interface Props {
     fullName: string;
@@ -12,8 +13,6 @@ export interface Props {
 }
 
 const { fullName, tagline, username } = Astro.props;
-
-const socials = [];
 ---
 
 <header id="header">
@@ -21,7 +20,7 @@ const socials = [];
         <h1 class="name">{fullName}</h1>
         <p class="title">{tagline}</p>
         <div class="links">
-            {socials.map((link) => <HeaderSocialLink link={link} />)}
+            {SOCIAL_LINKS.map((link) => <HeaderSocialLink link={link} />)}
         </div>
     </div>
     <div id="header-row">
