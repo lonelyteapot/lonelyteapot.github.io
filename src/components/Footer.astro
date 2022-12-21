@@ -11,3 +11,33 @@ const today = new Date();
     <a href="#" class="icon arrow-up">Scroll to top</a>
     <span>&copy; {fullName}, {today.getFullYear()}</span>
 </footer>
+
+<style lang="scss">
+    @use "sass:color";
+    @import "../styles/variables.scss";
+
+    #footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        min-height: 3rem;
+        color: color.scale($color-on-background, $alpha: -80%);
+        font-size: 14px;
+        letter-spacing: 0.5px;
+
+        .icon {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 8px;
+            transition: 200ms color;
+            color: color.scale($color-on-background, $alpha: -70%);
+
+            &:hover {
+                color: $color-on-background;
+            }
+        }
+    }
+</style>

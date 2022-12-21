@@ -24,3 +24,22 @@ if (!title || !cls) throw Error;
 <a class:list={["icon", cls]} href={link} target="_blank">
     <span>{title}</span>
 </a>
+
+<style lang="scss">
+    a {
+        display: flex;
+        align-items: center;
+        opacity: 0.75;
+        transition: opacity 200ms;
+
+        span {
+            font-size: 0;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+            outline: none;
+        }
+    }
+</style>

@@ -1,6 +1,13 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import "../styles/reset.scss";
+import "../styles/button.scss";
+import "../styles/card.scss";
+import "../styles/divided-button.scss";
+import "../styles/icon.scss";
+import "../styles/input.scss";
+import "../styles/vertical-link.scss";
 
 export interface Props {
     title: string;
@@ -40,17 +47,94 @@ const { title } = Astro.props;
         <Footer fullName="Dmitry Semenov" />
     </body>
 </html>
-<style is:global>
-    :root {
-        --accent: 124, 58, 237;
-        --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-    }
+
+<style lang="scss" is:global>
+    @use "sass:color";
+    @import "../styles/variables.scss";
+
     html {
-        font-family: system-ui, sans-serif;
-        background-color: #f6f6f6;
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
     }
-    code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-            Bitstream Vera Sans Mono, Courier New, monospace;
+
+    body {
+        display: grid;
+        grid-template:
+            "header header header" max-content
+            "  .     main    .   " auto
+            "  .    footer   .   " max-content
+            / 1fr minmax(auto, 900px) 1fr;
+        column-gap: 0.75rem;
+        min-height: 100vh;
+        line-height: 1.2;
+        font-family: $content-font;
+        background-color: $background-color;
+    }
+
+    main {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        // Adjust anchoring position for header height
+        padding-top: $header-height - 4px;
+        margin-top: -$header-height + 4px;
+
+        > ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+
+            > li {
+                flex: 1 1 100%;
+            }
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $header-font;
+        font-weight: 500;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 1.5rem 0;
+        font-size: 1.825rem;
+        color: color.scale($color-on-background, $alpha: -12%);
+        font-family: $content-font;
+    }
+
+    h3 {
+        color: $secondary-color;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .yellow {
+        color: #756303;
+    }
+
+    .green {
+        color: #29c785;
+    }
+
+    .gray {
+        color: #666;
     }
 </style>
