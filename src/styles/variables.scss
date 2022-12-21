@@ -43,4 +43,7 @@ html {
     --shadow-lg: #{$shadow-4};
     --shadow-xl: #{$shadow-6};
     --shadow-2xl: #{$shadow-8};
+
+    --header-height: #{$header-height};
+    --full-header-height: #{$full-header-height};
 }
