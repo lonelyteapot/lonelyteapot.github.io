@@ -1,4 +1,5 @@
 ---
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/reset.scss";
@@ -8,18 +9,22 @@ import "../styles/divided-button.scss";
 import "../styles/icon.scss";
 import "../styles/input.scss";
 import "../styles/vertical-link.scss";
+import { GOOGLE_ANALYTICS_ID } from "../config";
 
 export interface Props {
     title: string;
 }
 
 const { title } = Astro.props;
+
+const IS_PRODUCTION = import.meta.env.PROD;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <!-- TODO Include prefix="og: https://ogp.me/ns#" -->
     <head>
+        <!-- prettier-ignore -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +43,7 @@ const { title } = Astro.props;
         />
         <!-- End Google Fonts -->
         <!-- TODO Include SEO tags -->
-        <!-- TODO Include Google Analytics -->
+        {IS_PRODUCTION && <GoogleAnalytics id={GOOGLE_ANALYTICS_ID} partytown />}
         <title>{title}</title>
     </head>
     <body>

@@ -14,6 +14,7 @@
     "trailingComma": "es5"
   },
   "dependencies": {
+    "@astrojs/partytown": "^1.0.2",
     "astro": "^1.7.2"
   },
   "devDependencies": {

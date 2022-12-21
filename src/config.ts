@@ -7,6 +7,8 @@ export const FOOTER_FULLNAME = "Dmitry Semenov";
 
 export const SOCIAL_LINKS = ["https://github.com/lonelyteapot", "https://t.me/lonelyteapot"];
 
+export const GOOGLE_ANALYTICS_ID = "G-4N4MCBCG3C";
+
 export const NAV_ITEMS = [
     { title: "About", url: "/#" },
     { title: "My Skills", url: "/#skills" },
