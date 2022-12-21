@@ -2,6 +2,9 @@
 import HeaderNavLink from "./HeaderNavLink.astro";
 import HeaderSocialLink from "./HeaderSocialLink.astro";
 
+// @ts-ignore
+import { navLinks } from "../../data/navigation.yaml";
+
 export interface Props {
     fullName: string;
     tagline: string;
@@ -11,7 +14,6 @@ export interface Props {
 const { fullName, tagline, username } = Astro.props;
 
 const socials = [];
-const navLinks = [];
 ---
 
 <header id="header">

@@ -1,0 +1,9 @@
+navLinks:
+    - title: About
+      url: /#
+    - title: My Skills
+      url: /#skills
+    - title: My Software
+      url: /#software
+    - title: Contact Me
+      url: /#contact-me
