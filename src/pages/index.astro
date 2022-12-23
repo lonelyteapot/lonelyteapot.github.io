@@ -5,10 +5,9 @@ import Card from "../components/Card.astro";
 // @ts-ignore;
 import projects from "../../data/projects.yaml";
 // @ts-ignore;
-import skillCategories from "../../data/skills.yaml";
-import ProjectIconLink from "../components/ProjectIconLink.astro";
-import { Icon } from "astro-iconify";
+import ProjectIconLink from "../components/index_page/ProjectIconLink.astro";
 import Button from "../components/Button.astro";
+import Skill from "../components/index_page/Skill.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -19,25 +18,38 @@ import Button from "../components/Button.astro";
       <p class="nickname">@lonelyteapot</p>
     </section>
     <section id="skills">
-      <h2>My Skills & Tech Stack</h2>
+      <h2>My Tech Stack</h2>
       <ul>
-        {
-          skillCategories.map((category) => (
-            <li>
-              <Card>
-                <h3>{category.category}</h3>
-                <ul>
-                  {category.skills.map((skill) => (
-                    <li>
-                      <Icon width="40" height="40" color={skill.iconColor} name={skill.icon} />
-                      <span>{skill.text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-            </li>
-          ))
-        }
+        <li class="skill_category">
+          <h3>Backend Development</h3>
+          <ul class="skills">
+            <Skill icon="starlite">Starlite</Skill>
+            <Skill icon="simple-icons:fastapi" iconColor="#05998b">FastAPI</Skill>
+            <Skill icon="simple-icons:flask" iconColor="white">Flask</Skill>
+            <Skill icon="logos:firebase">Firebase</Skill>
+            <Skill icon="logos:google-cloud">Google Cloud</Skill>
+          </ul>
+        </li>
+        <li class="skill_category">
+          <h3>Frontend Development</h3>
+          <ul class="skills">
+            <Skill icon="logos:flutter">Flutter</Skill>
+            <Skill icon="vscode-icons:file-type-astro">Astro</Skill>
+            <Skill icon="logos:vue">Vue</Skill>
+            <Skill icon="logos:qt">Qt</Skill>
+            <Skill icon="logos:android-icon">Android</Skill>
+          </ul>
+        </li>
+        <li class="skill_category">
+          <h3>Programming Languages</h3>
+          <ul class="skills">
+            <Skill icon="logos:dart">Dart</Skill>
+            <Skill icon="logos:python">Python</Skill>
+            <Skill icon="logos:javascript">JavaScript</Skill>
+            <Skill icon="vscode-icons:file-type-cpp3">C++</Skill>
+            <Skill icon="logos:java">Java, Kotlin</Skill>
+          </ul>
+        </li>
       </ul>
     </section>
     <section id="software">
@@ -99,6 +111,10 @@ import Button from "../components/Button.astro";
 </Layout>
 
 <style is:global lang="scss">
+  main {
+    gap: 6rem;
+  }
+
   #about {
     height: 50vh;
     text-align: center;
@@ -132,45 +148,27 @@ import Button from "../components/Button.astro";
     font-size: 1.25rem;
   }
 
-  #skills {
-    > ul {
-      margin: 0;
-      padding: 0;
-    }
-    > ul > li {
-      display: grid;
-      flex-basis: 300px;
-    }
+  #skills > ul {
+    list-style: none;
+    margin: 1.5rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+  }
 
-    .card {
-      h3 {
-        text-align: center;
-        font-size: 1.375rem;
-      }
+  #skills li.skill_category h3 {
+    font-size: 1.25rem;
+  }
 
-      ul {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-        // display: flex;
-        // justify-content: space-between;
-        gap: 0.25rem;
-      }
-
-      li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.375rem;
-
-        span {
-          text-align: center;
-          color: var(--color-on-canvas);
-          font-size: 0.825rem;
-          line-height: 1;
-        }
-      }
-    }
+  #skills ul.skills {
+    list-style: none;
+    margin: 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   #software {
