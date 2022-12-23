@@ -1,7 +1,7 @@
 ---
 import { SEO } from "astro-seo";
 import GoogleAnalytics from "../components/GoogleAnalytics.astro";
-import Header from "../components/Header.astro";
+import Header from "../components/header/Header.astro";
 import Footer from "../components/Footer.astro";
 import "normalize.css";
 import "@fontsource/work-sans";
@@ -67,7 +67,7 @@ const IS_PRODUCTION = import.meta.env.PROD;
       "header header header" max-content
       "  .     main    .   " auto
       "  .    footer   .   " max-content
-      / 1fr minmax(auto, 900px) 1fr;
+      / 1fr minmax(auto, var(--max-content-width)) 1fr;
     column-gap: 0.75rem;
     min-height: 100vh;
     line-height: 1.2;

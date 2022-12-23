@@ -9,25 +9,33 @@ export interface Props {
 const { url, icon } = Astro.props;
 ---
 
-<a href={url} target="_blank">
-  <Icon size="32" name={icon} />
-  <span>{url}</span>
-</a>
+<li>
+  <a href={url} target="_blank">
+    <Icon size="32" name={icon} />
+    <span>{url}</span>
+  </a>
+</li>
 
 <style>
+  li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
   a {
-    display: flex;
-    align-items: center;
-    opacity: 0.75;
-    transition: opacity 200ms;
     color: inherit;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    opacity: 0.85;
+    transition: opacity 200ms;
   }
 
   a:hover,
   a:focus {
     opacity: 1;
-    outline: none;
   }
 
   span {

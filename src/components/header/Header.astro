@@ -1,0 +1,61 @@
+---
+import NavItem from "./NavItem.astro";
+import SocialLink from "./SocialLink.astro";
+---
+
+<header>
+  <nav>
+    <ul class="nav">
+      <NavItem title="About" url="/#" />
+      <NavItem title="Skills" url="/#skills" />
+      <NavItem title="Software" url="/#software" />
+      <NavItem title="Contact me" url="/#contact-me" />
+    </ul>
+  </nav>
+  <div>
+    <ul class="social">
+      <SocialLink url="https://t.me/lonelyteapot" icon="ic:baseline-telegram" />
+      <SocialLink url="https://github.com/lonelyteapot" icon="mdi:github" />
+    </ul>
+  </div>
+</header>
+
+<style>
+  header {
+    grid-area: header;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 calc(50% - var(--max-content-width) / 2);
+    background: var(--background-color);
+    opacity: 94%;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .nav {
+    display: flex;
+    white-space: nowrap;
+    height: 100%;
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    justify-self: stretch;
+    align-items: center;
+    padding-right: 0.5rem;
+  }
+</style>

@@ -17,6 +17,5 @@ html {
   --shadow-xl: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
   --shadow-2xl: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
 
-  --header-height: 60px;
-  --full-header-height: min(50vh, 80vw);
+  --max-content-width: 900px;
 }
