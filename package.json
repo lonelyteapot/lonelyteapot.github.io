@@ -22,7 +22,8 @@
     "astro-iconify": "^1.2.0",
     "astro-seo": "^0.6.1",
     "normalize.css": "^8.0.1",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.3",
+    "svgo": "^3.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^4.0.1",
