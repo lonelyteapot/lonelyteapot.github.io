@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-iconify";
+
+export interface Props {
+  icon: string;
+  iconColor?: string;
+}
+
+const { icon, iconColor } = Astro.props;
+---
+
+<li class="skill">
+  <span><slot /></span>
+  <Icon name={icon} color={iconColor} size="34" />
+</li>
+
+<style>
+  li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: 0.75em;
+  }
+
+  span {
+    text-align: center;
+    color: var(--color-on-canvas);
+    margin-top: 6px;
+  }
+</style>

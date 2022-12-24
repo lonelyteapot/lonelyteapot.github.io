@@ -5,10 +5,22 @@ import Yaml from "@rollup/plugin-yaml";
 import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
+import image from "@astrojs/image";
+
+// https://astro.build/config
 export default defineConfig({
-    site: "https://astronaut.github.io",
-    vite: {
-        plugins: [Yaml()],
-    },
-    integrations: [partytown()],
+  site: "https://astronaut.github.io",
+  vite: {
+    plugins: [Yaml()],
+  },
+  integrations: [
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+  ],
 });
