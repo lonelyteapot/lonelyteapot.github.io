@@ -2,7 +2,7 @@
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
-import Skill from "../components/index_page/Skill.astro";
+import SkillsSection from "../components/index_page/SkillsSection.astro";
 import ProjectsSection from "../components/index_page/ProjectsSection.astro";
 ---
 
@@ -13,41 +13,7 @@ import ProjectsSection from "../components/index_page/ProjectsSection.astro";
       <p class="tagline">Software Developer</p>
       <p class="nickname">@lonelyteapot</p>
     </section>
-    <section id="skills">
-      <h2>My Tech Stack</h2>
-      <ul>
-        <li class="skill_category">
-          <h3>Backend Development</h3>
-          <ul class="skills">
-            <Skill icon="starlite">Starlite</Skill>
-            <Skill icon="simple-icons:fastapi" iconColor="#05998b">FastAPI</Skill>
-            <Skill icon="simple-icons:flask" iconColor="white">Flask</Skill>
-            <Skill icon="logos:firebase">Firebase</Skill>
-            <Skill icon="logos:google-cloud">Google Cloud</Skill>
-          </ul>
-        </li>
-        <li class="skill_category">
-          <h3>Frontend Development</h3>
-          <ul class="skills">
-            <Skill icon="logos:flutter">Flutter</Skill>
-            <Skill icon="vscode-icons:file-type-astro">Astro</Skill>
-            <Skill icon="logos:vue">Vue</Skill>
-            <Skill icon="logos:qt">Qt</Skill>
-            <Skill icon="logos:android-icon">Android</Skill>
-          </ul>
-        </li>
-        <li class="skill_category">
-          <h3>Programming Languages</h3>
-          <ul class="skills">
-            <Skill icon="logos:dart">Dart</Skill>
-            <Skill icon="logos:python">Python</Skill>
-            <Skill icon="logos:javascript">JavaScript</Skill>
-            <Skill icon="vscode-icons:file-type-cpp3">C++</Skill>
-            <Skill icon="logos:java">Java, Kotlin</Skill>
-          </ul>
-        </li>
-      </ul>
-    </section>
+    <SkillsSection />
     <ProjectsSection />
     <section id="contact-me">
       <h2>Contact me</h2>
@@ -102,29 +68,6 @@ import ProjectsSection from "../components/index_page/ProjectsSection.astro";
     grid-area: nickname;
     margin: 0 0 0 0;
     font-size: 1.25rem;
-  }
-
-  #skills > ul {
-    list-style: none;
-    margin: 1.5rem;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3rem;
-  }
-
-  #skills li.skill_category h3 {
-    font-size: 1.25rem;
-  }
-
-  #skills ul.skills {
-    list-style: none;
-    margin: 0 2rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
   }
 
   #contact-me form {
