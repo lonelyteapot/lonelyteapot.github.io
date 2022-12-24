@@ -1,0 +1,207 @@
+---
+import ProjectIconLink from "./ProjectIconLink.astro";
+import { Image } from "@astrojs/image/components";
+---
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <ul>
+    <li class="project">
+      <h3>Bustracker</h3>
+      <div class="stage">In development</div>
+      <p class="description">
+        A platform about mass transit navigation. Plan your route and track public transport in real
+        time.
+      </p>
+      <ul class="keypoints">
+        <li>Built with <strong>Flutter</strong> UI framework</li>
+        <li>Runs on a custom <strong>Django</strong> backend</li>
+      </ul>
+    </li>
+    <li class="project">
+      <h3>HowLong</h3>
+      <div class="stage">Deployed / Alpha</div>
+      <p class="description">A minimal mobile app that counts days between dates.</p>
+      <ul class="keypoints">
+        <li>Clean & Intuitive</li>
+        <li>Built with <strong>Android SDK</strong></li>
+        <li>Written in <strong>Kotlin</strong></li>
+      </ul>
+      <div class="links">
+        <ProjectIconLink
+          text="GitHub"
+          url="https://github.com/lonelyteapot/HowLong"
+          icon="mdi:github"
+        />
+        <ProjectIconLink
+          text="Android APK"
+          url="https://github.com/lonelyteapot/HowLong/releases/latest"
+          icon="material-symbols:download"
+        />
+      </div>
+      <div class="images">
+        <Image
+          src={import("../../images/howlong_bright.webp")}
+          alt="[project screenshot]"
+          width="350"
+        />
+        <Image
+          src={import("../../images/howlong_dark.webp")}
+          alt="[project screenshot]"
+          width="350"
+        />
+      </div>
+    </li>
+    <li class="project">
+      <h3>SteamyNotes</h3>
+      <div class="stage">Deployed / Alpha</div>
+      <p class="description">A cloud-based note-keeping web app.</p>
+      <ul class="keypoints">
+        <li>Stores notes in the cloud, tied to your Google account</li>
+        <li>Built cross-platform with <strong>Flutter</strong></li>
+        <li>Powered by and hosted on <strong>Firebase</strong></li>
+      </ul>
+      <div class="links">
+        <ProjectIconLink
+          text="GitHub"
+          url="https://github.com/lonelyteapot/SteamyNotes"
+          icon="mdi:github"
+        />
+        <ProjectIconLink
+          text="Web App"
+          url="https://steamy-notes.web.app"
+          icon="material-symbols:open-in-new"
+        />
+      </div>
+      <div class="images">
+        <Image
+          src={import("../../images/steamynotes.webp")}
+          alt="[project screenshot]"
+          width="700"
+        />
+      </div>
+    </li>
+    <li class="project">
+      <h3>Just Dance</h3>
+      <div class="stage">Not for production</div>
+      <p class="description">A computer vision game that imitates Just Dance and Osu.</p>
+      <ul class="keypoints">
+        <li>
+          Detects body parts on a real-time video feed using neural networks from <strong
+            >OpenModelZoo</strong
+          > & <strong>MediaPipe</strong>
+        </li>
+        <li>Built with <strong>OpenVINO</strong> toolkit</li>
+        <li>Built for <strong>Intel CV Summer Camp 2021</strong></li>
+      </ul>
+      <div class="links">
+        <ProjectIconLink
+          text="GitHub"
+          url="https://github.com/Gravens/JustDance"
+          icon="mdi:github"
+        />
+      </div>
+    </li>
+    <li class="project">
+      <h3>This Website</h3>
+      <div class="stage">Deployed</div>
+      <p class="description">A computer vision game that imitates Just Dance and Osu.</p>
+      <ul class="keypoints">
+        <li>Built with <strong>HTML</strong> &amp; <strong>SASS</strong></li>
+        <li>Statically generated with <strong>Jekyll</strong></li>
+        <li>Hosted on <strong>GitHub Pages</strong></li>
+      </ul>
+      <div class="links">
+        <ProjectIconLink
+          text="GitHub"
+          url="https://github.com/lonelyteapot/lonelyteapot.github.io"
+          icon="mdi:github"
+        />
+      </div>
+    </li>
+  </ul>
+</section>
+
+<style>
+  section > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project {
+    display: grid;
+    grid-template:
+      "header links  images" auto
+      " descr descr  images" auto
+      "points points images" 1fr
+      / 1fr auto calc(50% - 1.5rem);
+    margin: 3rem 0;
+    width: 100%;
+    gap: 0 3rem;
+  }
+
+  .project:nth-child(2n) {
+    grid-template:
+      "images header links " auto
+      "images  descr descr " auto
+      "images points points" 1fr
+      / calc(50% - 1.5rem) 1fr auto;
+  }
+
+  @media (max-width: 768px) {
+    .project:nth-child(1n) {
+      grid-template:
+        "header links " auto
+        " descr descr " auto
+        "points points" auto
+        "images images" 1fr
+        / 1fr auto;
+    }
+
+    .images {
+      margin: 1.5rem 1rem 0;
+    }
+  }
+
+  h3 {
+    grid-area: header;
+    margin: 0.75rem 0;
+    font-size: 1.75rem;
+  }
+
+  .stage {
+    display: none;
+  }
+
+  p {
+    grid-area: descr;
+  }
+
+  .keypoints {
+    grid-area: points;
+    list-style: disc;
+  }
+
+  .links {
+    grid-area: header;
+    justify-self: right;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .images {
+    grid-area: images;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  }
+</style>

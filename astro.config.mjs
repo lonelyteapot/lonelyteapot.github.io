@@ -5,6 +5,9 @@ import Yaml from "@rollup/plugin-yaml";
 import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
+import image from "@astrojs/image";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://astronaut.github.io",
   vite: {
@@ -15,6 +18,9 @@ export default defineConfig({
       config: {
         forward: ["dataLayer.push"],
       },
+    }),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
     }),
   ],
 });
