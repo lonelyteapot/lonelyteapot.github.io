@@ -2,6 +2,7 @@ html {
   --primary-color: #29c785;
   --secondary-color: #29c785;
   --background-color: #222222;
+  --background-color-opaque: #222222ee;
   --canvas-color: #222222;
   --color-on-primary: #232729;
   --color-on-secondary: #ffffff;
