@@ -1,29 +1,28 @@
 import { defineConfig } from "astro/config";
-import partytown from "@astrojs/partytown";
-import yaml from "@rollup/plugin-yaml";
-import icon from "astro-icon";
+import PartytownPlugin from "@astrojs/partytown";
+import YamlPlugin from "@rollup/plugin-yaml";
+import IconPlugin from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://lonelyteapot.github.io/",
   vite: {
-    plugins: [
-      yaml(),
-    ],
+    plugins: [YamlPlugin()],
   },
   integrations: [
-    partytown({
+    PartytownPlugin({
       config: {
         forward: ["dataLayer.push"],
       },
     }),
-    icon({
+    IconPlugin({
       include: {
         mdi: ["*"],
         ic: ["*"],
         logos: ["*"],
         "material-symbols": ["*"],
         "simple-icons": ["*"],
+        "skill-icons": ["*"],
         "vscode-icons": ["*"],
       },
     }),
