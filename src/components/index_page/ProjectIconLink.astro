@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-iconify";
+import { Icon } from "astro-icon/components";
 
 export interface Props {
   text: string;
@@ -11,7 +11,7 @@ const { text, url, icon } = Astro.props;
 ---
 
 <a href={url} target="_blank">
-  <Icon size="20" name={icon} />
+  <Icon size={20} name={icon} />
   <span>{text}</span>
 </a>
 

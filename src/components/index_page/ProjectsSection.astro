@@ -1,6 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import ProjectIconLink from "./ProjectIconLink.astro";
-import { Image } from "@astrojs/image/components";
+import howlongBrightImage from "../../images/howlong_bright.webp";
+import howlongDarkImage from "../../images/howlong_dark.webp";
+import steamynotesImage from "../../images/steamynotes.webp";
 ---
 
 <section id="projects">
@@ -46,16 +49,8 @@ import { Image } from "@astrojs/image/components";
         />
       </div>
       <div class="images">
-        <Image
-          src={import("../../images/howlong_bright.webp")}
-          alt="[project screenshot]"
-          width="350"
-        />
-        <Image
-          src={import("../../images/howlong_dark.webp")}
-          alt="[project screenshot]"
-          width="350"
-        />
+        <Image src={howlongBrightImage} alt="project screenshot" width="350" />
+        <Image src={howlongDarkImage} alt="project screenshot" width="350" />
       </div>
     </li>
     <li class="project">
@@ -80,11 +75,7 @@ import { Image } from "@astrojs/image/components";
         />
       </div>
       <div class="images">
-        <Image
-          src={import("../../images/steamynotes.webp")}
-          alt="[project screenshot]"
-          width="700"
-        />
+        <Image src={steamynotesImage} alt="project screenshot" width="700" />
       </div>
     </li>
     <li class="project">

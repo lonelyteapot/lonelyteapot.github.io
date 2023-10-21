@@ -1,17 +1,15 @@
 import { defineConfig } from "astro/config";
-import Yaml from "@rollup/plugin-yaml";
-
-// https://astro.build/config
 import partytown from "@astrojs/partytown";
-
-// https://astro.build/config
-import image from "@astrojs/image";
+import yaml from "@rollup/plugin-yaml";
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astronaut.github.io",
+  site: "https://lonelyteapot.github.io/",
   vite: {
-    plugins: [Yaml()],
+    plugins: [
+      yaml(),
+    ],
   },
   integrations: [
     partytown({
@@ -19,8 +17,15 @@ export default defineConfig({
         forward: ["dataLayer.push"],
       },
     }),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
+    icon({
+      include: {
+        mdi: ["*"],
+        ic: ["*"],
+        logos: ["*"],
+        "material-symbols": ["*"],
+        "simple-icons": ["*"],
+        "vscode-icons": ["*"],
+      },
     }),
   ],
 });

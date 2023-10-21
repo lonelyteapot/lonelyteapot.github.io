@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-iconify";
+import { Icon } from "astro-icon/components";
 import { FOOTER_FULLNAME } from "../config";
 
 const today = new Date();
@@ -7,7 +7,7 @@ const today = new Date();
 
 <footer>
   <a href="#">
-    <Icon size="32" name="material-symbols:keyboard-double-arrow-up-rounded" />
+    <Icon size={32} name="material-symbols:keyboard-double-arrow-up-rounded" />
     <span>Scroll to top</span>
   </a>
   <span class="copyright">&copy; {FOOTER_FULLNAME}, {today.getFullYear()}</span>
