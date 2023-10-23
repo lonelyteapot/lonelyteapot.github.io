@@ -1,18 +1,18 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import Layout from "../layouts/Layout.astro";
-import SkillsSection from "../components/index_page/SkillsSection.astro";
-import ProjectsSection from "../components/index_page/ProjectsSection.astro";
-import AboutSection from "../components/index_page/AboutSection.astro";
-import ContactMeSection from "../components/index_page/ContactMeSection.astro";
+import Skills from "../sections/Skills.astro";
+import Projects from "../sections/Projects.astro";
+import About from "../sections/About.astro";
+import ContactMe from "../sections/ContactMe.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <main>
-    <AboutSection />
-    <SkillsSection />
-    <ProjectsSection />
-    <ContactMeSection />
+    <About />
+    <Skills />
+    <Projects />
+    <ContactMe />
   </main>
 </Layout>
 
