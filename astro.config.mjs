@@ -1,21 +1,22 @@
 import { defineConfig } from "astro/config";
-import PartytownPlugin from "@astrojs/partytown";
-import YamlPlugin from "@rollup/plugin-yaml";
-import IconPlugin from "astro-icon";
+import partytown from "@astrojs/partytown";
+import yaml from "@rollup/plugin-yaml";
+import icon from "astro-icon";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://lonelyteapot.github.io/",
   vite: {
-    plugins: [YamlPlugin()],
+    plugins: [yaml()],
   },
   integrations: [
-    PartytownPlugin({
+    partytown({
       config: {
         forward: ["dataLayer.push"],
       },
     }),
-    IconPlugin({
+    icon({
       // Individual icons are specified to speed up build times
       include: {
         bxl: ["flask"],
@@ -27,5 +28,6 @@ export default defineConfig({
         "skill-icons": ["typescript"],
       },
     }),
+    tailwind(),
   ],
 });
