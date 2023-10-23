@@ -10,21 +10,18 @@ import steamynotesImage from "../images/steamynotes.webp";
   <h2>Projects I made</h2>
   <ul>
     <li class="project">
-      <h3>Transit at Hand</h3>
+      <h3>Open Transit</h3>
       <div class="stage">In development</div>
-      <p class="description">Provider of global public transportation data.</p>
+      <p class="description">Global provider of public transportation data.</p>
       <ul class="keypoints">
-        <li>
-          Static and realtime transit data &mdash; routes, stops, continuous location updates and
-          arrival predictions
-        </li>
-        <li>Easy-to-use front-end application</li>
-        <li>Easy-to-consume GraphQL API</li>
-        <li>Data collected from trusted sources as well as communty-made</li>
-        <li>Advanced navigation and prediction algorithms</li>
+        <li>Growing database of public transportation data</li>
+        <li>Real-time updates (vehicle locations, arrival predictions)</li>
+        <li>Easy-to-use cross-platform app for passengers</li>
+        <li>Free GraphQL API for developers</li>
+        <li>Data sourced from trusted organizations and the communty</li>
       </ul>
       <div class="links">
-        <ProjectIconLink text="GitHub" url="https://github.com/transit-at-hand" icon="mdi:github" />
+        <ProjectIconLink text="GitHub" url="https://github.com/lonelyteapot/open-transit" icon="mdi:github" />
       </div>
     </li>
     <li class="project">
@@ -56,9 +53,12 @@ import steamynotesImage from "../images/steamynotes.webp";
     <li class="project">
       <h3>SteamyNotes</h3>
       <div class="stage">Deployed / Alpha</div>
-      <p class="description">A cloud-based note-keeping web app.</p>
+      <p class="description">
+        A cloud-based note-keeping web app.
+        I built it for learning Flutter.
+      </p>
       <ul class="keypoints">
-        <li>Stores notes in the cloud, tied to your Google account</li>
+        <li>Stores notes in the cloud, tied to a Google account</li>
         <li>Built cross-platform with <strong>Flutter</strong></li>
         <li>Powered by and hosted on <strong>Firebase</strong></li>
       </ul>
@@ -81,15 +81,17 @@ import steamynotesImage from "../images/steamynotes.webp";
     <li class="project">
       <h3>Just Dance</h3>
       <div class="stage">Not for production</div>
-      <p class="description">A computer vision game that imitates Just Dance and Osu.</p>
+      <p class="description">
+        A computer vision game that imitates Just Dance and Osu.
+        A small project built during the <strong>Intel CV Summer Camp 2021</strong>
+        to learn the <strong>OpenVINO</strong> toolkit.
+      </p>
       <ul class="keypoints">
         <li>
           Detects body parts on a real-time video feed using neural networks from <strong
             >OpenModelZoo</strong
           > & <strong>MediaPipe</strong>
         </li>
-        <li>Built with <strong>OpenVINO</strong> toolkit</li>
-        <li>Built for <strong>Intel CV Summer Camp 2021</strong></li>
       </ul>
       <div class="links">
         <ProjectIconLink
@@ -102,12 +104,10 @@ import steamynotesImage from "../images/steamynotes.webp";
     <li class="project">
       <h3>This Website</h3>
       <div class="stage">Deployed</div>
-      <p class="description">A place about me and my projects.</p>
-      <ul class="keypoints">
-        <li>Built with <strong>Astro</strong></li>
-        <li>Fully statically generated</li>
-        <li>Hosted on <strong>GitHub Pages</strong></li>
-      </ul>
+      <p class="description">
+        About me and my projects.
+        Built with Astro, hosted on GitHub.
+      </p>
       <div class="links">
         <ProjectIconLink
           text="GitHub"
@@ -178,6 +178,10 @@ import steamynotesImage from "../images/steamynotes.webp";
   .keypoints {
     grid-area: points;
     list-style: disc;
+
+    li {
+      margin: 8px 0;
+    }
   }
 
   .links {
