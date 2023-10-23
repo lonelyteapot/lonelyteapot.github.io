@@ -3,5 +3,12 @@
   "editor.formatOnSave": true,
   "yaml.schemas": {
     "https://json.schemastore.org/github-workflow.json": "file:///d%3A/Development/Web/lonelyteapot.github.io/.github/workflows/deploy.yaml"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/dist": true,
+    "package-lock.json": true
   }
 }

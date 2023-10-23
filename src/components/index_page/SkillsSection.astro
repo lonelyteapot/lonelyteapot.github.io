@@ -3,14 +3,14 @@ import Skill from "./Skill.astro";
 ---
 
 <section id="skills">
-  <h2>My Tech Stack</h2>
+  <h2>Technologies I use</h2>
   <ul>
     <li class="skill_category">
       <h3>Backend Development</h3>
       <ul class="skills">
-        <Skill icon="starlite">Starlite</Skill>
-        <Skill icon="simple-icons:fastapi" iconColor="#05998b">FastAPI</Skill>
-        <Skill icon="simple-icons:flask" iconColor="white">Flask</Skill>
+        <Skill icon="litestar-logo">Litestar</Skill>
+        <Skill icon="logos:fastapi-icon">FastAPI</Skill>
+        <Skill icon="bxl:flask">Flask</Skill>
         <Skill icon="logos:firebase">Firebase</Skill>
         <Skill icon="logos:google-cloud">Google Cloud</Skill>
       </ul>
@@ -18,20 +18,20 @@ import Skill from "./Skill.astro";
     <li class="skill_category">
       <h3>Frontend Development</h3>
       <ul class="skills">
-        <Skill icon="logos:flutter">Flutter</Skill>
-        <Skill icon="vscode-icons:file-type-astro">Astro</Skill>
         <Skill icon="logos:vue">Vue</Skill>
+        <Skill icon="logos:flutter">Flutter</Skill>
+        <Skill icon="astro-icon-light">Astro</Skill>
         <Skill icon="logos:qt">Qt</Skill>
-        <Skill icon="logos:android-icon">Android</Skill>
+        <Skill icon="devicon:androidstudio">Android</Skill>
       </ul>
     </li>
     <li class="skill_category">
       <h3>Programming Languages</h3>
       <ul class="skills">
-        <Skill icon="skill-icons:python-light">Python</Skill>
+        <Skill icon="logos:python">Python</Skill>
         <Skill icon="skill-icons:typescript">TypeScript</Skill>
-        <Skill icon="skill-icons:cpp">C++</Skill>
-        <Skill icon="skill-icons:dart-light">Dart</Skill>
+        <Skill icon="logos:dart">Dart</Skill>
+        <Skill icon="logos:c-plusplus">C++</Skill>
         <Skill icon="logos:java">Java, Kotlin</Skill>
       </ul>
     </li>
@@ -50,15 +50,15 @@ import Skill from "./Skill.astro";
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 22px;
   }
 
   ul.skills {
     list-style: none;
-    margin: 0 2rem;
+    margin: 2rem;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 12px;
   }
 </style>

@@ -16,14 +16,15 @@ export default defineConfig({
       },
     }),
     IconPlugin({
+      // Individual icons are specified to speed up build times
       include: {
-        mdi: ["*"],
-        ic: ["*"],
+        bxl: ["flask"],
+        devicon: ["androidstudio"],
+        ic: ["baseline-telegram"],
         logos: ["*"],
         "material-symbols": ["*"],
-        "simple-icons": ["*"],
-        "skill-icons": ["*"],
-        "vscode-icons": ["*"],
+        mdi: ["github"],
+        "skill-icons": ["typescript"],
       },
     }),
   ],
