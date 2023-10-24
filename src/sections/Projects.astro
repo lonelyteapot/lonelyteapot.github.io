@@ -77,7 +77,7 @@ import steamynotesImage from "../images/steamynotes.webp";
       <h3 class="my-3 text-3xl">SteamyNotes</h3>
       <div class="hidden">Deployed / Alpha</div>
       <p class="description my-4">
-        A cloud-based note-keeping web app. I built it for learning Flutter.
+        A cloud-based note-keeping web app. Built for learning Flutter.
       </p>
       <ul class="keypoints list-disc pl-10">
         <li>Stores notes in the cloud, tied to a Google account</li>
@@ -127,13 +127,12 @@ import steamynotesImage from "../images/steamynotes.webp";
         />
       </div>
     </li>
-    <li class="project my-12 grid w-full gap-x-12">
-      <h3 class="my-3 text-3xl">This Website</h3>
+    <li class="my-12 grid w-full grid-flow-row auto-rows-min gap-x-12 gap-y-4">
+      <h3 class="row-start-1 my-3 text-3xl">This Website</h3>
       <div class="hidden">Deployed</div>
-      <p class="description my-4">
-        About me and my projects. Built with Astro, hosted on GitHub.
-      </p>
-      <div class="links flex flex-row-reverse justify-self-end">
+      <p class="col-span-2">About me and my projects.</p>
+      <p class="col-span-2">Built with Astro, hosted on GitHub.</p>
+      <div class="row-start-1 flex flex-row-reverse justify-self-end">
         <ProjectIconLink
           text="GitHub"
           url="https://github.com/lonelyteapot/lonelyteapot.github.io"
@@ -177,15 +176,15 @@ import steamynotesImage from "../images/steamynotes.webp";
     }
   }
 
-  h3 {
+  .project h3 {
     grid-area: header;
   }
 
-  p {
+  .project p {
     grid-area: descr;
   }
 
-  .keypoints {
+  .project .keypoints {
     grid-area: points;
 
     li {
@@ -193,11 +192,11 @@ import steamynotesImage from "../images/steamynotes.webp";
     }
   }
 
-  .links {
+  .project .links {
     grid-area: links;
   }
 
-  .images {
+  .project .images {
     grid-area: images;
     grid-auto-columns: 1fr;
   }
