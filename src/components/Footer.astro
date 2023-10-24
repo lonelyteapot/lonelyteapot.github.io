@@ -6,13 +6,24 @@ const today = new Date();
 ---
 
 <footer
-  class="mt-8 flex h-12 items-center justify-between text-sm tracking-wide"
+  class="mt-2 grid grid-cols-1 items-center justify-items-center gap-4 py-4 text-sm tracking-wide sm:grid-cols-[minmax(min-content,1fr)_max-content_1fr]"
 >
-  <a href="#" class="flex items-center gap-2 tracking-wider opacity-30">
+  <span class="opacity-30 sm:justify-self-start"
+    >This website uses <a
+      href="https://microanalytics.io"
+      target="_blank"
+      class="underline underline-offset-2">microanalytics.io</a
+    ></span
+  >
+  <a
+    href="#"
+    class="row-start-1 flex items-center gap-2 justify-self-center tracking-wider opacity-30 sm:row-start-auto"
+  >
     <Icon size={32} name="material-symbols:keyboard-double-arrow-up-rounded" />
     <span>Scroll to top</span>
   </a>
-  <span class="opacity-30">&copy; {FOOTER_FULLNAME}, {today.getFullYear()}</span
+  <span class="opacity-30 sm:justify-self-end"
+    >&copy; {FOOTER_FULLNAME}, {today.getFullYear()}</span
   >
 </footer>
 
