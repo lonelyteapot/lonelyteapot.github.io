@@ -7,13 +7,13 @@ import Button from "../components/Button.astro";
   <form
     action="https://formspree.io/f/myyojnjw"
     method="POST"
-    class="grid flex-1 basis-[480px] gap-3"
+    class="grid flex-1 basis-[480px] grid-cols-[1fr_auto] grid-rows-[minmax(200px,auto)_auto] gap-3"
   >
-    <label class="input message rounded-sm rounded-t-lg">
+    <label class="input message col-span-2 rounded-lg bg-neutral-700">
       <textarea name="message" placeholder=" " required></textarea>
       <span class="label">Message</span>
     </label>
-    <label class="input email rounded-b-sm rounded-t-lg">
+    <label class="input email rounded-lg bg-neutral-700">
       <input type="email" name="email" placeholder=" " required />
       <span class="label">your-email@example.com</span>
     </label>
@@ -21,32 +21,4 @@ import Button from "../components/Button.astro";
   </form>
 </section>
 
-<style>
-  form {
-    grid-template-columns: 1fr auto;
-    grid-template-rows: minmax(200px, auto) auto;
-    grid-template-areas: "message message" "email submit";
-  }
-
-  .input {
-    background-color: var(--color-canvas);
-    box-shadow: var(--shadow-md);
-  }
-
-  input,
-  textarea {
-    color: var(--color-on-canvas);
-  }
-
-  .message {
-    grid-area: message;
-  }
-
-  .email {
-    grid-area: email;
-  }
-
-  .submit {
-    grid-area: submit;
-  }
-</style>
+<style></style>
