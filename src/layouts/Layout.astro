@@ -1,6 +1,6 @@
 ---
 import { SEO } from "astro-seo";
-import GoogleAnalytics from "../components/GoogleAnalytics.astro";
+import Analytics from "../components/Analytics.astro";
 import Header from "../components/header/Header.astro";
 import Footer from "../components/Footer.astro";
 import "normalize.css";
@@ -9,7 +9,6 @@ import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/600.css";
 import "../styles/variables.css";
 import "../styles/input.scss";
-import { GOOGLE_ANALYTICS_ID } from "../config";
 
 export interface Props {
   title: string;
@@ -43,7 +42,7 @@ const IS_PRODUCTION = import.meta.env.PROD;
         },
       }}
     />
-    {IS_PRODUCTION && <GoogleAnalytics id={GOOGLE_ANALYTICS_ID} partytown />}
+    {IS_PRODUCTION && <Analytics />}
   </head>
   <body class="grid gap-x-7 min-h-screen">
     <Header />
