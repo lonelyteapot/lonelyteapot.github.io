@@ -5,41 +5,27 @@ import { FOOTER_FULLNAME } from "../config";
 const today = new Date();
 ---
 
-<footer>
-  <a href="#">
+<footer
+  class="mt-8 flex h-12 items-center justify-between text-sm tracking-wide"
+>
+  <a href="#" class="flex items-center gap-2 tracking-wider opacity-30">
     <Icon size={32} name="material-symbols:keyboard-double-arrow-up-rounded" />
     <span>Scroll to top</span>
   </a>
-  <span class="copyright">&copy; {FOOTER_FULLNAME}, {today.getFullYear()}</span>
+  <span class="opacity-30">&copy; {FOOTER_FULLNAME}, {today.getFullYear()}</span
+  >
 </footer>
 
 <style>
   footer {
     grid-area: footer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    min-height: 3rem;
-    font-size: 14px;
-    letter-spacing: 0.5px;
   }
 
   a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    opacity: 30%;
     transition: 200ms opacity;
-    color: inherit;
-    text-decoration: none;
   }
 
   a:hover {
     opacity: 100%;
-  }
-
-  .copyright {
-    opacity: 30%;
   }
 </style>

@@ -4,12 +4,16 @@ import Button from "../components/Button.astro";
 
 <section id="contact-me">
   <h2>Contact me</h2>
-  <form action="https://formspree.io/f/myyojnjw" method="POST">
-    <label class="input message">
+  <form
+    action="https://formspree.io/f/myyojnjw"
+    method="POST"
+    class="grid flex-1 basis-[480px] gap-3"
+  >
+    <label class="input message rounded-sm rounded-t-lg">
       <textarea name="message" placeholder=" " required></textarea>
       <span class="label">Message</span>
     </label>
-    <label class="input email">
+    <label class="input email rounded-b-sm rounded-t-lg">
       <input type="email" name="email" placeholder=" " required />
       <span class="label">your-email@example.com</span>
     </label>
@@ -19,18 +23,14 @@ import Button from "../components/Button.astro";
 
 <style>
   form {
-    flex: 1 1 480px;
-    display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: minmax(200px, auto) auto;
     grid-template-areas: "message message" "email submit";
-    gap: 0.75rem;
   }
 
   .input {
     background-color: var(--color-canvas);
     box-shadow: var(--shadow-md);
-    border-radius: 8px;
   }
 
   input,
@@ -48,6 +48,5 @@ import Button from "../components/Button.astro";
 
   .submit {
     grid-area: submit;
-    font-size: 18px;
   }
 </style>

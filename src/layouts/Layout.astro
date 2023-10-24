@@ -45,31 +45,30 @@ const IS_PRODUCTION = import.meta.env.PROD;
     />
     {IS_PRODUCTION && <GoogleAnalytics id={GOOGLE_ANALYTICS_ID} partytown />}
   </head>
-  <body>
+  <body class="grid gap-x-7 min-h-screen">
     <Header />
     <slot />
     <Footer />
   </body>
 </html>
 
-<style lang="scss" is:global>
-  @use "sass:color";
 
+<style>
   html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
   }
+</style>
+
+<style lang="scss" is:global>
+  @use "sass:color";
 
   body {
-    display: grid;
     grid-template:
       "header header header" max-content
       "  .     main    .   " auto
       "  .    footer   .   " max-content
       / 1fr minmax(auto, var(--max-content-width)) 1fr;
-    column-gap: 1.75rem;
-    min-height: 100vh;
-    line-height: 1.2;
     font-family: var(--primary-font);
     background-color: var(--background-color);
     color: var(--color-on-background);

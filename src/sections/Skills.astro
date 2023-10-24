@@ -4,10 +4,10 @@ import Skill from "./Skill.astro";
 
 <section id="skills">
   <h2>Technologies I use</h2>
-  <ul>
-    <li class="skill_category">
-      <h3>Backend Development</h3>
-      <ul class="skills">
+  <ul class="flex flex-wrap justify-around gap-12 mt-14">
+    <li>
+      <h3 class="text-xl">Backend Development</h3>
+      <ul class="flex flex-col m-8 gap-3">
         <Skill icon="litestar-logo">Litestar</Skill>
         <Skill icon="logos:fastapi-icon">FastAPI</Skill>
         <Skill icon="bxl:flask">Flask</Skill>
@@ -15,9 +15,9 @@ import Skill from "./Skill.astro";
         <Skill icon="logos:google-cloud">Google Cloud</Skill>
       </ul>
     </li>
-    <li class="skill_category">
-      <h3>Frontend Development</h3>
-      <ul class="skills">
+    <li>
+      <h3 class="text-xl">Frontend Development</h3>
+      <ul class="flex flex-col m-8 gap-3">
         <Skill icon="logos:vue">Vue</Skill>
         <Skill icon="logos:flutter">Flutter</Skill>
         <Skill icon="astro-icon-light">Astro</Skill>
@@ -25,9 +25,9 @@ import Skill from "./Skill.astro";
         <Skill icon="devicon:androidstudio">Android</Skill>
       </ul>
     </li>
-    <li class="skill_category">
-      <h3>Programming Languages</h3>
-      <ul class="skills">
+    <li>
+      <h3 class="text-xl">Programming Languages</h3>
+      <ul class="flex flex-col m-8 gap-3">
         <Skill icon="logos:python">Python</Skill>
         <Skill icon="skill-icons:typescript">TypeScript</Skill>
         <Skill icon="logos:dart">Dart</Skill>
@@ -37,28 +37,3 @@ import Skill from "./Skill.astro";
     </li>
   </ul>
 </section>
-
-<style>
-  section > ul {
-    list-style: none;
-    margin: 3.5rem 1rem;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3rem;
-  }
-
-  h3 {
-    font-size: 22px;
-  }
-
-  ul.skills {
-    list-style: none;
-    margin: 2rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-</style>

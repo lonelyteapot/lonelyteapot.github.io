@@ -6,7 +6,7 @@ export interface Props {
 const { type } = Astro.props;
 ---
 
-<button class={type} type={type}><slot /></button>
+<button class:list={[type]} type={type}><slot /></button>
 
 <style>
   button {

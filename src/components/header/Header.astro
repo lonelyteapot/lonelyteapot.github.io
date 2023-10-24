@@ -3,9 +3,9 @@ import NavItem from "./NavItem.astro";
 import SocialLink from "./SocialLink.astro";
 ---
 
-<header>
+<header class="sticky top-0 z-10 flex justify-between">
   <nav>
-    <ul class="nav">
+    <ul class="nav flex h-full whitespace-nowrap text-base">
       <NavItem title="About" url="/#" />
       <NavItem title="Skills" url="/#skills" />
       <NavItem title="Projects" url="/#projects" />
@@ -13,7 +13,9 @@ import SocialLink from "./SocialLink.astro";
     </ul>
   </nav>
   <div>
-    <ul class="social">
+    <ul
+      class="flex h-full items-center justify-between justify-self-stretch pr-2"
+    >
       <SocialLink url="https://t.me/lonelyteapot" icon="ic:baseline-telegram" />
       <SocialLink url="https://github.com/lonelyteapot" icon="mdi:github" />
     </ul>
@@ -24,11 +26,6 @@ import SocialLink from "./SocialLink.astro";
   header {
     grid-area: header;
     height: 60px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
     padding: 0 calc(50% - var(--max-content-width) / 2);
     background: linear-gradient(
       0deg,
@@ -51,26 +48,7 @@ import SocialLink from "./SocialLink.astro";
     }
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-  }
-
   .nav {
-    display: flex;
-    white-space: nowrap;
-    height: 100%;
-    font-size: 1rem;
     font-family: var(--secondary-font);
-  }
-
-  .social {
-    display: flex;
-    justify-content: space-between;
-    justify-self: stretch;
-    align-items: center;
-    padding-right: 0.5rem;
   }
 </style>
