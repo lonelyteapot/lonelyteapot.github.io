@@ -3,11 +3,9 @@ import { SEO } from "astro-seo";
 import Analytics from "../components/Analytics.astro";
 import Header from "../components/header/Header.astro";
 import Footer from "../components/Footer.astro";
-import "normalize.css";
 import "@fontsource/work-sans";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/600.css";
-import "../styles/variables.css";
 import "../styles/input.scss";
 
 export interface Props {
@@ -20,8 +18,8 @@ const { title, description } = Astro.props;
 const IS_PRODUCTION = import.meta.env.PROD;
 ---
 
-<!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#" class="bg-canvas">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,23 +42,23 @@ const IS_PRODUCTION = import.meta.env.PROD;
     />
     {IS_PRODUCTION && <Analytics />}
   </head>
-  <body class="grid gap-x-7 min-h-screen">
+  <body
+    class="font-primary grid min-h-screen gap-x-7 bg-canvas text-neutral-50"
+  >
     <Header />
     <slot />
     <Footer />
   </body>
 </html>
 
-
-<style>
+<style is:global>
   html {
+    --primary-color: #29c785;
+    --color-on-canvas: #ffffff;
+    --max-content-width: 900px;
     scroll-behavior: smooth;
     scrollbar-width: thin;
   }
-</style>
-
-<style lang="scss" is:global>
-  @use "sass:color";
 
   body {
     grid-template:
@@ -68,19 +66,15 @@ const IS_PRODUCTION = import.meta.env.PROD;
       "  .     main    .   " auto
       "  .    footer   .   " max-content
       / 1fr minmax(auto, var(--max-content-width)) 1fr;
-    font-family: var(--primary-font);
-    background-color: var(--background-color);
-    color: var(--color-on-background);
   }
 
   main {
     grid-area: main;
-    display: flex;
-    flex-direction: column;
+    @apply flex flex-col;
   }
 
   section {
-    // Adjust anchoring position for header height
+    /* Adjust anchoring position for header height */
     padding-top: calc(var(--header-height) - 4px);
     margin-top: calc(4px - var(--header-height));
 
@@ -97,41 +91,23 @@ const IS_PRODUCTION = import.meta.env.PROD;
   h4,
   h5,
   h6 {
-    font-family: var(--secondary-font);
-    font-weight: 500;
+    @apply font-secondary font-medium;
   }
 
   h2 {
-    text-align: center;
-    margin: 1.5rem 0;
-    font-size: 1.825rem;
-    font-family: var(--primary-font);
+    /* TODO: Remove margin */
+    @apply font-primary my-4 text-center text-3xl;
   }
 
   h3 {
-    color: var(--secondary-color);
+    @apply text-primary;
   }
 
   strong {
-    font-weight: 600;
+    @apply font-semibold;
   }
 
   img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .yellow {
-    color: #756303;
-  }
-
-  .green {
-    color: #29c785;
-  }
-
-  .gray {
-    color: #666;
+    @apply flex items-center justify-center text-center;
   }
 </style>

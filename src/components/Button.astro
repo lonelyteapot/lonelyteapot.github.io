@@ -6,31 +6,11 @@ export interface Props {
 const { type } = Astro.props;
 ---
 
-<button class:list={[type]} type={type}><slot /></button>
-
-<style>
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.4em;
-    padding: 0.5em 0.75em;
-    min-width: 6em;
-    border-radius: 6px;
-    font-family: var(--secondary-font);
-    font-size: smaller;
-    border: none;
-    cursor: pointer;
-    box-shadow: var(--shadow-md);
-    transition: box-shadow 200ms;
-    background-color: var(--primary-color);
-    color: var(--color-on-primary);
-  }
-
-  button:hover,
-  button:focus,
-  button:active {
-    box-shadow: var(--shadow-xl);
-    outline: none;
-  }
-</style>
+<button
+  class="min-w-"
+  class:list={[
+    type,
+    "bg-primary font-primary flex min-w-[6em] cursor-pointer items-center justify-center gap-1.5 rounded-md px-3 py-2 text-canvas",
+  ]}
+  type={type}><slot /></button
+>

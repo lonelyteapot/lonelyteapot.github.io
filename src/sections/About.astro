@@ -1,36 +1,20 @@
-<section id="about" class="text-center grid place-content-center">
-  <h1 class="title m-0 -ml-2">Dmitry Semenov</h1>
-  <p class="tagline text-xl text-left">Software Developer</p>
-  <p class="nickname text-xl">@lonelyteapot</p>
+<section
+  id="about"
+  class="grid h-[50vh] grid-cols-[auto_min-content] place-content-center text-center"
+>
+  <h1
+    class="title text-primary font-secondary col-span-2 row-start-1 m-0 -ml-2 text-[5rem]"
+  >
+    Dmitry Semenov
+  </h1>
+  <p class="tagline row-start-2 text-left text-xl">Software Developer</p>
+  <p class="nickname row-start-2 text-xl">@lonelyteapot</p>
 </section>
 
 <style>
-  section {
-    height: 50vh;
-    grid-template:
-      "title title" min-content
-      "tagline nickname" min-content
-      / auto min-content;
-  }
-
-  .title {
-    grid-area: title;
-    font-size: min(11.125vw, 5rem);
-    font-family: var(--secondary-font);
-    color: var(--primary-color);
-  }
-
-  @media (max-width: 500px) {
+  @media (min-width: 500px) {
     .title {
-      font-size: 5rem;
+      font-size: min(11.125vw, 5rem);
     }
-  }
-
-  .tagline {
-    grid-area: tagline;
-  }
-
-  .nickname {
-    grid-area: nickname;
   }
 </style>
