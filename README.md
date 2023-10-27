@@ -1,14 +1,13 @@
-# My personal website — [lonelyteapot.github.io][link]
+# My personal website — [lonelyteapot.github.io][website]
 
-[![screenshot]][link]
+![Screenshot](https://lonelyteapot.github.io/images/screenshot.png)
 
 ## A place about me and my projects
 
-Built with [Astro](https://astro.build/), fully statically generated and hosted on GitHub Pages.
+Built with [Astro](https://astro.build/), hosted on GitHub Pages.
 
 ## License
 
-Copyright &copy; 2022, [Dmitry Semenov][link].
+Copyright &copy; 2022, [Dmitry Semenov][website].
 
-[link]: https://lonelyteapot.github.io
-[screenshot]: https://user-images.githubusercontent.com/50505104/174487618-8d81e556-0533-41d1-ae26-6e8e8ba06358.png
+[website]: https://lonelyteapot.github.io
