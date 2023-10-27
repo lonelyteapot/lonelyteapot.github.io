@@ -1,9 +1,20 @@
 ---
+import { Icon } from "astro-icon/components";
 import Button from "../components/Button.astro";
 ---
 
 <section id="contact-me">
-  <h2>Contact me</h2>
+  <header class="grid grid-cols-[minmax(0,1fr)_auto_1fr]">
+    <h2 class="col-start-2 justify-center text-center">Contact me</h2>
+    <a
+      href="https://t.me/lonelyteapot"
+      target="_blank"
+      class="col-start-3 flex items-center justify-end gap-2 px-2 opacity-80 transition-opacity duration-100 hover:opacity-100"
+    >
+      <Icon size={32} name="ic:baseline-telegram" />
+      <span class="max-hbp:text-[0]">Telegram</span>
+    </a>
+  </header>
   <form
     action="https://formspree.io/f/myyojnjw"
     method="POST"

@@ -2,15 +2,18 @@
 export interface Props {
   url: string;
   title: string;
+  className?: string;
 }
 
-const { url, title } = Astro.props;
+const { url, title, className } = Astro.props;
 ---
 
 <li>
   <a
     href={url}
-    class="flex h-full items-center px-4 transition-[text-shadow] duration-100 hover:[text-shadow:_0_0_0px]"
-    >{title}</a
+    class:list={[
+      "flex h-full items-center px-4 transition-[text-shadow] duration-100 hover:[text-shadow:_0_0_0px]",
+      className,
+    ]}>{title}</a
   >
 </li>
