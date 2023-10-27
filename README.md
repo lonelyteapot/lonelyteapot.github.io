@@ -1,6 +1,6 @@
 # My personal website — [lonelyteapot.github.io][website]
 
-![Screenshot](https://lonelyteapot.github.io/images/screenshot.png)
+[![Screenshot](https://lonelyteapot.github.io/images/screenshot.png)][website]
 
 ## A place about me and my projects
 
