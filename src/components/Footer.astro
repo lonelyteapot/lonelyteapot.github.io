@@ -8,21 +8,23 @@ const today = new Date();
 <footer
   class="mt-2 grid grid-cols-1 items-center justify-items-center gap-4 py-4 text-sm tracking-wide sm:grid-cols-[minmax(min-content,1fr)_max-content_1fr]"
 >
-  <span class="opacity-30 sm:justify-self-start"
-    >This website uses <a
+  <span class="sm:justify-self-start">
+    <span class="opacity-40">This website uses&#32;</span>
+    <a
       href="https://microanalytics.io"
       target="_blank"
-      class="underline underline-offset-2">microanalytics.io</a
-    ></span
-  >
+      class="underline underline-offset-2 opacity-40 transition-opacity duration-100 hover:opacity-100"
+      >microanalytics.io</a
+    >
+  </span>
   <a
     href="#"
-    class="row-start-1 flex items-center gap-2 justify-self-center tracking-wider opacity-30 sm:row-start-auto"
+    class="row-start-1 flex items-center gap-2 justify-self-center tracking-wider opacity-40 transition-opacity duration-100 hover:opacity-100 sm:row-start-auto"
   >
     <Icon size={32} name="material-symbols:keyboard-double-arrow-up-rounded" />
     <span>Scroll to top</span>
   </a>
-  <span class="opacity-30 sm:justify-self-end"
+  <span class="opacity-40 sm:justify-self-end"
     >&copy; {FOOTER_FULLNAME}, {today.getFullYear()}</span
   >
 </footer>
@@ -30,13 +32,5 @@ const today = new Date();
 <style>
   footer {
     grid-area: footer;
-  }
-
-  a {
-    transition: 200ms opacity;
-  }
-
-  a:hover {
-    opacity: 100%;
   }
 </style>

@@ -10,7 +10,7 @@ const { type } = Astro.props;
   class="min-w-"
   class:list={[
     type,
-    "bg-primary font-primary flex min-w-[6em] cursor-pointer items-center justify-center gap-1.5 rounded-md px-3 py-2 text-canvas",
+    "flex min-w-[6em] cursor-pointer items-center justify-center gap-1.5 rounded-md bg-primary px-3 py-2 font-primary text-canvas transition-colors duration-100 hover:bg-primary/80",
   ]}
   type={type}><slot /></button
 >

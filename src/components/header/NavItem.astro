@@ -8,5 +8,9 @@ const { url, title } = Astro.props;
 ---
 
 <li>
-  <a href={url} class="flex h-full items-center px-4">{title}</a>
+  <a
+    href={url}
+    class="flex h-full items-center px-4 transition-[text-shadow] duration-100 hover:[text-shadow:_0_0_0px]"
+    >{title}</a
+  >
 </li>

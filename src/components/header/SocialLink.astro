@@ -10,19 +10,12 @@ const { url, icon } = Astro.props;
 ---
 
 <li>
-  <a href={url} target="_blank" class="flex items-center px-2 opacity-80">
+  <a
+    href={url}
+    target="_blank"
+    class="flex items-center px-2 opacity-80 transition-opacity duration-100 hover:opacity-100"
+  >
     <Icon size={32} name={icon} />
     <span class="text-[0px]">{url}</span>
   </a>
 </li>
-
-<style>
-  a {
-    transition: opacity 200ms;
-  }
-
-  a:hover,
-  a:focus {
-    opacity: 1;
-  }
-</style>

@@ -13,19 +13,8 @@ const { text, url, icon } = Astro.props;
 <a
   href={url}
   target="_blank"
-  class="font-secondary text-primary flex flex-col items-center gap-0.5 rounded-lg p-1.5 text-xs"
+  class="flex flex-col items-center justify-center gap-0.5 rounded-lg p-2.5 font-secondary text-xs text-primary transition-colors duration-100 hover:bg-white/10"
 >
   <Icon size={20} name={icon} />
   <span>{text}</span>
 </a>
-
-<style>
-  a {
-    transition: background-color 200ms;
-  }
-
-  a:hover,
-  a:focus {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-</style>
