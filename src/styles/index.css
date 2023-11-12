@@ -1,0 +1,58 @@
+html {
+  --primary-color: #29c785;
+  --color-on-canvas: #ffffff;
+  --max-content-width: 900px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+body {
+  grid-template:
+    "header header header" max-content
+    "  .     main    .   " auto
+    "  .    footer   .   " max-content
+    / 1fr minmax(auto, var(--max-content-width)) 1fr;
+}
+
+main {
+  grid-area: main;
+  @apply flex flex-col;
+}
+
+section {
+  /* Adjust anchoring position for header height */
+  padding-top: calc(var(--header-height) - 4px);
+  margin-top: calc(4px - var(--header-height));
+
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-secondary font-medium;
+}
+
+h2 {
+  /* TODO: Remove margin */
+  @apply my-12 text-center font-primary text-4xl;
+}
+
+h3 {
+  @apply text-primary;
+}
+
+strong {
+  @apply font-semibold;
+}
+
+img {
+  @apply flex items-center justify-center text-center;
+}

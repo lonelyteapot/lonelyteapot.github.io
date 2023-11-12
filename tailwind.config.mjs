@@ -8,6 +8,7 @@ export default {
       colors: {
         primary: "#29c785",
         canvas: "#1f1f1f",
+        card: "#282828",
 
         // "primary-color": "#29c785",
         // "secondary-color": "#29c785",

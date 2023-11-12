@@ -4,12 +4,12 @@ import Button from "../components/Button.astro";
 ---
 
 <section id="contact-me">
-  <header class="grid grid-cols-[minmax(0,1fr)_auto_1fr]">
+  <header class="grid grid-cols-[minmax(0,1fr)_auto_1fr] gap-x-4">
     <h2 class="col-start-2 justify-center text-center">Contact me</h2>
     <a
       href="https://t.me/lonelyteapot"
       target="_blank"
-      class="col-start-3 flex items-center justify-end gap-2 justify-self-end px-2 opacity-80 transition-opacity duration-100 hover:opacity-100"
+      class="col-start-3 mt-2 flex items-center justify-end gap-2 self-center justify-self-end p-1 opacity-80 transition-opacity duration-100 hover:opacity-100"
     >
       <Icon size={32} name="ic:baseline-telegram" />
       <span class="max-hbp:text-[0]">Telegram</span>
@@ -20,11 +20,11 @@ import Button from "../components/Button.astro";
     method="POST"
     class="grid flex-1 basis-[480px] grid-cols-[1fr_auto] grid-rows-[minmax(200px,auto)_auto] gap-3"
   >
-    <label class="input message col-span-2 rounded-lg bg-neutral-700">
+    <label class="input message bg-card col-span-2 rounded-b-md rounded-t-2xl">
       <textarea name="message" placeholder=" " required></textarea>
       <span class="label">Message</span>
     </label>
-    <label class="input email rounded-lg bg-neutral-700">
+    <label class="input email bg-card rounded-b-md rounded-t-2xl">
       <input type="email" name="email" placeholder=" " required />
       <span class="label">your-email@example.com</span>
     </label>
