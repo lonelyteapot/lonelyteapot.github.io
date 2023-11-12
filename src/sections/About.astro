@@ -1,13 +1,27 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <section
   id="about"
-  class="flex h-[50vh] flex-col place-content-center text-center"
+  class="flex h-[calc(100vh-10rem)] flex-col place-content-center text-center"
 >
   <h1
     class="title col-span-2 row-start-1 m-0 -ml-2 font-secondary text-[5rem] text-primary"
   >
     lonelyteapot
   </h1>
-  <p class="tagline text-center text-xl">I build full stack web applications</p>
+  <p class="tagline text-center text-xl">I build full-stack web applications</p>
+  <div class="mt-5 flex justify-center">
+    <a
+      href="https://github.com/lonelyteapot"
+      target="_blank"
+      class="flex items-center gap-2 p-1 opacity-80 transition-opacity duration-100 hover:opacity-100 max-[410px]:text-[0]"
+    >
+      <Icon size={32} name="mdi:github" />
+      <span>GitHub</span>
+    </a>
+  </div>
 </section>
 
 <style>
