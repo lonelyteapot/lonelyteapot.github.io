@@ -7,7 +7,7 @@ import { Icon } from "astro-icon/components";
   class="flex h-[calc(100vh-10rem)] flex-col place-content-center text-center"
 >
   <h1
-    class="title col-span-2 row-start-1 m-0 -ml-2 font-secondary text-[5rem] text-primary"
+    class="title col-span-2 row-start-1 m-0 -ml-2 font-secondary text-primary"
   >
     lonelyteapot
   </h1>
@@ -25,9 +25,7 @@ import { Icon } from "astro-icon/components";
 </section>
 
 <style>
-  @media (min-width: 500px) {
-    .title {
-      font-size: min(11.125vw, 5rem);
-    }
+  .title {
+    font-size: min(calc(2.5rem + 4vw), 6rem);
   }
 </style>

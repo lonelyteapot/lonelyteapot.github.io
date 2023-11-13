@@ -8,7 +8,7 @@ import steamynotesImage from "../images/steamynotes.webp";
 
 <section id="projects">
   <h2>Projects</h2>
-  <ul class="grid grid-flow-row gap-8 md:grid-cols-2">
+  <ul class="grid grid-flow-row gap-8 md:grid-cols-[1fr_1fr]">
     <li
       class="project bg-card grid w-full gap-x-12 rounded-2xl p-8 leading-relaxed md:col-span-2"
     >
@@ -165,6 +165,7 @@ import steamynotesImage from "../images/steamynotes.webp";
   }
 
   @media (max-width: 768px) {
+    /* increased specificity */
     .project:nth-child(1n) {
       grid-template:
         "header links " auto
@@ -193,6 +194,7 @@ import steamynotesImage from "../images/steamynotes.webp";
 
   .project .links {
     grid-area: links;
+    @apply -ml-10 -mr-4;
   }
 
   .project .images {
